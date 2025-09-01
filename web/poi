@@ -1,0 +1,67 @@
+[weeks]
+
+[weeks.intro]
+key = "intro"
+title = "Introduction"
+date = "2024-09-24"
+
+[weeks.tones]
+key = "tones"
+title = "Tone in Asian Languages"
+date = "2024-10-01"
+other = "Guest Lecture: Lian Hee Wee (Hong Kong Baptist)"
+
+[weeks.family]
+key = "family"
+title = "Language families, multilingualism, official languages"
+date = "2024-10-01"
+
+[weeks.features]
+key = "features"
+title = "Characteristic features of the languages of East and Southeast Asia"
+date = "2024-10-08"
+
+[weeks.minority]
+key = "minority"
+title = "Minority languages of Southeast and East Asia"
+date = "2024-10-15"
+
+[weeks.oral]
+key = "oral"
+title = "Oral literature and traditions"
+date = "2024-10-22"
+
+[weeks.contact]
+key = "contact"
+title = "Language contact in SE and V Asia"
+date = "2024-10-29"
+
+# [weeks.sound]
+# key = "sound"
+# title = "Sound structure of Asian languages"
+# date = "2024-11-05"
+
+[weeks.writing]
+key = "writing"
+title = "Writing, its origin, spread and adaptation"
+date = "2024-11-12"
+
+[weeks.politeness]
+key = "politeness"
+title = "Politeness in Asian languages"
+date = "2024-11-19"
+
+[weeks.arts]
+key = "arts"
+title = "Language Arts and Literature"
+date = "2024-11-26"
+
+[weeks.english]
+key = "english"
+title = "Asian Englishes"
+date = "2024-12-03"
+
+[weeks.presentation]
+key = "presentation"
+title = "Presentation of seminar work topics and its structure"
+date = "2024-12-10"

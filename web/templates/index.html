@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Open Knowledge for a Sustainable Future: Research, Ethics, and Wikipedia</a>
+<h3>Overview</h3>
+
+  <p>
+<a href='https://fcbond.github.io/'>
+  <ruby>
+    <rb>Francis</rb>
+    <rp>(</rp><rt>フランシス</rt><rp>)</rp>
+</ruby>
+  <ruby>
+    <rb><b>Bond</b></rb>
+    <rp>(</rp><rt>凡土</rt><rp>)</rp>
+</ruby></a> and <a href='pavel.bednarik@wikimedia.cz'>Pavel Bednařík</a>
+  <strong>2025</strong> (DAS OK)
+
+<p>Monday
+  Tuesday 16:45-18:15 (16:45-19:45),
+  <a href='https://mapy.upol.cz/en?prac=64'>Room 2.404 tř. Svobody 26,
+  779 00 Olomouc</a>
+
+
+  
+<p>This course is an introduction to writing viewed as creating and sharing knowledge --- through both Wikipedia and academic writing.  We will teach you how to do so effectively, with the goal of creating a more sustainable future.
+
+<p>This course is being developed in cooperation with <a href='https://wikimedia.cz/en/'>Wikimedia Czech Republic</a>.  And will be taught in a combination of English and Czech.
+
+<p>We will cooperate with the Asian Month on Czech Wikipedia (<a href='https://cs.wikipedia.org/wiki/Wikipedie:Asijsk%C3%BD_m%C4%9Bs%C3%ADc_Wikipedie_2024'>2024 page</a>).
+  
+   <h2>Learning Objectives</h2>
+    <p>By the end of this course, students will be able to:</p>
+    
+    <ol>
+        <li><strong>Evaluate and ethically assess knowledge sources</strong>, distinguishing between reliable and unreliable information, and critically engaging with multilingual content.</li>
+        
+        <li><strong>Write clearly and effectively for diverse purposes and audiences</strong>, including academic contexts and general readerships.</li>
+        
+        <li><strong>Understand and apply Wikipedia's standards and practices</strong>, contributing ethically, accurately, and collaboratively to public knowledge.</li>
+        
+        <li><strong>Clearly and responsibly present multilingual information</strong>, acknowledging linguistic and cultural differences and demonstrating sensitivity and accuracy.</li>
+        
+        <li><strong>Communicate persuasively and ethically</strong>, developing well-supported arguments while</li>
+    </ol>
+    
+    <p>
+        The course will be taught with a longer class every two weeks, so weeks 2, 4, 6, 8, 10 and 12 will be two lectures worth of material.
+
+    
+
+<h3 class="text-center">Course Table of Contents</h3>
+<table class="table table-striped table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Other</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, week in weeks.items() %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ week.date }}</td>
+            <td><a href="{{ url_for('week', week_key=key) }}">{{ week.title }}</a></td>
+            <td>{{ week.other if week.other else '' }}</td>
+        </tr>
+        {% endfor %}
+	<tr>
+            <th colspan=2>2025-12-31</th>
+            <td>Assignment Due</td>
+            <td>Submit in moodle/edit in wikipedia</td>
+        </tr>
+ 
+	
+    </tbody>
+</table>
+
+<h3>Readings and Resources</h3>
+
+<h4>FAIR Principles & Open Knowledge</h4>
+<p>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... & Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, 3, 160018. <a href="https://www.nature.com/articles/sdata201618">https://www.nature.com/articles/sdata201618</a></p>
+
+<h4>Wikipedia & Collaborative Knowledge</h4>
+<p>Wikimedia Foundation. (n.d.). Wikipedia: Five pillars. Retrieved from <a href="https://en.wikipedia.org/wiki/Wikipedia:Five_pillars">https://en.wikipedia.org/wiki/Wikipedia:Five_pillars</a></p>
+
+<p>Matei, S. A., & Dobrescu, C. (2011). Wikipedia's "neutral point of view": Settling conflict through ambiguity. <em>Information, Communication & Society</em>, 14(6), 850–871. <a href="https://www.researchgate.net/publication/220175584ResearchGate">https://www.researchgate.net/publication/220175584ResearchGate</a></p>
+
+<h4>Misinformation & Critical Literacy</h4>
+<p>Silverman, C. (2015). Lies, damn lies, and viral content: How news websites spread (and debunk) online rumors, unverified claims and misinformation. <em>Tow Center for Digital Journalism</em>. <a href="https://academiccommons.columbia.edu/doi/10.7916/D8Q81RHHSAGE">https://academiccommons.columbia.edu/doi/10.7916/D8Q81RHHSAGE</a></p>
+
+<p>Wardle, C., & Derakhshan, H. (2017). Information disorder: Toward an interdisciplinary framework for research and policy making. <em>Council of Europe</em>. <a href="https://shorensteincenter.org/information-disorder-framework-for-research-and-policymaking/">https://shorensteincenter.org/information-disorder-framework-for-research-and-policymaking/</a></p>
+
+<h4>Principles and practice</h4>
+<p><a href="https://navody.wikimedia.cz">navody.wikimedia.cz</a></p>
+
+<p>VESELÝ, Vojtěch (ed.).: <a href='https://commons.wikimedia.org/wiki/File:Jak_ps%C3%A1t_Wikipedii_%E2%80%93_P%C5%99%C3%ADru%C4%8Dka_pro_za%C4%8D%C3%A1te%C4%8Dn%C3%ADky.pdf'>Jak psát Wikipedii</a>. Wikimedia Česká republika, Praha 2020. Dostupné online</p>
+
+<p>BLAHUŠ, Marek: <a href='https://commons.wikimedia.org/wiki/File:Jak_se_zrodila_%C4%8Desk%C3%A1_Wikipedie.pdf'>Jak se zrodila česká Wikipedie</a>. Brno 2023.</p>
+
+<h3>Assessment</h3>
+
+<p>The prerequisites for successful completion are the following:
+
+<ul>
+  <li> Regular attendance and active participation in class
+  <li> A Wikipedia article on a topic to be oked by the lecturer <br>
+    <ul>
+      <li>Feedback on other student's articles (15%)
+      <li>Your own article (35%)
+    </ul>
+  <li> A research paper on a topic to be oked by the lecturer --- does not have to be the same as the wikipedia article (range 4-8 pages)
+    <ul>
+      <li>Feedback on other student's articles (15%)
+      <li>Your own article (35%)
+    </ul>
+</ul>
+
+<h3>Acknowledgements</h3>
+
+<ul
+  <li> <img height = '20px' src="{{ url_for('static', filename='img/Wikimedia-logo.png') }}" alt='Wikimedia Logo'>  <a href="https://commons.wikimedia.org/wiki/File:Wikimedia-logo.png">The Wikmedia Logo</a> is a registered trademark of Wikimedia.
+</ul>
+  
+<p>Source code for this course available
+here <a href='https://github.com/bond-lab/Open-Knowledge'>https://github.com/bond-lab/Open-Knowledge</a>
+under
+a <a href='https://creativecommons.org/licenses/by/4.0/'>Creative
+Commons Attribution 4.0 International Licence &mdash; CC BY 4.0</a>.
+
+
+  
+{% endblock %}

@@ -1,0 +1,56 @@
+[weeks]
+
+[weeks.intro]
+key = "intro"
+title = "Overview (Pavel and Francis)"
+date = "09-23"
+
+[weeks.wiki]
+key = "wiki"
+title = "Introduction to Wikipedia - Rules and Recommendations"
+date = "09-30"
+other = "Pavel (3h), in Czech"
+
+[weeks.writing]
+key = "writing"
+title = "Academic Writing vs Encyclopedic Writing - Evaluating Sources"
+date = "10-14"
+other = "Francis (3h), in English"
+
+[weeks.good]
+key = "good"
+title = "Writing a Good Wikipedia Article - Clear, Engaging and Neutral"
+date = "10-28"
+other = "Pavel (3h), in Czech"
+
+
+[weeks.fair]
+key = "fair"
+title = "FAIR Principals - Multilingual and Ethical considerations"
+date = "11-11"
+other = "Francis (3h), in English"
+
+# [weeks.holiday]
+# key = "holiday"
+# title = "Public Holiday"
+# date = "10-28"
+# other = "Independent Czechoslovak State Day"
+
+[weeks.feedback]
+key = "feedback"
+title = "Feedback on Wikipedia Articles - Editing as Communal Knowledge Building"
+date = "11-25"
+other = "Pavel (3h), in Czech"
+
+[weeks.comments]
+key = "comments"
+title = "Feedback on Academic Articles -  Peer review and revision for publication"
+date = "12-09"
+other = "Francis (3h), in English"
+
+[weeks.conclusion]
+key = "conclusion"
+title = "Conclusion: long term strategies for sustainable knowledge creation; reflection"
+date = "12-16"
+other = "Pavel and Francis"
+

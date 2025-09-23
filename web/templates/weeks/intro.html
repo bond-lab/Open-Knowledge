@@ -3,4 +3,8 @@
 {% block content %}
 <h2>{{ info.title }}</h2>
 <p>This is the content for <i>{{ info.title }}</i>, scheduled for {{ info.date }}.</p>
+
+These <a href="{{ url_for('static', filename='pdf/wk-01-intro.pdf')}}">slides</a> give an overview of the course, and what we hope to do.</p>
+
+
 {% endblock %}

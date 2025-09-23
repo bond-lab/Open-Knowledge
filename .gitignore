@@ -6,6 +6,8 @@ slides/*.fls
 slides/*.log
 slides/*.out
 slides/*.pdf
+slides/*.snm
+slides/*.nav
 *~
 */*~
 */*/*~

@@ -1,0 +1,396 @@
+\documentclass[aspectratio=169]{beamer}
+
+% ---- Minimal setup (LuaLaTeX) ----
+\usepackage{fontspec}
+\setsansfont{TeX Gyre Heros} % Safe default; swap to your preferred sans
+\setmainfont{TeX Gyre Pagella}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks,
+     linkcolor={blue!50!black},
+     citecolor={red!50!black},
+     urlcolor={blue!80!black}
+   }
+\usepackage{booktabs}
+\usepackage{microtype}
+
+% --- biber
+\usepackage[backend=biber,style=authoryear,doi=true,url=true]{biblatex}
+\addbibresource{open.bib}
+
+% ---- Beamer look ----
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[triangle]
+%\setbeamertemplate{footline}[frame number]
+
+% ---- Section outline slide ----
+\AtBeginSection[]{
+  \begin{frame}
+    \frametitle{Roadmap}
+    \small
+    \tableofcontents[currentsection, hideallsubsections]
+  \end{frame}
+}
+
+% ---- Title metadata ----
+\title[Open Knowledge --- Intro]{Open Knowledge for a Sustainable Future:\\ Research, Ethics, and Wikipedia}
+\subtitle{Week 1 (Academic + Wiki) — Course Overview \& Framing}
+\author[Bond \& Bednařík]{Francis Bond (Academic) \and Pavel Bednařík (Wiki)}
+\institute[UPOL \& Wikimedia]{Palacký University Olomouc \quad | \quad Wikimedia ČR}
+\date{23 September 2025}
+
+\begin{document}
+
+% =====================================================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Today}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% =====================================================================
+\section{Course Overview}
+
+\begin{frame}{What This Course Is About}
+\begin{itemize}
+  \item Academic vs.\ encyclopedic writing (audience, voice, structure)
+  \item Sustainable knowledge: FAIR / CARE, openness, ethics
+  \item Practice both: (Academic) paper and (Wiki) article
+  \item Learn transferrable skills: argument, evaluation, revision, collaboration
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Tracks, One Goal}
+\begin{columns}[T,onlytextwidth]
+\column{0.48\textwidth}
+\textbf{(Academic)} Short paper (4-8 pp + refs)
+\begin{itemize}
+  \item Argument-driven, thesis-focused
+  \item Synthesis and analysis
+  \item Scholarly voice \& citation norms
+  \item Writing part of a larger process
+\end{itemize}
+
+\column{0.48\textwidth}
+\textbf{(Wiki)} Wikipedia article
+\begin{itemize}
+  \item NPOV, verifiability, no original research
+  \item Clear structure; accessibility
+  \item Community standards, consensus
+\end{itemize}
+\end{columns}
+
+\vspace{4ex}
+\begin{itemize}
+  \item We \textbf{compare genres} to strengthen writing and judgment.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Academic vs.\ Encyclopedic Writing (Quick Contrast)}
+\begin{itemize}
+  \item \textbf{Audience}: specialists vs.\ general public
+  \item \textbf{Purpose}: advance/argue vs.\ summarize established knowledge
+  \item \textbf{Voice}: hedged, theory-aware vs.\ neutral, accessible
+  \item \textbf{Evidence}: engage literature vs.\ cite reliable secondary sources
+  \item \textbf{Structure}: IMRaD/thesis vs.\ lede + sections
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Assessment Overview}
+\begin{itemize}
+\item \textbf{Academic paper (Francis)}: 4-8 pages + references; peer review; revision memo
+  \begin{itemize}
+  \item Review two articles
+  \end{itemize}
+  \item \textbf{Wikipedia article (Pavel)}: sandbox draft; sourcing; feedback; mainspace
+  \begin{itemize}
+  \item Comment on two articles
+  \end{itemize}
+  \item \textbf{Participation}: discussion, reflections
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{Why Academic Writing Matters}
+
+\begin{frame}{Why It Matters}
+\begin{itemize}
+  \item It \textbf{helps thinking}: analysis, structure, precision
+  \item It \textbf{builds knowledge}: claims + evidence + reasoning
+  \item It \textbf{travels}: others can reuse, critique, extend
+  \item It \textbf{signals credibility}: method, transparency, sources
+  \item It \textbf{connects communities}: researchers, practitioners, public
+  \item It \textbf{enables openness}: FAIR data and reusable prose
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Write for your Audience}
+\begin{itemize}
+\item \textbf{Discipline expectations}: terminology, typical arguments
+\item \textbf{Background knowledge}: what can be assumed?
+  \begin{itemize}
+  \item Different disciplines are interested in different things (not always sensibly)
+  \end{itemize}
+\item \textbf{Background knowledge}: what can be assumed?
+  \begin{itemize}
+  \item You can assume some shared knowledge
+  \item No need to explain everything
+  \end{itemize}
+\item \textbf{Motivation}: what problem are they trying to solve?
+  \begin{itemize}
+  \item Are you writing for basic research? \hfill understanding
+  \item Applied research?  \hfill better practice
+  \item Literary studies? \hfill better appreciation
+  \item Fine arts? \hfill engage an audience
+  \item \ldots{}
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Define Your Purpose}
+\begin{itemize}
+  \item Explain, evaluate, compare, propose, synthesize?
+  \item Purpose drives selection of evidence and structure
+  \item One paper should have, one clear purpose 
+    \begin{itemize}
+    \item \textbf{Specific}: a claim you can support in a short paper
+    \item \textbf{Contestable}: not a truism; invites argument
+    \item \textbf{Roadmap}: hints at reasons/structure to come
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{Global Structure}
+
+\begin{frame}{Common Structures}
+\begin{itemize}
+  \item Humanities: \textbf{thesis-driven essay}
+  \item Social sciences: \textbf{IMRaD}
+    \\  Intro → Methods → Results → Discussion → Conclusion.
+  \item Linguistics: 
+    \\   Intro → Background → Data/Methods → Analysis → Discussion → Conclusion
+  \item Computer Science:
+    \\ Intro → Related Work → Method → Data → Experiments/Results → Analysis → Conclusion
+  \item Hybrids: literature review + case study; policy analysis + recommendations
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Start and end well}
+  \begin{itemize}
+  \item The Introduction sets the stage
+\begin{itemize}
+  \item Context \textrightarrow\ Problem \textrightarrow\ Question/Claim \textrightarrow\ Contribution \textrightarrow\ Roadmap
+  \item Avoid: history lessons without focus; claims with no stakes
+\end{itemize}
+\item The Conclusion drives home the argument
+  \begin{itemize}
+  \item Answer the question; synthesize findings
+  \item State implications, limits, next steps
+  \item \textbf{Avoid}: repeating the intro; new evidence in the last paragraph
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{Evidence and Sources (lecture 3)}
+\begin{frame}{How to choose evidence}
+  \begin{itemize}
+  \item What can be trusted as evidence?
+    \begin{itemize}
+    \item Peer-reviewed articles; scholarly books
+    \item Policy reports; official statistics; reputable NGOs
+    \item Data (quantitative/qualitative), corpora, case studies
+    \end{itemize}
+  \item Evaluating Sources (Academic Lens)
+    \begin{itemize}
+    \item \textbf{Authority}: who wrote it? venue? peer review?
+    \item \textbf{Recency/Relevance}: up-to-date, on-point
+    \item \textbf{Method/Transparency}: can you inspect or replicate?
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Integrating Sources}
+\begin{itemize}
+  \item \textbf{Summarize}: key point in your words, with citation
+  \item \textbf{Paraphrase}: reframe to serve your argument
+  \item \textbf{Quote}: sparingly, when wording is crucial
+  \item Always connect source to \textbf{your} claim
+  \item Multiple sources are best
+    \begin{itemize}
+    \item Weave multiple sources to make a new point
+    \item Compare/contrast findings, methods, assumptions
+    \item Identify gaps, tensions, implications
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Multilingual Source Literacy}
+\begin{itemize}
+\item Often sources in other languages are ignored 
+  \item When English is not the richest source: local journals, government docs, linguistic data, \ldots
+  \item Beware translation bias; summarize fairly
+  \item Cross-check facts across languages
+\end{itemize}
+\end{frame}
+% =====================================================================
+\section{Ethics, Integrity, Openness (lecture 5)}
+
+\begin{frame}{Academic Integrity}
+\begin{itemize}
+\item Cite all sources (including data, images)
+  \begin{itemize}
+  \item Read what you cite, don't cite transitively (or acknowledge when you do)
+  \item Cite in detail --- give page numbers (especially for books)
+  \end{itemize}
+  \item Proper paraphrase: change structure and wording, cite anyway
+  \item Avoid patchwriting; keep notes disciplined
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Responsible Use of AI Tools}
+\begin{itemize}
+  \item AI can help brainstorm, outline, surface references
+  \item \textbf{You} are responsible for accuracy, reasoning, and citation
+  \item Disclose use where appropriate; never fabricate sources
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sustainable Knowledge (Why Open?)}
+
+This is more about data then writing, but still very important.
+  
+\begin{itemize}
+  \item \textbf{FAIR}: Findable, Accessible, Interoperable, Reusable \cite{FAIR2016}
+  \item \textbf{CARE}: Collective benefit, Authority, Responsibility, Ethics \cite{CARE2020}
+  \item \textbf{Open Science} (UNESCO Recommendation) \cite{UNESCOOpenScience2021}
+  \item \textbf{Knowledge equity} (Wikimedia 2030) \cite{KnowledgeEquity2030}
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{Process: Revision and Feedback (Lecture 7)}
+
+\begin{frame}{Writing is Revising}
+\begin{itemize}
+\item Draft fast; revise for structure, then style
+  \begin{itemize}
+  \item \textbf{Content is more important than presentation}
+  \end{itemize}
+  \item Read aloud; reverse outline; get feedback early
+  \item Track changes; keep a revision log
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Peer Review is part of the process}
+  \begin{itemize}
+  \item Helpful feedback
+    \begin{itemize}
+    \item Focus on \textbf{claims, evidence, logic}, not just grammar
+    \item Ask: what is the thesis? is it supported? what is missing?
+    \item Offer specific, actionable suggestions
+    \item Don't be \href{https://www.youtube.com/watch?v=-VRBWLpYCPY}{reviewer three}\\
+      \textbf{Do not:} Use a negative or dismissive tone; Ask for unreasonable
+      revisions; Provide little or no constructive guidance; Let
+      personal bias color the review.
+    \end{itemize}
+  \item Responding to Feedback
+    \begin{itemize}
+    \item Separate criticism into categories (structure, evidence, style)
+    \item Decide: change, clarify, or justify (with reasons)
+    \item Write a brief \textbf{revision memo}: what changed and why
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{General Advice: Common Mistakes \& Checklist}
+
+\begin{frame}{Common Mistakes}
+  \begin{itemize}
+  \item   Topic Too Broad
+    \begin{itemize}
+    \item Fix: narrow to a focused question you can answer with available evidence
+    \end{itemize}
+  \item  Claim Without Evidence
+    \begin{itemize}
+    \item Fix: support with sources, data, or analysis; show how evidence bears on the claim
+    \end{itemize}
+    \item  Source Dump
+      \begin{itemize}
+      \item Fix: synthesize; explain why each source matters \emph{for your thesis}
+      \end{itemize}
+    \item  Structure Drift
+      \begin{itemize}
+      \item Fix: reverse outline; re-order sections to match argumentative flow
+      \end{itemize}
+    \item  Jargon Overload
+      \begin{itemize}
+      \item Fix: define key terms once; prefer plain English/Czech unless precision demands technical terms
+      \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Pre-Submission Checklist}
+\begin{itemize}
+  \item Clear thesis in the introduction
+  \item Section headings reflect argumentative moves
+  \item Each paragraph has a topic sentence and a purpose
+  \item Claims are cited; sources are integrated (not just quoted)
+  \item Figures/tables are labeled and discussed
+  \item Proofread for clarity, concision, coherence
+  \item What Good Work Looks Like
+    \begin{itemize}
+    \item \textbf{Clarity}: readers always know the claim \& why it matters
+    \item \textbf{Evidence}: claims anchored to credible sources
+    \item \textbf{Ethics}: accurate attribution; respectful tone; UCoC compliance
+    \item \textbf{Sustainability}: work that others can find, reuse, build upon
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Minimal Model Outline}
+\begin{itemize}
+  \item \textbf{Abstract} (150--200 words)
+  \item \textbf{Introduction}: context, question, thesis, roadmap
+  \item \textbf{Body}: 2--3 sections building your case
+  \item \textbf{Conclusion}: answer, implications, limits
+  \item \textbf{References}: consistent style
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{(Wiki) Orientation \& Onboarding}
+
+\begin{frame}{(Wiki) Ground Rules}
+\begin{itemize}
+  \item Wikipedia \textbf{Five pillars} \cite{wikipediaFivePillars}
+  \item \textbf{UCoC}: Universal Code of Conduct \cite{WikimediaUCoC}
+  \item \textbf{Programs \& Events Dashboard} enrollment \cite{WikiEduDashboard}
+  \item Starter modules: editing basics, sourcing, plagiarism
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}
+%%% Local Variables: 
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-engine: luatex
+%%% End: 
+

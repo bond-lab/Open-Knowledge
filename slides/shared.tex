@@ -1,0 +1,44 @@
+% ---- Minimal setup (LuaLaTeX) ----
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+\ltjsetparameter{jacharrange={-9}}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmainjfont{Noto Serif CJK JP}  % for Japanese/CJK in roman text
+\setsansjfont{Noto Sans CJK JP}   % if you switch to \sffamily and still want CJK
+\newfontfamily\emoji{Noto Color Emoji}[Renderer=Harfbuzz,Scale=MatchLowercase]
+\newcommand{\e}[1]{{\emoji #1}}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks,
+     linkcolor={blue!50!black},
+     citecolor={red!50!black},
+     urlcolor={blue!80!black}
+   }
+\usepackage{booktabs}
+\usepackage{microtype}
+
+% --- biber
+\usepackage[backend=biber,style=apa,doi=true,url=true,natbib=true]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{open.bib}
+
+% ---- Beamer look ----
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[triangle]
+%\setbeamertemplate{footline}[frame number]
+
+% ---- Section outline slide ----
+\AtBeginSection[]{
+  \begin{frame}
+    \frametitle{Roadmap}
+    \small
+    \tableofcontents[currentsection, hideallsubsections]
+  \end{frame}
+}

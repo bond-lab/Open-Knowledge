@@ -1,40 +1,6 @@
 \documentclass[aspectratio=169]{beamer}
 
-% ---- Minimal setup (LuaLaTeX) ----
-\usepackage{fontspec}
-\setsansfont{TeX Gyre Heros} % Safe default; swap to your preferred sans
-\setmainfont{TeX Gyre Pagella}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\hypersetup{
-     colorlinks,
-     linkcolor={blue!50!black},
-     citecolor={red!50!black},
-     urlcolor={blue!80!black}
-   }
-\usepackage{booktabs}
-\usepackage{microtype}
-
-% --- biber
-\usepackage[backend=biber,style=authoryear,doi=true,url=true]{biblatex}
-\addbibresource{open.bib}
-
-% ---- Beamer look ----
-\usetheme{Boadilla}
-\usecolortheme{seahorse}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{itemize subitem}[triangle]
-%\setbeamertemplate{footline}[frame number]
-
-% ---- Section outline slide ----
-\AtBeginSection[]{
-  \begin{frame}
-    \frametitle{Roadmap}
-    \small
-    \tableofcontents[currentsection, hideallsubsections]
-  \end{frame}
-}
+\input{shared.tex}
 
 % ---- Title metadata ----
 \title[Open Knowledge --- Intro]{Open Knowledge for a Sustainable Future:\\ Research, Ethics, and Wikipedia}

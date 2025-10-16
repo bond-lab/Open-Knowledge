@@ -9,7 +9,5 @@ Jinja2
 MarkupSafe
 pathspec
 regex
-typed-ast
-typing-extensions
 toml
-Werkzeug==3.0.6
+Werkzeug

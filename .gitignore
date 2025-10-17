@@ -30,6 +30,7 @@ moodle/*
 *.cb
 *.cb2
 .*.lb
+*.vrb
 
 ## Intermediate documents:
 *.dvi

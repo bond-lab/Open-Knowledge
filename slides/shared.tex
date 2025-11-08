@@ -21,6 +21,8 @@
 \usepackage{booktabs}
 \usepackage{microtype}
 
+\newcommand{\txx}[1]{\textbf{\textcolor{blue}{#1}}}
+
 % --- biber
 \usepackage[backend=biber,style=apa,doi=true,url=true,natbib=true]{biblatex}
 \DeclareLanguageMapping{english}{english-apa}
@@ -33,12 +35,17 @@
 \setbeamertemplate{itemize items}[circle]
 \setbeamertemplate{itemize subitem}[triangle]
 %\setbeamertemplate{footline}[frame number]
-
+\setbeamerfont{block body example}{size=\small}
+\setbeamerfont{block title example}{size=\small}  % optional: adjust title too
 % ---- Section outline slide ----
 \AtBeginSection[]{
   \begin{frame}
     \frametitle{Roadmap}
     \small
-    \tableofcontents[currentsection, hideallsubsections]
+    \tableofcontents[currentsection, hideothersubsections]%, hideallsubsections]
   \end{frame}
 }
+
+
+% ---- other packages
+\usepackage{tikz}

@@ -1,14 +1,10 @@
 #!/bin/bash
 
-if [ -d ".venv" ]
-then
-    source .venv/bin/activate
-    pip install -r requirements.txt
-    python wsgi.py
-else
-    python3 -m venv .venv
-    source .venv/bin/activate
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-    python wsgi.py
+# Create the virtual environment if missing
+if [ ! -d ".venv" ]; then
+  echo "Creating virtual environment..."
+  uv venv .venv
 fi
+uv pip install -r requirements.txt 
+
+uv run python wsgi.py

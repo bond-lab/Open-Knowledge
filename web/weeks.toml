@@ -42,8 +42,8 @@ title = "Feedback on Wikipedia Articles - Editing as Communal Knowledge Building
 date = "11-25"
 other = "Pavel (3h), in Czech"
 
-[weeks.comments]
-key = "comments"
+[weeks.peer_review]
+key = "peer_review"
 title = "Feedback on Academic Articles -  Peer review and revision for publication"
 date = "12-09"
 other = "Francis (3h), in English"

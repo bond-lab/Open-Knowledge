@@ -2,5 +2,13 @@
 
 {% block content %}
 <h2>{{ info.title }}</h2>
-<p>This is the content for <i>{{ info.title }}</i>, scheduled for {{ info.date }}.</p>
+
+<p>This week we give some advice from well known authors and researchers and solicit feedback from you.
+
+    <p>The <a href="{{ url_for('static', filename='pdf/wk-99-conclusions.pdf')}}">slides</a> give more detail, as well as references.</p>
+
+<img  src="{{ url_for('static', filename='img/3-themanuscriptandtheprintedbook.jpg')}}">
+
+<p>THE MANUSCRIPT AND THE PRINTED BOOK from Hendrik Van Loon's (1921) <a href='https://gutenberg.org/ebooks/46399'>The Story of Mankind</a> (in <a href='https://en.wikipedia.org/wiki/The_Story_of_Mankind'>Wikipedia</a>).
+
 {% endblock %}

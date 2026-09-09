@@ -192,3 +192,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+## Local, non-distributable material (student work, marking)
+local/
+
+## Editor cruft
+\#*\#
+.\#*
+*.old

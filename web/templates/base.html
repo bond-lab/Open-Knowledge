@@ -16,7 +16,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('index') }}">  <img height = '20px' style = "vertical-align:-2px" src="{{ url_for('static', filename='img/Wikimedia-logo.png') }}"> Open Knowledge</a>
+            <a class="navbar-brand" href="{{ url_for('index') }}">  <img height = '20px' style = "vertical-align:-2px" src="{{ url_for('static', filename='img/Wikimedia-logo.png') }}" alt=''> Open Knowledge</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,7 +24,7 @@
                 <ul class="navbar-nav">
                     {% for key, tweek in weeks.items() %}
                         <li class="nav-item">
-                            <a class="nav-link {% if week == key %}active{% endif %}" title= "{{week.title}}" href="{{ url_for('week', week_key=key) }}">{{ key.title() }}</a>
+                            <a class="nav-link {% if week == key %}active{% endif %}" title="{{ tweek.title }}" href="{{ url_for('week', week_key=key) }}">{{ key.title() }}</a>
                         </li>
                     {% endfor %}
                 </ul>

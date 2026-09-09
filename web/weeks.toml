@@ -3,54 +3,53 @@
 [weeks.intro]
 key = "intro"
 title = "Overview (Pavel and Francis)"
-date = "09-23"
+date = "09-22"
 
 [weeks.wiki]
 key = "wiki"
 title = "Introduction to Wikipedia - Rules and Recommendations"
-date = "09-30"
+date = "09-29"
 other = "Pavel (3h), in Czech"
 
 [weeks.writing]
 key = "writing"
 title = "Academic Writing vs Encyclopedic Writing - Evaluating Sources"
-date = "10-14"
+date = "10-13"
 other = "Francis (3h), in English"
 
 [weeks.good]
 key = "good"
 title = "Writing a Good Wikipedia Article - Clear, Engaging and Neutral"
-date = "10-21"
+date = "10-27"
 other = "Pavel (3h), in Czech"
 
 
 [weeks.fair]
 key = "fair"
 title = "Making your data and writing useful and ethical"
-date = "11-11"
+date = "11-10"
 other = "Francis (3h), in English"
 
-# [weeks.holiday]
-# key = "holiday"
-# title = "Public Holiday"
-# date = "10-28"
-# other = "Independent Czechoslovak State Day"
+# Czech public holidays falling on a Tuesday in the 2026 autumn semester:
+#   11-17 Struggle for Freedom and Democracy Day (Den boje za svobodu a demokracii)
+# No class is scheduled that week, so no session needs to move.
+# (09-28 St Wenceslas and 10-28 Czechoslovak Statehood fall on Mon/Wed in 2026.)
 
 [weeks.feedback]
 key = "feedback"
 title = "Feedback on Wikipedia Articles - Editing as Communal Knowledge Building"
-date = "11-25"
+date = "11-24"
 other = "Pavel (3h), in Czech"
 
 [weeks.peer_review]
 key = "peer_review"
 title = "Feedback on Academic Articles -  Peer review and revision for publication"
-date = "12-09"
+date = "12-08"
 other = "Francis (3h), in English"
 
 [weeks.conclusion]
 key = "conclusion"
 title = "Conclusion: long term strategies for sustainable knowledge creation; reflection"
-date = "12-16"
+date = "12-15"
 other = "Pavel and Francis"
 

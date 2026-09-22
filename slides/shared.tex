@@ -9,6 +9,10 @@
 %\setsansjfont{Noto Sans CJK JP}   % if you switch to \sffamily and still want CJK
 \newfontfamily\emoji{Noto Color Emoji}[Renderer=Harfbuzz,Scale=MatchLowercase]
 \newcommand{\e}[1]{{\emoji #1}}
+% CJK: Pagella has no kanji or kana, so wrap them in \cjk{...} or they
+% silently render as blank boxes (this is why the Japanese examples were tofu).
+\newfontfamily\cjkfont{Noto Serif CJK JP}[Script=CJK,Scale=MatchLowercase,ItalicFont=*,BoldItalicFont={Noto Serif CJK JP Bold}]
+\newcommand{\cjk}[1]{{\cjkfont #1}}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -49,3 +53,20 @@
 
 % ---- other packages
 \usepackage{tikz}
+
+% ---- AI disclosure, shared by every deck so the wording cannot drift ----
+% Use inside an itemize: \aicheck
+\newcommand{\aicheck}{%
+  \item {\small \textbf{Claude Opus 5} \citep{anthropic-claude-opus-5-2026-09-20}
+    was used to check the slides rather than to write them: to resolve every
+    DOI against Crossref, fetch every URL, and compare each quotation with its
+    original.  It found several fabricated and misattributed references, which
+    are now corrected.  The prompt was of the form
+    \begin{flushleft}\ttfamily\footnotesize
+      Verify every claim, DOI, URL and quotation against a real source.  Where
+      you cannot verify something, say so rather than guessing --- never
+      invent a reference. \\
+    \end{flushleft}
+    Each correction names the source it was checked against.  Responsibility
+    for what remains is mine.}%
+}

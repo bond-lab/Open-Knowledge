@@ -3,7 +3,7 @@
 
 % ---- Title metadata ----
 \title[FAIR ethical research]{Open Knowledge for a Sustainable Future:\\ Research, Ethics, and Wikipedia}
-\subtitle{Week 5  — FAIR Principles - Multilingual and Ethical considerations}
+\subtitle{Week 5 — Making your data and writing useful and ethical}
 \author[Bond \& Bednařík]{Francis Bond (\textbf{Academic}) \and Pavel Bednařík (Wiki)}
 \institute[UPOL \& Wikimedia]{Palacký University Olomouc \quad | \quad Wikimedia ČR}
 \date{}
@@ -15,8 +15,11 @@
   \titlepage
 \end{frame}
 
-
-
+\begin{frame}
+  \frametitle{Today}
+  \small
+  \tableofcontents[hideallsubsections]
+\end{frame}
 
 % =====================================================================
 % =========================
@@ -44,7 +47,7 @@
 FAIR data makes research more transparent, verifiable, and sustainable.
 
 \tiny Sources: \citep{FAIR2016}, 
-\href{https://au-research.github.io/FAIR-data-101-training/}{FAIR Data 101} (accessed 2025-11-08)
+\href{https://au-research.github.io/FAIR-data-101-training/}{FAIR Data 101} (ARDC, CC BY 4.0; accessed 2026-09-20)
 \end{frame}
 % =========================
 % FINDABLE
@@ -67,7 +70,7 @@ FAIR data makes research more transparent, verifiable, and sustainable.
     \item Use standard terms, so people can find them easily
     \end{itemize}
   \item Register your dataset in a trusted repository with a permanent identifier (e.g., Zenodo, Dataverse).  
-  \item Cross-link: paper ↔ dataset ↔ code.
+  \item Cross-link: paper $\leftrightarrow$ dataset $\leftrightarrow$ code.
   \item This applies to governments and companies as well as academia
     \begin{itemize}
     \item Making data findable should be part of making the data!
@@ -83,7 +86,6 @@ FAIR data makes research more transparent, verifiable, and sustainable.
   \item Even well-described data is useless if people can’t reach it.  
   \item Accessibility ensures that others can actually download or view your work \\ — now and in the future.  
   \item It also clarifies boundaries: who can use the data, under what conditions.
-  \item 
 \end{itemize}
 \medskip
 Access is about clarity and stability, not about giving everything away.  For sensitive language/cultural data, clarity of access rules is part of the ethics record.
@@ -153,7 +155,8 @@ Reuse is the payoff — the reward for all your FAIR effort.
 
 \begin{frame}{Making data reusable}
 \begin{itemize}
-  \item Include full context: how the data was collected, cleaned, and analysed.   \item Choose a clear license (e.g., CC BY or CC BY-SA).  
+  \item Include full context: how the data was collected, cleaned, and analysed.
+  \item Choose a clear licence (e.g., CC BY or CC BY-SA).
   \item Describe known limitations or ethical constraints.  
   \item Provide examples of how to cite or acknowledge your dataset.
   \end{itemize}
@@ -181,7 +184,8 @@ A survey of wordnets and their licenses In \textit{Proceedings of the 6th Global
       \item \textbf{CC BY} – reuse with attribution.  
       \item \textbf{CC BY-SA} – reuse with attribution and same licence (share-alike).  
       \item \textbf{CC0 /Public Domain} – no restrictions.  
-      \item \textbf{ODC BY/ODbL} – for databases; require attribution and share-alike.
+      \item \textbf{ODC-BY} – for databases; attribution only.
+      \item \textbf{ODbL} – for databases; attribution \emph{and} share-alike.
     \end{itemize}
   \item Choosing the right licence ensures that your data remains reusable and legally safe.
 \end{itemize}
@@ -395,7 +399,8 @@ Sustainable openness means doing more with less—knowledge without waste.
 \begin{itemize}
   \item \textbf{Findable:} AO3 uses detailed, user-generated tags and filters. Works can be discovered by fandom, pairing, trope, or content rating.  
   \item Every work has a stable URL and consistent metadata, ensuring it can be cited or referenced reliably.  
-  \item \textbf{Accessible:} Content is available through a standard web interface and open API.  
+  \item \textbf{Accessible:} Content is free to read through an ordinary web interface --- most works need no account, and each has a stable, shareable URL.
+  \item But there is \emph{no public API}: the OTW rate-limits bulk collection and makes no exception for researchers, who scrape the site instead.
   \item Authors may choose to “lock” works for logged-in users—clear, transparent access rules.
 \end{itemize}
 \textit{Users can always find and retrieve what they are looking for, within consent boundaries.}
@@ -404,9 +409,14 @@ Sustainable openness means doing more with less—knowledge without waste.
 % --- INTEROPERABLE & REUSABLE
 \begin{frame}{Interoperable and Reusable}
 \begin{itemize}
-  \item \textbf{Interoperable:} AO3 maintains a controlled vocabulary of tags with hierarchical relations—useful for digital humanities and fan studies.  
-  \item Data can be exported via API, allowing analysis across fandoms or comparison with other archives.  
-  \item \textbf{Reusable:} The platform supports transformative reuse—the foundation of fan creativity.  
+  \item \textbf{Interoperable:} users tag however they like, and volunteer
+    \emph{tag wranglers} then link each new tag to a \emph{canonical} tag as a
+    synonym, so free text becomes a filterable controlled vocabulary.
+  \item That is the real interoperability story: the structure is built by the
+    community, by hand, not imposed by a schema.
+  \item Its limit is honest too --- the vocabulary lives inside AO3.  There is
+    no API and no published dump, so cross-archive comparison means scraping.
+  \item \textbf{Reusable:} The platform supports transformative reuse—the foundation of fan creativity.
   \item Clear terms of service define attribution and remix norms, promoting responsible reuse.
 \end{itemize}
 AO3 enables a living ecosystem of reuse—stories inspire stories.
@@ -470,7 +480,7 @@ Responsible AI should provide not only FAIR access to data, but CARE for the peo
   \item Scholars are exploring how CARE can inform AI ethics and governance:
     \begin{itemize}
       \item \textbf{Carroll et al. (2020)} – Introduced CARE as complement to FAIR, warning that AI amplifies inequities.  
-      \item \textbf{Whittaker et al. (2023)} – Frame AI data practices as extractive and colonial.  
+      \item \textbf{Couldry \& Mejias (2019)} – Frame data practices as extractive and colonial.  
       \item \textbf{Bender et al. (2021)} – “Stochastic parrots” critique: AI models reuse data without consent or understanding.  
       \item \textbf{DECORAIT (2023)} – A registry to track opt-in/opt-out for creative data in AI training.  
     \end{itemize}
@@ -482,7 +492,7 @@ Responsible AI should provide not only FAIR access to data, but CARE for the peo
     \end{itemize}
 \end{itemize}
 \medskip
-\small Sources: \citep{carroll2020care, bender2021stochastic, whittaker2023extractive, decoraait2023registry}.
+\small Sources: \citep{CARE2020, bender2021stochastic, couldry2019datacolonialism, decoraait2023registry}.
 \end{frame}
 
 % =========================
@@ -509,8 +519,29 @@ Responsible AI should provide not only FAIR access to data, but CARE for the peo
   \item \textbf{Sustainability:} Large models consume significant energy and resources.
 \end{itemize}
 \end{columns}
-\medskip
-Generative AI amplifies the FAIR goals of access and reuse—but challenges the CARE goals of credit, consent, and responsibility.
+\end{frame}
+
+% --- The course rule
+\begin{frame}{Generative AI: the rule in this course}
+\begin{itemize}
+  \item Generative AI amplifies the FAIR goals of access and reuse—but
+    challenges the CARE goals of credit, consent, and responsibility.
+  \item So, in this course:
+    \begin{itemize}
+      \item \textbf{Not for writing} --- and that includes proofreading.
+        A model would rewrite your sentences into fluent, anonymous English,
+        which is the part you are here to learn.  Spell-checker yes; rewrite
+        no.
+      \item \textbf{Allowed for research} --- explaining a concept, suggesting
+        search terms, pointing you at literature --- \textbf{if you say so}.
+        Name the tool and version, and what you used it for.
+      \item What a model tells you is a lead, not a source: find the original,
+        read it, and cite that.
+      \item \textbf{Undisclosed use counts as academic misconduct.}
+    \end{itemize}
+  \item Full policy on
+    \href{https://bond-lab.github.io/Open-Knowledge/}{the course website}.
+\end{itemize}
 \end{frame}
 
 % =========================
@@ -605,7 +636,7 @@ John Coleman, cited by  Anthony Watts, cited by \href{https://tamino.wordpress.c
 \begin{frame}{Not if you zoom out}
 
 \begin{center}
-\includegraphics[width=0.6\textwidth]{img/usa48_1.jpg }
+\includegraphics[width=0.6\textwidth]{img/usa48_1.jpg}
 \end{center}
 \href{https://tamino.wordpress.com/2013/03/04/cherry-picking-is-childs-play/}{Open Mind} \textit{Cherry Picking is Child's Play}
 \end{frame}
@@ -615,7 +646,7 @@ John Coleman, cited by  Anthony Watts, cited by \href{https://tamino.wordpress.c
 \begin{center}
 \includegraphics[width=0.6\textwidth]{img/1611534261_comparison-of-global-warming-trend-from-six-different-datasetspng.png}
 \end{center}
-\href{https://www.climate.gov.ph/news/416}{Climate Change Commission} \textit{CCC: No more time for inaction as global warming accelerates, marking 2020 as one of the warmest years on record}
+\href{https://www.climate.gov.ph/news/416}{Climate Change Commission} \textit{CCC: No more time for inaction as global warming accelerates, marking 2020 as one of the warmest years on record} (graph: Berkeley Earth)
 \end{frame}
 
 
@@ -648,9 +679,9 @@ John Coleman, cited by  Anthony Watts, cited by \href{https://tamino.wordpress.c
 \end{itemize}
 \begin{center}
 \includegraphics[width=0.4\textwidth]{img/700px-Truncated_Bar_Graph.svg.png} 
-\includegraphics[width=0.4\textwidth]{img/700px-Bar_Graph.svg.png} 
+\includegraphics[width=0.4\textwidth]{img/700px-Bar_graph.svg.png} 
 \end{center}
-Images from \href{https://en.wikipedia.org/wiki/Misleading_graph}{Wikipedia:Misleading graph} (accessed 2025-11-08)
+Images from \href{https://en.wikipedia.org/wiki/Misleading_graph}{Wikipedia: Misleading graph} (CC BY-SA; accessed 2026-09-20)
 \end{frame}
 
 % --- FROM DATA TO ARGUMENT
@@ -809,21 +840,45 @@ If you discover that what you thought was wrong, \emph{then you have improved yo
 % =========================
 \section{Practice!}
 
+\begin{frame}{Due today: your annotated bibliography}
+\begin{itemize}
+  \item \textbf{Five or more sources}, in APA 7, with \textbf{two or three
+    sentences} on each
+  \item Each annotation answers three questions:
+    \begin{itemize}
+      \item What does this source \emph{say} that bears on your question?
+      \item How far can you \emph{trust} it --- who wrote it, where did it
+        appear, what is the evidence behind it?
+      \item What will you \emph{use} it for: background, evidence, a position
+        you argue against?
+    \end{itemize}
+  \item It is not a summary exercise.  An annotation that could have been
+    written without reading the source is worth nothing to you in December,
+    when you are writing the paper and cannot remember which one said what.
+  \item Not graded on its own --- it is the scaffolding for the paper, and we
+    use it today.
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Auditing sources for FAIR and CARE issues}
 \begin{itemize}
-  \item Next, we’ll spend about \textbf{30 minutes} discussing and practising what we’ve learned.  
-  \item Two connected parts:
-    \begin{enumerate}
-      \item \textbf{Discussion of your annotated bibliography.}  
-            Share one source you found insightful or problematic.  
-      \item \textbf{Source audit activity.}  
-            Choose one of your sources and check:
-            \begin{itemize}
-              \item Is it \textbf{Findable, Accessible, Interoperable, Reusable}?  
-              \item Does it respect \textbf{Collective Benefit, Authority to Control, Responsibility, Ethics}?  
-            \end{itemize}
-    \end{enumerate}
-  \item Work individually or in pairs; we’ll share highlights at the end.
+  \item \textbf{30 minutes, in pairs.}  Work from the annotated bibliography
+    you brought today.
+  \item \textbf{Part 1 (10 min): pitch your topic.}  Tell your partner the
+    question you want your paper to answer, then read them two of your
+    annotations: your \textbf{best} source and your \textbf{shakiest}.  Your
+    partner asks: how do you know that one is any good?
+  \item \textbf{Part 2 (15 min): audit one source each.}  Pick the shaky one
+    and check it:
+    \begin{itemize}
+      \item \textbf{FAIR:} can you \emph{find} it by DOI or stable URL, can you
+        actually \emph{read} it, is its data or method reusable, is the licence clear?
+      \item \textbf{CARE:} whose data or words does it rest on?  Did they
+        consent?  Who benefits from it being published?
+    \end{itemize}
+  \item \textbf{Part 3 (5 min):} decide together --- keep it, replace it, or
+    cite it \emph{with} its limitations stated.  \textbf{Rewrite that
+    annotation} before you leave.
 \end{itemize}
 \textit{Our goal: to read sources not only for what they say, but for how responsibly they were created.}
 \end{frame}
@@ -839,10 +894,11 @@ If you discover that what you thought was wrong, \emph{then you have improved yo
       \item Evidence-based argument supported by credible sources.  
       \item Neutral tone; cautious interpretation; accurate citations.
     \end{itemize}
-  \item Your annotated bibliography and Wikipedia writing experience both help:
+  \item The work you have already done both helps:
     \begin{itemize}
-      \item Bibliography → evaluating sources and citation style.  
-      \item Wikipedia → writing neutrally and clearly for others.
+      \item The three-paragraph comparison of texts on water use in data centres
+        $\rightarrow$ weighing sources against each other, and citing them in APA.
+      \item Wikipedia $\rightarrow$ writing neutrally and clearly for others.
     \end{itemize}
 \end{itemize}
 
@@ -856,17 +912,35 @@ I want to see how well you can use your sources to answer the question, as accur
 
 % =====================================================================
 
-\begin{frame}{Acknowledgements}
-
-  \begin{itemize} %%%FIXME --- REDO
-  \item \textcite{openai-chatgpt-2025-03-14} was used to format the references, and generate a first draft of the slides
+\begin{frame}[allowframebreaks]{Acknowledgements}
+  \small
+  \begin{itemize}
+  \item \textbf{Temperature graphs:} the two US 48-state plots come from
+    Tamino's \href{https://tamino.wordpress.com/2013/03/04/cherry-picking-is-childs-play/}{Open Mind}
+    post \textit{Cherry-Picking is Child's Play} (2013-03-04), which is
+    rebutting John Coleman, reposted by Anthony Watts.  The six-dataset
+    comparison is from
+    \href{https://www.climate.gov.ph/news/416}{the Philippine Climate Change Commission},
+    who credit Berkeley Earth.
+  \item \textbf{Bar charts:} the truncated and untruncated bar graphs are from
+    \href{https://en.wikipedia.org/wiki/Misleading_graph}{Wikipedia: Misleading graph} (CC BY-SA).
+  \item \textbf{FAIR material} draws on
+    \href{https://au-research.github.io/FAIR-data-101-training/}{FAIR Data 101}
+    (Australian Research Data Commons, CC BY 4.0) and \citet{FAIR2016}.
+  \item \textbf{CARE material} draws on the Global Indigenous Data Alliance
+    \citep{CARE2020}.
+  \item \textbf{The AO3 case study} rests on the
+    \href{https://archiveofourown.org/}{Archive of Our Own} and the
+    Organization for Transformative Works, including their statement on
+    \href{https://www.transformativeworks.org/ai-and-data-scraping-on-the-archive/}{AI and data scraping on the Archive}.
+  \item \textbf{AI disclosure:} \textcite{openai-chatgpt-2025-03-14} (ChatGPT,
+    OpenAI) was used to format the references and to draft an early version of
+    these slides.
+  \aicheck
   \end{itemize}
-  
 \end{frame}
 
 
-
-\section{References}
 % =====================================================================
 \begin{frame}[allowframebreaks]
 \frametitle{References}

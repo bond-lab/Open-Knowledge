@@ -1,0 +1,70 @@
+% One-page worksheet for the week 3 (13 October) in-class peer response.
+% Build: latexmk -lualatex handout-wk-03-water.tex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\usepackage[top=16mm,bottom=14mm,left=18mm,right=18mm]{geometry}
+\usepackage{enumitem}
+\usepackage{tikz}   % for \foreach
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% ruled space to write in
+\newcommand{\lines}[1]{%
+  \par\vspace{1.2ex}
+  \foreach \i in {1,...,#1}{\rule{\linewidth}{0.4pt}\par\vspace{3.4ex}}%
+}
+
+\begin{document}
+
+{\sffamily\Large\bfseries Reading each other's writing}
+
+\vspace{0.5ex}
+{\sffamily\large Water use in data centres}
+
+\vspace{1ex}
+{\footnotesize Writer: \rule{45mm}{0.4pt}\qquad Reader:
+  \rule{45mm}{0.4pt}\qquad Open Knowledge, 13 October}
+
+\vspace{2ex}
+Read the whole thing once before you write anything.
+
+\begin{enumerate}[leftmargin=*,itemsep=1.6ex,topsep=1.6ex]
+
+\item \textbf{What is this writer's claim?}
+  {\footnotesize One sentence, in your own words --- not a summary of the three
+    texts.}
+  \lines{3}
+
+\item \textbf{Which of the three texts did they trust most, and on what
+    grounds?}
+  {\footnotesize Name the grounds: evidence, sources, hedging, tone.}
+  \lines{3}
+
+\item \textbf{Do you agree with their judgement of the sources?}
+  {\footnotesize Point at a sentence.}
+  \lines{4}
+
+\item \textbf{Do you agree with their conclusion about water?}
+  \lines{4}
+
+\end{enumerate}
+
+\vspace{1ex}
+\hrule
+\vspace{1ex}
+
+{\footnotesize \textbf{3 and 4 are different questions.}  A text can be well
+  evidenced and still reach a conclusion you reject, and you can agree with a
+  conclusion that rests on nothing.  Say which is which.\\[0.6ex]
+  \textbf{Then talk to the writer.}  Start with question 1, and let them tell
+  you whether that is what they meant.}
+
+\end{document}
+%%% Local Variables:
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: luatex
+%%% End:

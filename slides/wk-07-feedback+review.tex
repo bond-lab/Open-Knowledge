@@ -3,7 +3,7 @@
 
 % ---- Title metadata ----
 \title[Feedback]{Open Knowledge for a Sustainable Future:\\ Research, Ethics, and Wikipedia}
-\subtitle{Week 7  — Feedback on Academic Articles - Peer review and revision for publication}
+\subtitle{Week 7 — Feedback on Academic Articles: Peer review and revision for publication}
 \author[Bond \& Bednařík]{Francis Bond (\textbf{Academic}) \and Pavel Bednařík (Wiki)}
 \institute[UPOL \& Wikimedia]{Palacký University Olomouc \quad | \quad Wikimedia ČR}
 \date{}
@@ -133,7 +133,7 @@
   \item Can be slow, inconsistent, or biased
   \item Overburdens a small reviewer pool
   \item Replication and transparency not always checked
-  \item Negative or null results often unpublished ("file-drawer" effect)
+  \item Negative or null results often unpublished (``file-drawer'' effect)
 \end{itemize}
 \end{columns}
 \medskip
@@ -163,7 +163,7 @@
     \begin{itemize}
       \item Early sharing (e.g., \href{https://arxiv.org/}{arXiv}, 
             \href{https://ling.auf.net/lingbuzz}{LingBuzz}) invites informal peer feedback before formal submission
-      \item Speeds dissemination and reduces "scoop" anxiety
+      \item Speeds dissemination and reduces ``scoop'' anxiety
     \end{itemize}
 
   \item These models shift peer review from an evaluation to a 
@@ -199,9 +199,9 @@
 % ================================
 \subsection{Feedback Beyond Academia}
 
-\begin{frame}{Feedback in industry: the practice of "giving notes"}
+\begin{frame}{Feedback in industry: the practice of ``giving notes''}
 \begin{itemize}
-  \item In many industries (film, publishing, games, advertising), feedback is formalised as \textbf{"notes"} \citep{catmull2014creativityinc}
+  \item In many industries (film, publishing, games, advertising), feedback is formalised as \textbf{``notes''} \citep{catmull2014creativityinc}
   \item Notes come from editors, producers, managers, clients — often in a hierarchical chain
   \item The goal is similar to academic review:
     \begin{itemize}
@@ -292,9 +292,11 @@
   \item These offer a model for responsible, constructive, ethical reviewing
   \item A large conference at scale --- ACL 2025, for example:
     \begin{itemize}
-    \item  8,300 submissions
-    \item  1,700 accepted as full,  1,392 as findings
-      % (/ 17 83.0) 0.20481927710843373
+    \item  8,360 submissions
+    \item  1,699 accepted to the main conference (20.3\%), 1,392 as Findings (16.7\%)
+      % (/ 1699 8360.0) 0.20322966507177034
+      % (/ 1392 8360.0) 0.16650717703349283
+      % Source: https://openaccept.org/c/ai/acl/2025/ (ARR/ACL 2025 statistics)
     \item  169 Senior Area Chairs, 1,937 Area Chairs, 11,720 reviewers!
     \item Each paper reviewed by three reviewers, the authors respond, the reviewers update their reviews,  the area chairs suggest which papers are accepted, the senior area chairs make the final decisions, \ldots
     \end{itemize}
@@ -314,10 +316,11 @@
       \item \textbf{Capacity}: Do you actually have time to read carefully?
     \end{itemize}
   \item Accepting when you are unqualified or overloaded leads to unfair or rushed reviews
-  \item Slightly undermined by the fact that if you submit a paper you must agree to review at least 5 others, \ldots
+  \item Slightly undermined by the fact that if you submit a paper, someone from the author team must volunteer to review, and owes
+        \href{https://aclrollingreview.org/reviewing-workload-adjustment/}{four reviews per submission} (capped at 16 in a cycle), \ldots
       \begin{itemize}
-    \item ACL has a 15-20\% acceptance rate, so for one paper accepted 4 are rejected. 
-
+    \item ACL 2025 accepted 20.3\% to the main conference and a further 16.7\% as Findings --- four papers miss the main conference for every one that makes it, and nearly two thirds are turned down altogether
+    \item From October 2026 the \href{https://aclrollingreview.org/sustainable-reviewing-2026}{ACL sustainable reviewing policy} goes further: each submission must be backed by a qualified service contributor (who may serve for at most two submissions), authors are capped at 20 submissions and 5 first-author submissions a cycle, and papers whose authors do not register and do the service are desk rejected
     \end{itemize}
 \end{itemize}
 
@@ -387,9 +390,9 @@
   \item Use a constructive and collegial tone
   \item Avoid dismissive language:
     \begin{itemize}
-      \item "This is trivial"
-      \item "obviously wrong"
-      \item "the authors don't understand"
+      \item ``This is trivial''
+      \item ``obviously wrong''
+      \item ``the authors don't understand''
     \end{itemize}
   \item Remember: reviewers and authors are colleagues
   \item Treat the paper the way you would want yours to be treated
@@ -485,9 +488,10 @@
       \item institutions (citation counts, productivity)
     \end{itemize}
 
-  \item \textbf{Impact Factor (IF):} average number of citations to articles in a journal over a two-year period
+  \item \textbf{Impact Factor (IF):} citations made in one year to what a journal published in the \emph{two preceding} years, divided by the number of ``citable items'' (research articles and reviews) it published in those two years
   \begin{itemize}
     \item Designed to help libraries choose journals and to signal visibility
+    \item A standard criticism is the mismatch between the two halves: the numerator counts citations to \emph{everything} (editorials, letters, news), the denominator counts only the ``citable items''
   \end{itemize}
 
   \item \textbf{h-index:} a researcher has index $h$ if they have $h$ papers each cited at least $h$ times
@@ -512,7 +516,7 @@
     \item Citation counts become currency; novelty outranks replication or rigour
   \end{itemize}
 
-  \item \textbf{Goodhart's Law:}
+  \item \textbf{Goodhart's Law}, as \citet[p.~308]{strathern1997ratings} famously put it:
   \begin{quote}
     When a measure becomes a target, it ceases to be a good measure.
   \end{quote}
@@ -521,7 +525,7 @@
     \item IF and h-index lose validity once people actively game them
   \end{itemize}
 
-  \item \textbf{Punktoza ("points fever"):} publishing strategically to accumulate evaluation points rather than to advance knowledge \citep{kulczycki2017punktoza,kulczycki2017assessing}
+  \item \textbf{Punktoza (``points fever''):} publishing strategically to accumulate evaluation points rather than to advance knowledge \citep{kulczycki2017punktoza,kulczycki2017assessing}
   \begin{itemize}
     \item Encourages salami-slicing, low-risk incremental work, quantity over substance
     \item A systemic response to metric-driven national evaluation frameworks
@@ -532,12 +536,13 @@
 \end{itemize}
 
 \textit{Quantifying trust can erode it when numbers replace judgment.}
+\vspace*{-1ex}
 \end{frame}
 
 
 \begin{frame}{Goodhart's Law  \href{https://xkcd.com/2899/}{xkcd 2899}}
   \begin{center}
-    \includegraphics[width=0.45\textwidth]{img/goodharts_law_2x.png}
+    \includegraphics[width=0.40\textwidth]{img/goodharts_law_2x.png}
   \end{center}
 \end{frame}
 
@@ -556,9 +561,8 @@
 
 \begin{frame}{Gender bias and underrepresentation}
 \begin{itemize}
-  \item A large study of 1.7 million authors and 740,000 referees found that manuscripts by women were not universally penalized — yet women remain under-represented among peer reviewers and editors \citep{helmer2017genderbias}
-  \item Another review finds that women are less likely to appear as first/last authors, especially in high–impact journals, and are underrepresented as reviewers/editors
-    \citep{murray2020genderpeerreview}
+  \item A study of 145 journals --- 1.7 million authors and 740,000 referees --- found that manuscripts by women were not universally penalized, yet women remain under-represented among reviewers and editors \citep{squazzoni2021genderbias}
+  \item An earlier study of 9,000 editors and 43,000 reviewers at one publisher found the same under-representation, and that reviewers tend to be matched with authors like themselves \citep{helmer2017genderbias,murray2018homophily}
   \item In grant-review contexts, women have also been shown to receive lower scores despite similar qualifications
     \citep{wenneras1997nepotism}
   \end{itemize}
@@ -566,10 +570,35 @@
 
 \begin{frame}{Institutional – affiliation and prestige bias}
 \begin{itemize}
-\item Recent evidence shows "affiliation bias": papers from prestigious or well-known institutions are more likely to get favourable review or acceptance
-  \citep{tomkins2017dblblind}
+\item ``Affiliation bias'' has been measured directly: WSDM 2017 ran a controlled experiment in which every paper got two \emph{single-blind} reviewers and two \emph{double-blind} ones \citep{tomkins2017dblblind}
+    \begin{itemize}
+    \item The single-blind reviewers were markedly more likely to recommend acceptance for papers by famous authors (odds $\times$1.63) and from top universities ($\times$1.58) or top companies ($\times$2.10)
+    \item Their double-blind colleagues, reading the same papers, showed no such advantage --- so double-blinding takes it away
+    \end{itemize}
   \item This can disadvantage authors from lesser-known institutions, even when the manuscript quality is comparable
-  \item Result: citation networks and publication records amplify institutional inequality — making "the rich institutions" richer
+  \item Result: citation networks and publication records amplify institutional inequality — making ``the rich institutions'' richer
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Open review --- which is what you just did}
+\begin{itemize}
+  \item Your reviews went in the Moodle forum: \textbf{signed}, and readable by
+    the whole class.  That is \textbf{open review}, and some journals work this
+    way (eLife, BMJ, F1000).
+  \item \textbf{What blinding buys you}: double-blinding removes the famous-author
+    advantage \citep{tomkins2017dblblind}.
+  \item \textbf{What signing costs you}: in a randomised trial at the
+    \emph{BMJ}, reviewers asked to be identified to the author were
+    \textbf{12 points more likely to refuse} to review at all (35\% v 23\%) ---
+    but for those who did review, quality, recommendation and time taken were
+    \textbf{no different} \citep{vanrooyen1999open}.
+\end{itemize}
+\vspace{1ex}
+\textbf{So, from your own week:}
+\begin{itemize}
+  \item Did you soften anything because your name was on it?
+  \item Did reading other people's reviews change how you wrote yours?
+  \item Would you have said more, or less, anonymously?
 \end{itemize}
 \end{frame}
 
@@ -577,7 +606,7 @@
   \begin{itemize}
   \item Why these biases happen
     \begin{itemize}
-    \item Reviewers (and editors) may rely on stereotypes, familiarity, or "status cues" (institution name, authors' reputation) rather than content
+    \item Reviewers (and editors) may rely on stereotypes, familiarity, or ``status cues'' (institution name, authors' reputation) rather than content
     \item Reviewing is human work; unconscious bias — on gender, prestige, nationality, career stage — is common
     \item Peer-review bias is not just about individual reviewers, but structural patterns: who gets invited to review, whose papers get visibility, who gets accepted
     \end{itemize}
@@ -606,18 +635,17 @@
 
 \begin{frame}{What the crisis looks like — some sobering numbers}
 \begin{itemize}
-\item In a 2015 project replicating 100 psychology studies, only ~36\% of results were successfully replicated; effect sizes dropped by about 50\% \citep{open2015reproducibility}
-  
-  \item A 2016 survey in biomedical research found over 70\% of researchers had tried and failed to reproduce another scientist's results — and 52\% judged that there is a significant crisis \citep{baker2016crisis}
-  \item Fields like oncology (e.g.\ cancer-biology) show particularly low reproducibility: external audits of many "landmark" papers found < 1/3 of results reliably reproduced
-   \citep{errington2021cancer}
+\item In a 2015 project replicating 100 psychology studies, only about 36\% of results were successfully replicated; effect sizes dropped by about 50\% \citep{open2015reproducibility}
+
+  \item A 2016 \textit{Nature} survey of 1,576 researchers, across all the sciences, found over 70\% had tried and failed to reproduce another scientist's results — and 52\% judged that there is a significant crisis \citep{baker2016crisis}
+  \item Cancer biology is no better: an eight-year project repeated 50 experiments from 23 high-profile papers, and only 46\% of the replications (51/112) succeeded --- with effect sizes a median 85\% smaller \citep{errington2021cancer}
 \end{itemize}
 \begin{block}{Why this matters}
 If published findings routinely fail replication, the scientific literature becomes unreliable — which undermines trust, wastes resources, and misleads follow-up research.
 \end{block}
 
 \medskip
-\small Video: \href{https://www.youtube.com/watch?v=42QuXLucH3Q}{Veritasium: "Is Most Published Research Wrong?"} (12 min) %% SHOW IN CLASS?
+\small Video: \href{https://www.youtube.com/watch?v=42QuXLucH3Q}{Veritasium: ``Is Most Published Research Wrong?''} (12 min) %% SHOW IN CLASS?
 \end{frame}
 
 \begin{frame}{Causes: why reproducibility fails}
@@ -648,7 +676,7 @@ If published findings routinely fail replication, the scientific literature beco
   \item Not all citations are equal:
     \begin{itemize}
       \item Some endorse, others critique or merely mention
-      \item "Citation cascades" can perpetuate unverified claims
+      \item ``Citation cascades'' can perpetuate unverified claims
     \end{itemize}
   \item Responsible citation means reading, understanding, and acknowledging context — not just counting links
 \end{itemize}
@@ -670,12 +698,12 @@ If published findings routinely fail replication, the scientific literature beco
 \begin{itemize}
   \item Large language models (LLMs) like ChatGPT are increasingly used in academic writing — and in peer review
   \item A 2024 study estimated that 6.5–17\% of peer reviews at major AI conferences may have been substantially written or modified by LLMs \citep{liang2024aireviews}
-  \item Telltale signs: unusual adjectives ("commendable", "meticulous", "intricate") spiked 10–35× in frequency
-  \item Major publishers (Springer Nature, Taylor \& Francis, Sage) prohibit or restrict AI in peer review.  The common rules:
+  \item Telltale signs: unusual adjectives (``commendable'', ``meticulous'', ``intricate'') spiked 10–35× in frequency
+  \item Major publishers all restrict AI in peer review, but not in the same way:
     \begin{itemize}
-      \item do not upload the manuscript to an AI tool
-      \item do not let AI write the review
-      \item disclose any assistance you did use
+      \item \textbf{All of them:} never upload the manuscript, or any part of it, to a public AI tool --- that alone breaks confidentiality
+      \item \textbf{Taylor \& Francis} and \textbf{Sage:} do not let AI generate the review at all (T\&F allow it only to improve the language of a review you wrote yourself)
+      \item \textbf{Springer Nature:} AI may support a reviewer but never replace their judgement --- use only secure or institutionally approved tools, and be transparent about it
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -744,7 +772,7 @@ If published findings routinely fail replication, the scientific literature beco
 \begin{itemize}
   \item A reader's report on \textbf{clarity, evidence, logic, and structure}
   \item Specific, constructive, and respectful; focused on \textbf{the writing}, not the writer
-  \item Not copyediting every comma; not "gotcha"
+  \item Not copyediting every comma; not ``gotcha''
   \item[$\Rightarrow$] Prioritise the few changes with the biggest impact
 \end{itemize}
 \end{frame}
@@ -763,7 +791,7 @@ If published findings routinely fail replication, the scientific literature beco
 \begin{frame}{How to respond to reviews}
 \begin{itemize}
   \item \textbf{Read carefully}: understand what the reviewer is actually asking — not what you fear they mean
-  \item \textbf{Respond to everything}: address each comment, even if briefly ("We have revised X as suggested" or "We respectfully disagree because Y")
+  \item \textbf{Respond to everything}: address each comment, even if briefly (``We have revised X as suggested'' or ``We respectfully disagree because Y'')
   \item \textbf{Be specific in your response}: quote the comment, then explain exactly what you changed (with page/line numbers)
   \item \textbf{Don't be defensive}: assume good intent; reviewers are trying to improve your work
   \item \textbf{Push back professionally}: if you disagree, explain why with evidence — editors respect reasoned disagreement
@@ -776,15 +804,16 @@ If published findings routinely fail replication, the scientific literature beco
 \small
 \begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
 \textbf{What reviewers write} & \textbf{What they often mean} \\
-\hline
-"The motivation is unclear" & Your introduction doesn't explain why anyone should care \\
-"This needs more context" & You assumed background knowledge I don't have \\
-"The contribution is incremental" & I don't see what's new here \\
-"Consider reorganising" & I got lost; the structure doesn't work \\
-"Minor revisions needed" & Fix these specific things and you're done \\
-"Major revisions needed" & Good potential, but significant work required \\
-"This is interesting but..." & Brace yourself \\
-"The authors may wish to consider..." & You really should do this \\
+\midrule
+\addlinespace
+``The motivation is unclear'' & Your introduction doesn't explain why anyone should care \\
+``This needs more context'' & You assumed background knowledge I don't have \\
+``The contribution is incremental'' & I don't see what's new here \\
+``Consider reorganising'' & I got lost; the structure doesn't work \\
+``Minor revisions needed'' & Fix these specific things and you're done \\
+``Major revisions needed'' & Good potential, but significant work required \\
+``This is interesting but\ldots'' & Brace yourself \\
+``The authors may wish to consider\ldots'' & You really should do this \\
 \end{tabular}
 
 \medskip
@@ -826,7 +855,7 @@ If published findings routinely fail replication, the scientific literature beco
 \begin{itemize}
   \item At least 5 reliable sources?
   \item Are sources integrated and evaluated (not just dropped in)?
-  \item Are citations/references consistent (APA)?
+  \item Are citations/references consistent (APA 7)?
 \end{itemize}
 \medskip
 \textbf{4) Language \& Style}
@@ -902,6 +931,7 @@ If published findings routinely fail replication, the scientific literature beco
  \item I have had over 200 papers reviewed (thanks reviewers!)
  \item I have peer reviewed over 2,000 conference papers, 100 journal papers, 10 PhDs, 2 Habilitations, and many grants
   \item \textcite{openai-chatgpt-2025-03-14} was used to format the references, and generate a first draft of the slides
+  \aicheck
   \end{itemize}
   
 \end{frame}

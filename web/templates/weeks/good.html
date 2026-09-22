@@ -3,4 +3,8 @@
 {% block content %}
 <h2>{{ info.title }}</h2>
 <p>This is the content for <i>{{ info.title }}</i>, scheduled for {{ info.date }}.</p>
+
+<p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
+&rarr;</a></p>
+
 {% endblock %}

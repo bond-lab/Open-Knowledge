@@ -31,8 +31,54 @@ main {
     padding: 20px;
 }
 
+/* Bootstrap 5 strips the default blockquote indent, so quoted examples read
+   as ordinary paragraphs.  Set them off with a rule and a tinted panel. */
+blockquote {
+    margin: 1rem 0 1rem 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #36c;      /* Wikimedia blue */
+    background-color: #f5f6f8;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
     color: #555;
+}
+
+/* Two-column lists (the seed topics on the assignment page). */
+.grid-2 {
+    column-count: 2;
+    column-gap: 2rem;
+}
+.grid-2 li { break-inside: avoid; }
+
+@media (max-width: 700px) {
+    .grid-2 { column-count: 1; }
+}
+
+/* Checklists: boxes rather than bullets. */
+ul.checklist {
+    list-style: none;
+    padding-left: 1.4em;
+}
+ul.checklist li::before {
+    content: "\2610\00a0";      /* ballot box */
+    margin-left: -1.4em;
+}
+
+/* Sub-task list on the assessment page: time and deliverable on their own
+   lines, quieter than the task itself. */
+ol.tasks > li { margin-bottom: 1.1rem; }
+
+ol.tasks .meta {
+    font-size: 0.92em;
+    color: #444;
+    margin-top: 0.25rem;
+    padding-left: 0.6rem;
+    border-left: 3px solid #d7dae0;
 }

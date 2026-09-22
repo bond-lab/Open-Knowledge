@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Assessment</h1>
+
+<p>This has the details of the assessment.    If something here disagrees
+with a slide, this page is correct.</p>
+
+<h3 id="what">What you write</h3>
+
+<ul>
+  <li>A <strong>Wikipedia article</strong> on a topic okayed by the lecturer,
+    drafted in your sandbox and moved to mainspace, plus feedback on other
+    students' articles.  Pavel's sessions cover how.</li>
+  <li>A <strong>short academic paper</strong> (4&ndash;8 pages plus
+    references &mdash; the reference list does not count towards the length)
+    on a topic okayed by the lecturer, plus feedback on other students'
+    papers.  It does not have to be the same topic as your Wikipedia
+    article.</li>
+</ul>
+
+<p>We focus on <strong>environmental issues</strong> in the writing practice.
+Both articles are due on <strong>15 January</strong>: submit the paper in Moodle, and have a complete article in Wikipedia.</p>
+
+
+<h3 id="subtasks">Sub-tasks</h3>
+
+<p>There are several sub-tasks on the way to the paper.  They are not all marked,
+<strong>but you must complete them all ON TIME to graduate</strong>.</p>
+
+<ol class="tasks">
+  <li><a href="{{ url_for('week', week_key='intro') }}#task">Three paragraphs on
+    water use in data centres</a> &mdash; read the three texts and say what each
+    claims, where they differ, and which you trusted most.
+    <div class="meta"><strong>Time:</strong> 2&ndash;3 hours &mdash; about an
+      hour reading, an hour writing.</div>
+    <div class="meta"><strong>Deliverable:</strong> upload to Moodle by
+      <strong>Sunday 11 October</strong>, and bring a printed copy to class on
+      13 October &mdash; you will swap it with a classmate.</div></li>
+
+  <li><strong>A topic, and three references</strong>: the question you want your
+    paper to answer, plus three sources you have actually found, one line each.
+    This is a feasibility check, not a bibliography: if you cannot find three
+    things to read, you need a different topic.
+    <div class="meta"><strong>Time:</strong> about 1 hour &mdash; longer if the
+      first topic does not survive, which is the point of doing it now.</div>
+    <div class="meta"><strong>Deliverable:</strong> upload to Moodle before the
+      <a href="{{ url_for('week', week_key='writing') }}">academic writing
+      session</a>, <strong>13 October</strong>.</div></li>
+
+  <li><strong>Annotated bibliography</strong>: five or more sources in APA 7,
+    with two or three sentences on each saying what it shows, how far you trust
+    it, and what you will use it for.
+    <div class="meta"><strong>Time:</strong> 3&ndash;4 hours &mdash; finding and
+      skimming the sources is most of it.</div>
+    <div class="meta"><strong>Deliverable:</strong> upload to Moodle by the
+      <a href="{{ url_for('week', week_key='fair') }}">FAIR and ethics
+      session</a>, <strong>10 November</strong>, and have it with you in class
+      that day, on paper or on screen &mdash; we work from it.</div></li>
+
+  <li><strong>A complete draft</strong>, formatted as described below.
+    <div class="meta"><strong>Time:</strong> 12&ndash;18 hours &mdash; the big
+      one.  Reading your sources properly is half of it.  Do not start in
+      December.</div>
+    <div class="meta"><strong>Deliverable:</strong> post in the <em>Peer
+      review: papers</em> forum in Moodle before the
+      <a href="{{ url_for('week', week_key='peer_review') }}">peer review
+      session</a> on <strong>8 December</strong>, and bring a printed copy to
+      class.  Without a draft you cannot take part, and the people reviewing
+      you have nothing to read.</div></li>
+
+  <li><strong>Peer review</strong>: you will be allocated two drafts.
+    <div class="meta"><strong>Time:</strong> 2&ndash;3 hours &mdash; about an
+      hour per draft to read it and write something useful.</div>
+    <div class="meta"><strong>Deliverable:</strong> reply in each of the two
+      forum threads by <strong>15 December</strong>.  The written feedback
+      <em>is</em> marked &mdash; see <a href="#marks">how it is marked</a>.</div>
+    <ul>
+      <li>Reviews are <strong>open</strong>: your name is on them and the whole
+        class can read them, as on a Wikipedia talk page.  That is deliberate
+        &mdash; you learn as much from reading other people's reviews as from
+        writing your own.</li>
+      <li>So drafts are visible to your classmates too.  Nothing leaves the
+        course.</li>
+    </ul></li>
+
+  <li><strong>The paper itself</strong>: revise in the light of the reviews you
+    were given.
+    <div class="meta"><strong>Time:</strong> 4&ndash;6 hours.</div>
+    <div class="meta"><strong>Deliverable:</strong> upload the final paper to
+      Moodle by <strong>15 January</strong>.</div></li>
+</ol>
+
+<p>Altogether that is roughly <strong>25&ndash;35 hours</strong> of your own
+time across the semester, on top of the classes &mdash; about two hours a week,
+with peaks at the draft and the revision.  The course is 5 ECTS, so the
+Wikipedia article and the reading account for the rest.</p>
+
+<h3 id="paper">The paper, in detail</h3>
+
+<p>Write a short academic paper  (4&ndash;8 pages plus references) on a sustainability-related topic (preferably local). This complements your Wikipedia assignment by practicing academic voice, structure, and argumentation.</p>
+
+
+<section aria-labelledby="goals">
+  <h5 id="goals">Learning Goals</h5>
+  <ul>
+    <li>Write for an <strong>academic audience</strong> with clear structure and argument.</li>
+    <li><strong>Critically evaluate</strong> and integrate scholarly, policy, and NGO sources.</li>
+    <li>Develop a <strong>sustained argument</strong> (not just description).</li>
+    <li>Practice <strong>ethical scholarship</strong>: attribution, citation consistency, transparency.</li>
+    <li>Engage with <strong>local/global sustainability</strong> questions.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="instructions">
+  <h5 id="instructions">Instructions</h5>
+  <ol>
+    <li><strong>Choose a topic.</strong> Prefer local relevance (Olomouc / Moravia / Czechia). Pick from the seed list below or propose your own.</li>
+    <li><strong>Research.</strong> Use at least <strong>5 reliable sources</strong>, including, if relevant, <strong>2+ scholarly/peer-reviewed</strong>. Policy/NGO/government reports are welcome.    Contact local experts if necessary.</li>
+    <li><strong>Content</strong>:
+      <ul>
+        <li><strong>Title &amp; Name &lt;email&gt;</strong>
+	<li> <strong>Abstract</strong> (150–200 words)</li>
+        <li><strong>Introduction</strong> (topic, research question/thesis)</li>
+        <li><strong>Body</strong> (evidence, analysis, argument)</li>
+        <li><strong>Conclusion</strong> (findings, implications)</li>
+        <li><strong>References</strong> (use APA)</li>
+      </ul>
+    </li>
+    <li><strong>Paper format:</strong>
+      <ul>
+        <li>Paper size A4, margins 25mm
+	<li>Single line spacing
+	<li>Text: <a href='https://en.wikipedia.org/wiki/Palatino'>Palatino font</a> 12pt (or <a href='https://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella'>TeX Gyre Pagella</a>)
+          <br>Title and Headers should be the same font but larger, I leave it up to you.
+        <li>Length: 4&ndash;8 pages, plus the reference list (which does not count).
+        <li>The pages must be numbered.
+	<li>The essay must contain the title and the author's first
+and last names and email address. This information should not need to
+	  be at the top of the first page, not a separate page.
+	  <li>Make the citations as complete as possible, and justify your choice of sources in the paper.
+      </ul>
+    <li><strong>Submit Draft</strong> for the <a href="{{ url_for('week', week_key='peer_review') }}">peer review session</a>.</li>
+    <li><strong>Revise</strong> and submit final paper (January 15).</li>
+  </ol>
+</section>
+
+<section aria-labelledby="seed-topics">
+  <h5 id="seed-topics">Suggested Seed Topics</h5>
+
+    <strong>Note:</strong> The questions below are starting points,
+  not prescribed titles.  You are encouraged to narrow them, challenge
+  their assumptions, or formulate a related question of your own. A
+  good topic has a question to answer, evidence that could support
+  more than one conclusion, and a scope small enough to address in 4–8
+  pages.
+</p>
+
+  <div class="grid grid-2">
+<ul>
+  <li><strong>Waste and recycling:</strong> Why is metal recycling in Olomouc only in a few specialised bins, instead of with plastic as in some other European countries?</li>
+
+  <li><strong>Deposit schemes:</strong> Are deposit-return schemes for PET bottles and cans likely to improve recycling in Czechia?</li>
+
+  <li><strong>Food and waste:</strong> What happens to unsold food from supermarkets in Olomouc, and how effective are current approaches to reducing food waste?</li>
+
+  <li><strong>Local food:</strong> Are farmers' markets in Olomouc genuinely more sustainable than supermarkets?</li>
+
+  <li><strong>Urban green space:</strong> Should Olomouc convert more lawns into wildflower meadows or reduce mowing in parks and along roads?</li>
+
+  <li><strong>Pedestrianisation:</strong> Are pedestrian zones good for both sustainability and local businesses?</li>
+
+  <li><strong>Public transport:</strong> Are free or very cheap public-transport fares an effective environmental policy?</li>
+
+  <li><strong>Cars and cities:</strong> Would replacing petrol cars with electric cars solve the main sustainability problems caused by cars in Olomouc?</li>
+
+  <li><strong>Rail versus air:</strong> Should short-haul flights within Central Europe be discouraged when a reasonable rail alternative exists?</li>
+
+  <li><strong>Energy:</strong> Why has rooftop solar developed differently in Czechia and neighbouring countries such as Austria or Germany?</li>
+
+  <li><strong>Historic buildings:</strong> Can historic buildings be made more energy-efficient without damaging their heritage value?</li>
+
+  <li><strong>Consumption:</strong> How sustainable is fast-fashion consumption among Czech university students?</li>
+
+  <li><strong>Circular economy:</strong> Should repairing consumer goods be made easier in Czechia?</li>
+
+  <li><strong>Wildlife and landscape:</strong> Should beavers be welcomed back into the Czech landscape?</li>
+
+  <li><strong>Universities and travel:</strong> Should academics fly less, and what would universities gain or lose by reducing academic air travel?</li>
+</ul>
+  </div>
+</section>
+
+
+  <section aria-labelledby="tips">
+    <h5 id="tips">Tips for Success</h5>
+    <ul class="checklist">
+      <li>Lead with a <strong>clear research question</strong> and answer it.</li>
+      <li>Use topic sentences and signposting for flow.</li>
+      <li>Support every claim with <strong>citations</strong> (even when paraphrasing).</li>
+      <li>Write in a <strong>formal academic style</strong>; avoid slang and vague phrasing.</li>
+      <li>Check <strong>originality</strong> and citation consistency before submitting.</li>
+    </ul>
+  </section>
+
+
+
+
+
+
+
+
+<h3 id="marks">How it is marked</h3>
+
+<p>Regular attendance and active participation are a necessary condition for
+passing: you have to come to class, or have a good reason not to.  They carry no
+percentage of their own.
+
+<p>The mark itself is made up as follows.  Both the article and the paper are
+due on 15 January:
+
+<ul>
+  <li> A Wikipedia article on a topic to be okayed by the lecturer
+    <ul>
+      <li>Your own article (35%)
+      <li>Feedback on other students' articles (15%)
+    </ul>
+  <li> A research paper on a topic to be okayed by the lecturer --- does not have to be the same as the wikipedia article (4&ndash;8 pages <strong>plus</strong> references &mdash; the reference list does not count towards the length), with references in <a href="#apa">APA style</a>
+    <ul>
+      <li>Your own paper (35%)
+      <li>Feedback on other students' papers (15%)
+    </ul>
+</ul>
+
+<h3 id="apa">Citing your sources: APA</h3>
+
+<p>Your paper should use <strong>APA style, 7th edition</strong>: author–date
+citations in the text, and an alphabetical reference list at the end.  Pick one
+style and be consistent — that is what these references, and the ones on this
+page, are doing.  (Wikipedia has its own citation templates instead; Pavel
+covers those.)</p>
+
+<ul>
+  <li><a href="https://apastyle.apa.org/style-grammar-guidelines">APA Style and Grammar Guidelines</a> — the official reference.  Start with the <a href="https://apastyle.apa.org/style-grammar-guidelines/references/examples">reference examples</a>, which show how to cite every kind of source, and the rules for <a href="https://apastyle.apa.org/style-grammar-guidelines/citations">in-text citations</a>.</li>
+  <li>Two free one-page handouts worth printing: the <a href="https://apastyle.apa.org/instructional-aids/reference-guide.pdf">reference guide for journal articles, books and book chapters</a> (PDF) and the <a href="https://apastyle.apa.org/instructional-aids/in-text-citation-checklist.pdf">in-text citation checklist</a> (PDF).</li>
+  <li><a href="https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html">Purdue OWL: APA formatting and style guide</a> — a gentler walk-through, with sample papers.</li>
+  <li><a href="https://www.zotero.org/">Zotero</a> — a free reference manager that will format APA for you.  Check what it produces: it is only as good as the metadata you feed it.</li>
+</ul>
+
+<p>The manual itself, cited in the style it defines:</p>
+
+<p>American Psychological Association. (2020). <em>Publication manual of the American Psychological Association</em> (7th ed.). <a href="https://doi.org/10.1037/0000165-000">https://doi.org/10.1037/0000165-000</a></p>
+
+<h3 id="using-ai">Using AI</h3>
+
+<p>You are here to practise writing, so the writing must be your own: do not use
+generative AI to write your paper or your Wikipedia article.  You may use it for
+research --- explaining a concept, suggesting search terms, pointing you towards
+literature --- as long as you say so.  Name the tool and the version, and what you
+used it for, for example:
+
+<blockquote>Claude Opus 5 (Anthropic) was used to suggest search terms.  All
+sources were located, read, and cited by me.</blockquote>
+
+<p><strong>This includes proofreading.</strong>  Most of you are writing in a
+second or third language, and a model would happily rewrite your sentences into
+fluent, anonymous English.  That is the part you are here to learn, and we would
+be marking the model.  A spell-checker is fine; so is a dictionary.  If you want
+help with the language, ask us, bring it to the peer-review session, or take it
+to the university's writing support --- all of which will teach you something a
+rewrite would not.
+
+<p>What a model tells you is a lead, not a source: find the original, read it, and
+cite that.  Undisclosed use counts as academic misconduct.
+
+
+{% endblock %}

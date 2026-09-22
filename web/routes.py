@@ -25,6 +25,15 @@ def index():
                            week='index',
                            weeks=g.weeks)
 
+@app.route('/assessment/')
+def assessment():
+    # The single source of truth for what is due, how it is marked, the
+    # citation style, and the rules on using AI.  Week pages link here.
+    return render_template('assessment.html',
+                           week='assessment',
+                           weeks=g.weeks)
+
+
 @app.route('/week/<week_key>/')
 def week(week_key):
     if week_key in g.weeks:

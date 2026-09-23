@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Build the slides, copy them into the website, and freeze the static site
 # into docs/.  Run this before committing whenever slides/ or web/ changed:
@@ -28,11 +28,16 @@ if [ ! -d ".venv" ]; then
 fi
 
 if [ "$SLIDES" = yes ]; then
+  # ---- dates come from web/weeks.toml, not from the .tex files -------------
+  echo "Generating slides/dates.tex from web/weeks.toml..."
+  uv run python make_dates.py
+
   # ---- build every deck and handout ----------------------------------------
   echo "Building slides..."
   cd slides
   for tex in *.tex; do
-    [ "$tex" = "shared.tex" ] && continue      # preamble, not a document
+    # skip includes (shared.tex, dates.tex): only build real documents
+    grep -q '\\documentclass' "$tex" || continue
     if ! latexmk -lualatex -interaction=nonstopmode "$tex" >/dev/null 2>&1; then
       echo "❌ ${tex%.tex} failed to build — run: latexmk -lualatex $tex"
       exit 1

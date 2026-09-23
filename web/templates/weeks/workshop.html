@@ -3,10 +3,17 @@
 {% block content %}
 <h2>{{ info.title }}</h2>
 
-<p>This week we explore why feedback and peer review is important, and look briefly in non academic disciplines.  We then look at some issues in peer review and publication metrics and then the best practice in peer review.
-The <a href="{{ url_for('static', filename='pdf/wk-07-feedback+review.pdf')}}">slides</a> give more detail, as well as references.</p>
+<p>{{ info.date|pretty }}, {{ info.time }}.</p>
 
+<p>These <a href="{{ url_for('static', filename='pdf/wk-08-workshop.pdf') }}">slides</a> cover the practical half: reading a draft and writing a review of it.</p>
 
+<p><strong>Bring your draft.</strong>  Post it in the <em>Peer review:
+papers</em> forum before class and bring a printed copy &mdash; without one you
+cannot take part, and the people reviewing you have nothing to read.</p>
+
+<p>We read, review and plan revisions in class.  Written reviews go in the
+forum afterwards; see <a href="{{ url_for('assessment') }}#subtasks">the
+sub-tasks</a> for the deadline.</p>
 
 <h3 id="peerreview">Peer Review</h3>
 <p >Use this to give specific, constructive feedback to your partner.  You must write at least one sentence for each topic.  You can also mark comments directly on the draft and summarize here.  For this task, neither the author or the reviewers are blind: put your name on your review (and it should be on your paper).</p>
@@ -60,9 +67,6 @@ The <a href="{{ url_for('static', filename='pdf/wk-07-feedback+review.pdf')}}">s
   </ul>
 </section>
 
-
-
 <p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
 &rarr;</a></p>
-
 {% endblock %}

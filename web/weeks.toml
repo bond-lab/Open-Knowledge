@@ -1,55 +1,123 @@
+# The timetable.  make_dates.py turns this into slides/dates.tex, so every
+# date in the slides and handouts comes from here.
+year = 2026
+
+# Deadlines that are not class dates.  "MM-DD" uses the year above;
+# "YYYY-MM-DD" says which year (the final paper is due after New Year).
+[deadlines]
+task = "10-11"          # three paragraphs on water use (due before the sources session)
+reviews = "12-15"       # peer reviews posted in the forum
+final = "2027-01-15"    # paper and Wikipedia article
+
+# Francis's sessions are 90 minutes (16:45-18:15): some students cannot stay
+# later, so each of his former three-hour classes is now two weekly sessions.
+# Pavel's remain three hours, with the new content in the first 90 minutes.
+#
+# Czech public holidays falling on a Tuesday in the 2026 autumn semester:
+#   11-17 Struggle for Freedom and Democracy Day (Den boje za svobodu a demokracii)
+# Nothing is scheduled that week; the FAIR/CARE pair sits before it, which is
+# why Pavel's "good article" session moved to 11-10.
+# (09-28 St Wenceslas and 10-28 Czechoslovak Statehood fall on Mon/Wed in 2026.)
+
+# Weeks with no class.  These are shown in the timetable so the gaps are
+# explained rather than mysterious; they have no page of their own.
+[[breaks]]
+key = "reading"
+date = "10-20"
+title = "Reading and writing week"
+other = "No class: work on your topic and sources"
+
+[[breaks]]
+key = "holiday"
+date = "11-17"
+title = "Public holiday: Den boje za svobodu a demokracii"
+other = "No class: Struggle for Freedom and Democracy Day"
+
+[[breaks]]
+key = "writingweeks"
+date = "12-22"
+title = "Reading and writing weeks"
+other = "No class until the deadline: revise your paper and your article"
+
 [weeks]
 
 [weeks.intro]
 key = "intro"
 title = "Overview (Pavel and Francis)"
 date = "09-22"
+time = "16:45-18:15"
 
 [weeks.wiki]
 key = "wiki"
 title = "Introduction to Wikipedia - Rules and Recommendations"
 date = "09-29"
-other = "Pavel (3h), in Czech"
+time = "16:45-19:45"
+other = "Pavel (3h, Czech)"
 
-[weeks.writing]
-key = "writing"
-title = "Academic Writing vs Encyclopedic Writing - Evaluating Sources"
+[weeks.message]
+key = "message"
+title = "Academic vs Encyclopedic Writing: what is your message?"
+date = "10-06"
+time = "16:45-18:15"
+other = "Francis (English)"
+due = "Topic + 3 references"
+
+[weeks.sources]
+key = "sources"
+title = "Finding, judging and citing sources"
 date = "10-13"
-other = "Francis (3h), in English"
+time = "16:45-18:15"
+other = "Francis (English)"
+due = "Three paragraphs (Sun 11 Oct)"
+
+[weeks.fair]
+key = "fair"
+title = "FAIR: making data findable and reusable"
+date = "10-27"
+time = "16:45-18:15"
+other = "Francis (English)"
+due = "Annotated bibliography"
+
+[weeks.care]
+key = "care"
+title = "CARE, ethics, and honest persuasion"
+date = "11-10"
+time = "16:45-18:15"
+other = "Francis (English)"
 
 [weeks.good]
 key = "good"
 title = "Writing a Good Wikipedia Article - Clear, Engaging and Neutral"
 date = "11-03"
-other = "Pavel (3h), in Czech"
-
-
-[weeks.fair]
-key = "fair"
-title = "Making your data and writing useful and ethical"
-date = "11-10"
-other = "Francis (3h), in English"
-
-# Czech public holidays falling on a Tuesday in the 2026 autumn semester:
-#   11-17 Struggle for Freedom and Democracy Day (Den boje za svobodu a demokracii)
-# No class is scheduled that week, so no session needs to move.
-# (09-28 St Wenceslas and 10-28 Czechoslovak Statehood fall on Mon/Wed in 2026.)
+time = "16:45-19:45"
+other = "Pavel (3h, Czech)"
 
 [weeks.feedback]
 key = "feedback"
 title = "Feedback on Wikipedia Articles - Editing as Communal Knowledge Building"
 date = "11-24"
-other = "Pavel (3h), in Czech"
+time = "16:45-19:45"
+other = "Pavel (3h, Czech)"
 
-[weeks.peer_review]
-key = "peer_review"
-title = "Feedback on Academic Articles -  Peer review and revision for publication"
+[weeks.review]
+key = "review"
+title = "Peer review: how it works"
+date = "12-01"
+time = "16:45-18:15"
+other = "Francis (English)"
+
+[weeks.workshop]
+key = "workshop"
+title = "Peer review: doing it"
 date = "12-08"
-other = "Francis (3h), in English"
+time = "16:45-18:15"
+other = "Francis (English)"
+due = "Draft, in the forum"
 
 [weeks.conclusion]
 key = "conclusion"
 title = "Conclusion: long term strategies for sustainable knowledge creation; reflection"
 date = "12-15"
+time = "16:45-18:15"
 other = "Pavel and Francis"
-
+due = "Peer reviews"

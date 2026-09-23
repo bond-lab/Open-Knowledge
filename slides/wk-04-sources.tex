@@ -1,0 +1,726 @@
+\documentclass[aspectratio=169]{beamer}
+\input{shared.tex}
+
+% ---- Title metadata ----
+\title[Sources]{Open Knowledge for a Sustainable Future:\\ Research, Ethics, and Wikipedia}
+\subtitle{Week 4 --- Finding, judging and citing sources}
+\author[Bond \& Bednařík]{Francis Bond (\textbf{Academic}) \and Pavel Bednařík (Wiki)}
+\institute[UPOL \& Wikimedia]{Palacký University Olomouc \quad | \quad Wikimedia ČR}
+\date{}
+
+
+\begin{document}
+
+
+% =====================================================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Contents}
+  \small
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% =====================================================================
+
+
+\section{In class: reading each other's writing}
+
+% --- In-class activity: peer response to the water-use task ---------------
+\begin{frame}{In class: read each other's paragraphs}
+You each read the same three texts on water use in data centres, and wrote
+three paragraphs.  Now swap with the person next to you.
+\begin{itemize}
+  \item \textbf{Read it once without writing anything} \hfill 5 min
+  \item \textbf{Then answer four questions on the worksheet} \hfill 10 min
+    \begin{enumerate}
+    \item What is this writer's \textbf{claim}?  One sentence, in your own words.
+    \item Which text did they \textbf{trust most}, and on what grounds?
+    \item Do you agree with their \textbf{judgement of the sources}?
+    \item Do you agree with their \textbf{conclusion} about water?
+    \end{enumerate}
+  \item \textbf{Talk in pairs} --- start with question 1, and let the writer
+    say whether that is what they meant \hfill 10 min
+\end{itemize}
+\vspace{1ex}
+Useful feedback is specific: point at a sentence.  ``I disagree'' is not
+feedback; ``your second paragraph claims X, but the source you cite says Y''
+is.  \hfill {\footnotesize (worksheet also on the course website)}
+\end{frame}
+
+\begin{frame}{Questions 3 and 4 are not the same question}
+\begin{itemize}
+  \item You can think a text is \textbf{well evidenced} and still think its
+    \textbf{conclusion} is wrong
+  \item You can agree with a conclusion that rests on \textbf{nothing}
+  \item Keeping those apart is the whole job:
+    \begin{itemize}
+    \item it is what a peer reviewer does in December
+    \item it is what \textbf{neutral point of view} asks of you on Wikipedia:
+      report what the sources say, whatever you think of it
+    \end{itemize}
+\end{itemize}
+\vspace{2ex}
+\textbf{Watch for this in your answers:} Masley says data centres use 0.008\%
+of US fresh water.  \citet{Mytton2021} and the Wikipedia article talk about
+stress on \emph{particular} watersheds.  Neither is lying.  They chose
+different things to compare against --- and that choice does most of the
+persuading.
+\end{frame}
+
+
+\section{What are good sources?}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Judging a source: the source itself}
+\small
+\begin{tabular}{@{}p{0.22\textwidth}p{0.36\textwidth}p{0.34\textwidth}@{}}
+\toprule
+\textbf{Ask} & \textbf{You want} & \textbf{Worry if} \\
+\midrule
+Who wrote it?      & a named author with findable credentials in \emph{this} field
+                   & anonymous, or an expert in something else \\
+\addlinespace
+Who published it?  & a journal or press with editors and review
+                   & an advocacy group, a content farm, no editorial trail \\
+\addlinespace
+When?              & recent enough for how fast the field moves
+                   & stale --- or \textbf{retracted} \\
+\addlinespace
+Why was it made?   & to report or explain
+                   & to sell, to lobby, to entertain \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+
+Check retractions in the \href{https://retractiondatabase.org}{Retraction Watch
+Database} --- by title, DOI, author or journal.  It also tells you \emph{why} a
+paper was withdrawn.
+\end{frame}
+
+\begin{frame}{Judging a source: its argument}
+\small
+\begin{tabular}{@{}p{0.22\textwidth}p{0.36\textwidth}p{0.34\textwidth}@{}}
+\toprule
+\textbf{Ask} & \textbf{You want} & \textbf{Worry if} \\
+\midrule
+What is the evidence? & data, examples, citations you can follow
+                      & assertions with nothing behind them \\
+\addlinespace
+Who is missing?       & it engages work that disagrees with it
+                      & it cites mostly itself and its friends \\
+\addlinespace
+How is it worded?     & measured; states its own limits
+                      & loaded words; inconvenient evidence left out \\
+\addlinespace
+Does it help you?     & it supports or challenges \emph{your} claim
+                      & it is there to make the bibliography look longer \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+
+No source is neutral.  Naming the slant is the work; pretending it is not there
+is the mistake.  Evaluation is judgement, not a checklist.
+\end{frame}
+
+\begin{frame}{What kind of source is it?}
+\begin{columns}[T,onlytextwidth]
+\column{0.48\textwidth}
+\textbf{How close to the thing itself}
+\begin{itemize}
+  \item \textbf{Primary}: the data, the text, the interview, the law
+  \item \textbf{Secondary}: analysis and interpretation of those
+  \item \textbf{Tertiary}: overviews --- textbooks, encyclopedias, \textbf{Wikipedia}
+\end{itemize}
+
+\column{0.48\textwidth}
+\textbf{Who it was written for}
+\begin{itemize}
+  \item \textbf{Scholarly}: peer-reviewed, technical, referenced
+  \item \textbf{Popular}: journalism, written to be read over breakfast
+  \item \textbf{Grey}: reports from governments, NGOs, companies --- often
+    excellent, rarely reviewed
+\end{itemize}
+\end{columns}
+\vspace{2ex}
+\begin{itemize}
+  \item Use primary for evidence, secondary for framing, tertiary to find your way in
+  \item Wikipedia is where you \textbf{start}, not what you \textbf{cite} ---
+    follow its references to the real sources
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Role of Peer Review}
+\begin{itemize}
+  \item Peer review adds accountability and expert evaluation.
+  \item Check the journal's own website, or one of these, for peer-review status:
+    \begin{itemize}
+    \item \href{https://doaj.org/}{DOAJ}: free; open-access journals, with their
+      review policy listed
+    \item \href{https://www.scopus.com/sources}{Scopus Sources},
+      \href{https://mjl.clarivate.com/}{Web of Science Master Journal List},
+      \href{https://ulrichsweb.serialssolutions.com}{Ulrichsweb} (look for
+      \textit{Refereed: Yes}) --- these need a subscription: reach them
+      through the university library, not from home
+    \end{itemize}
+  \item Conference papers, reports, and blogs may lack external review.
+  \item Non-reviewed sources can still inform background reading—use carefully.
+  \item Note review processes in your evaluation notes.
+    \begin{itemize}
+    \item \textbf{Single-blind}: reviewer knows author
+    \item \textbf{Double-blind}: neither reviewer nor author knows the other’s identity
+    \item How many reviewers?
+    \end{itemize}
+\end{itemize}
+\end{frame}
+% \begin{frame}{Using the CRAAP Test Wisely}
+% \begin{itemize}
+%   \item CRAAP = Currency, Relevance, Authority, Accuracy, Purpose.
+%   \item Handy memory aid but not exhaustive.
+%   \item Combine with deeper questioning from WAC model.
+%   \item Use it as a \textbf{starting framework}, not a mechanical rubric.
+%   \item Always relate criteria to the \textbf{discipline’s expectations}.
+% \end{itemize}
+% \end{frame}
+
+\begin{frame}{Synthesizing Multiple Sources}
+\begin{itemize}
+  \item Evaluation continues through comparison.
+  \item Ask:
+    \begin{itemize}
+      \item How do sources agree or conflict?
+      \item Which are most authoritative or current?
+    \end{itemize}
+  \item Synthesis reveals gaps and consensus in the field.
+  \item Use evaluation to decide which sources to highlight or challenge.
+\end{itemize}
+\end{frame}
+
+
+
+% =====================================================================
+
+\section{How can I make it easy for my reader?}
+
+\begin{frame}{Make the Information Accessible}
+
+\begin{itemize}
+  \item \e{🔍} \textbf{Identify the source clearly:}
+    include author, year, title, publisher, and version or edition.
+  \item \e{📍} \textbf{Pinpoint the exact location:}
+    add chapter, section, or page number — especially for long works.
+  \item \e{🌐} \textbf{Help readers find it quickly:}
+    provide a persistent link (URL, DOI) or unique identifier (ISBN, dataset ID).
+  \item \e{🧭} \textbf{Be consistent:}
+    use one style throughout --- in this course, \textbf{APA 7}.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Avoid Formatting or Mechanics Errors — Why It Matters}
+\begin{itemize}
+\item Formal citation styles encode a \textbf{“secret code”}
+  \\ —tiny details convey location and source type.
+  \item Using the community’s preferred style is a \textbf{“secret handshake”}: it signals you know the insider code.
+  \item Attention to detail builds \textbf{credibility} with readers who value intellectual property and accuracy.
+  \item Even in an era of easy keyword search, conventions still help readers \textbf{find and verify} sources quickly.
+  \item Goal: demonstrate care and competence, not just avoid penalties.
+    \begin{itemize}
+    \item You should use software to help
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pick the Right Style \& Identify Source Type}
+\begin{itemize}
+  \item Different communities prefer different styles: \textbf{APA} (most
+    social sciences), \textbf{MLA} (literature), \textbf{Chicago}
+    (notes-bibliography, or author--date).
+    \begin{itemize}
+    \item \textbf{For your paper in this course: APA 7.}  Examples on
+      \href{https://bond-lab.github.io/Open-Knowledge/}{the course website}.
+    \end{itemize}
+  \item Determine what you’re citing:
+    \begin{itemize}
+      \item Book vs.\ journal article vs.\ whole website vs.\ a single post/section.
+      \item Each type has \textbf{slightly different} required elements and order.
+    \end{itemize}
+  \item Differences usually make sense: books have titles/pages; tweets usually do not.
+  \item Match the pattern to the \textbf{actual source features}.
+  \item Avoid adding \textbf{unnecessary information}.
+\end{itemize}
+\end{frame}
+
+% \begin{frame}{Punctuation Around Quotations \& In-Text Citations}
+% \begin{itemize}
+%   \item Quotation punctuation follows \textbf{normal grammatical conventions}.
+%   \item In-text citations:
+%     \begin{itemize}
+%       \item \textbf{APA}: author and year inside the parentheses, separated
+%         by a comma --- (Mytton, 2021); add a page for a quotation ---
+%         (Mytton, 2021, p.~3).
+%       \item Other styles put different things inside the brackets: MLA uses
+%         author and page, with no comma.
+%     \end{itemize}
+%   \item End-of-text entries (Works Cited/References) use style-specific patterns of
+%     \textbf{commas, colons, periods, italics, quotation marks}.
+%   \item Treat these patterns as part of the \textbf{code}, not decoration.
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}{Order of Information (Field-Sensitive Choices)}
+% \begin{itemize}
+%   \item Major difference: placement of \textbf{publication year}.
+%     \begin{itemize}
+%       \item \textbf{MLA}: year tends to appear \textbf{near the end}.
+%       \item \textbf{APA/others}: year appears \textbf{earlier}.
+%     \end{itemize}
+%   \item Rationale: recency matters more in fast-moving fields (e.g., AI) than in some literary analyses.
+%   \item Ensure elements are in the \textbf{correct sequence} for the style.
+%   \item Do not pad entries with \textbf{irrelevant} details.
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}{Capitalization \& Abbreviation Patterns}
+% \begin{itemize}
+%   \item Some styles favor \textbf{full capitalization} and spelled-out names/titles for formality.
+%   \item Others prefer \textbf{fewer capitalized words} and more \textbf{abbreviations} to speed reading.
+%   \item Apply title case vs.\ sentence case \textbf{as the style dictates}.
+%   \item Check consistent use of \textbf{standard abbreviations} (ed., trans., vol., no.).
+%   \item Consistency across entries is as important as correctness.
+% \end{itemize}
+% \end{frame}
+
+\begin{frame}{Consistency is Non-Negotiable}
+\begin{itemize}
+  \item Pick a style and \textbf{stay with it}—don’t mix conventions.
+  \item If you sometimes include the year and sometimes don’t, readers may suspect \textbf{incomplete acknowledgment}.
+  \item For unusual sources (e.g., a deleted TikTok under a pseudonym), imitate the \textbf{closest established pattern}.
+  \item Prioritize reader orientation: can they \textbf{find} what you cited?
+  \item Keep a short \textbf{personal checklist} to enforce uniformity.
+\end{itemize}
+\end{frame}
+
+% \begin{frame}{Page Arrangement: Lists That Readers Can Scan}
+% \begin{itemize}
+%   \item Many end-of-text lists are \textbf{alphabetical} (by first element of the entry).
+%   \item Others are \textbf{chronological} or \textbf{numerical}—follow the assignment or venue.
+%   \item Use a \textbf{hanging indent} so lines after the first are indented—improves scanability.
+%   \item Maintain even spacing and \textbf{consistent} punctuation patterns across entries.
+%   \item Check that every in-text citation has a \textbf{matching} list entry (and vice versa).
+% \end{itemize}
+% \end{frame}
+
+\begin{frame}{Tools Help—But You’re Still Responsible}
+\begin{itemize}
+\item Bibliography managers and library export tools can \textbf{misformat} elements.
+  \begin{itemize}
+  \item E.g. Nurril Hirfana binte Mohamed Noor, Suerya binte Sapuan and Francis Bond (2011)
+    \\ cite as Nurril Hirfana, Suerya and Bond (2011) 
+  \end{itemize}
+  \item You must still \textbf{proofread} citations against the style rules.
+  \item Learn enough of the code to \textbf{spot errors} quickly.
+  \item Online forms may omit fields or guess wrong—\textbf{verify} and fill gaps.
+  \item Working in a “\textbf{generation gap}” means tools + human judgment are both needed.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Don't worry too much!}
+\begin{itemize}
+  \item No one is born knowing citation mechanics; even strong writers make mistakes.
+  \item The most important thing is that people can find the information.
+  \item Errors \textbf{do not} imply bad faith—but accuracy \textbf{does} build trust.
+  \item Getting the details right gives you \textbf{credibility}.
+  \item Over time, you join the discourse community that \textbf{evolves} conventions.
+  \item Learn the secret handshake, but most importantly \textbf{help readers} locate the sources.
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+
+\begin{frame}{Citing Works Not in English}
+\begin{itemize}
+  \item Scholarly writing often involves \textbf{sources in other languages}.
+  \item Goals:
+    \begin{itemize}
+      \item Give credit to the original author.
+      \item Help readers identify the work (even if they don’t read the language).
+      \item Follow your citation style’s rules for \textbf{non-English titles}.
+    \end{itemize}
+  \item APA and most citation systems recommend:
+    \begin{itemize}
+      \item Keeping the original title in the source language.
+      \item Optionally providing an \textbf{English translation in brackets}.
+    \end{itemize}
+  \item Transliterate non-Latin scripts if possible; retain diacritics accurately.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{General Principles (APA / biblatex)}
+\begin{itemize}
+  \item Use the author’s name in the script of publication (APA allows Latin transliteration).
+  \item Give publication data exactly as printed (year, publisher).  APA 7
+    dropped the publisher's location.
+  \item If the reader is unlikely to understand the title:
+    \begin{itemize}
+      \item Add a translation in square brackets, outside the italics:
+        \emph{Válka s Mloky} [War with the Newts].
+    \end{itemize}
+  \item Don’t invent English titles — translate accurately but informally.
+  \item If the work has an official English edition, you may cite that instead or alongside.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Example: Czech Source (Čapek, 1936)}
+\small
+\begin{verbatim}
+@book{capek1936,
+  author    = {Čapek, Karel},
+  year      = {1936},
+  title     = {Válka s Mloky [War with the Newts]},
+  publisher = {Fr. Borový},
+  langid    = {czech}
+}
+\end{verbatim}
+
+\textbf{Text citation examples:}
+\begin{itemize}
+  \item \citet{capek1936} satirizes industrial modernity through the figure of the salamander.
+  \item The allegory of human exploitation appears early in the narrative \citep{capek1936}.
+\end{itemize}
+
+\textbf{References entry (APA style):}
+\begin{quote}
+Čapek, K. (1936). \emph{Válka s Mloky} [War with the Newts]. Fr. Borový.
+\end{quote}
+{\footnotesize No place of publication: APA 7 dropped it.  Put the
+translation in the \texttt{title} field --- biblatex has a
+\texttt{titleaddon} field, but this style brackets it for you, so typing your
+own brackets there gives you two sets.}
+\end{frame}
+
+\begin{frame}{Example: Japanese Source (\cjk{芥川龍之介}, 1918)}
+\small
+{\ttfamily
+@article\{akutagawa1918,\\
+\hspace*{2em}author = \{\cjk{芥川龍之介}\},
+\hspace*{2em}sortname = \{Akutagawa, Ryūnosuke\}, \\
+\hspace*{2em}year = \{1918\},\\
+\hspace*{2em}title = \{\cjk{蜘蛛の糸} Kumo no ito [The Spider's Thread]\},\\
+\hspace*{2em}journaltitle = \{\cjk{赤い鳥} Akai Tori\},\\
+\hspace*{2em}volume = \{1\}, number = \{1\},\\
+\hspace*{2em}langid = \{japanese\}\}\\
+}
+\vspace{1ex}
+
+\textbf{Text citation examples:}
+\begin{itemize}
+  \item \citet{akutagawa1918} retells a Buddhist parable of redemption and failure.
+  \item Compassion and egoism intertwine in \cjk{「蜘蛛の糸」} \citep{akutagawa1918}.
+\end{itemize}
+
+\textbf{References entry (APA 7):}
+\begin{quote}
+\cjk{芥川龍之介} [Akutagawa, R.]. (1918). \cjk{蜘蛛の糸} \emph{Kumo no ito}
+[The spider's thread]. \emph{\cjk{赤い鳥} Akai Tori}, \emph{1}(1).
+\end{quote}
+
+
+\end{frame}
+
+
+
+\begin{frame}{When to Translate or Transliterate}
+\begin{itemize}
+  \item If the audience reads the language → keep original title only.
+  \item If not → add translation in brackets after the original title.
+  \item Transliteration (romaji, pinyin, etc.) helps with alphabetization and search.
+  \item Example (Japanese romanization):
+    \begin{quote}\small
+    Akutagawa, Ryūnosuke. (1918). \emph{Kumo no ito} [The spider's thread].
+    \end{quote}
+  \item Always apply one consistent pattern for all non-English items.
+\end{itemize}
+\end{frame}
+
+% \begin{frame}{In-Text Citation Behavior}
+% \begin{itemize}
+%   \item \textbf{biblatex} handles Unicode authors automatically.
+%   \item In multilingual documents, citations appear correctly:
+%     \begin{itemize}
+%       \item \citet{capek1936} → Čapek (1936)
+%       \item \citet{akutagawa1918} → 芥川龍之介 (1918)
+%     \end{itemize}
+%   \item Sorting by name or year still works with non-Latin scripts.
+%   \item To force alphabetization by Latin transcription, add:  
+%     \verb|sortname = {Capek, Karel}| or \verb|sortname = {Akutagawa, Ryunosuke}|.
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}{Checklist for Citing Non-English Sources}
+% \begin{itemize}
+%   \item Verify:
+%     \begin{itemize}
+%       \item Accurate author spelling and diacritics.
+%       \item Year, publisher, and city of publication.
+%       \item Correct script and optional translation.
+%     \end{itemize}
+%   \item Decide: original vs.\ translated title (or both).
+% %  \item Add \verb|sortname| for consistent alphabetical order.
+% %  \item Test output with \verb|\printbibliography|.
+%   \item Keep consistency across all non-English entries.
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}{Key Takeaways}
+% \begin{itemize}
+%   \item Cite foreign-language works with the same rigor as English sources.
+%   \item Use original titles + bracketed translations where helpful.
+%   \item Unicode and modern \textbf{biblatex} make multilingual citation smooth.
+%   \item Careful formatting demonstrates both linguistic and scholarly competence.
+%   \item Respect each language’s orthography while following APA consistency.
+% \end{itemize}
+% \end{frame}
+
+
+% =====================================================================
+
+
+\begin{frame}[allowframebreaks]{Acknowledgements}
+
+  \begin{itemize}
+  \item The first sections were based on A Short Handbook for Writing Essays in the Humanities and Social Sciences \citep{writinghandbook}
+  \item I also consulted \citet{Reid:2024} and \citet{Krause:2007}
+  \item \textcite{openai-chatgpt-2025-03-14} was used to format the references, and generate a first draft of the slides with a prompt like
+    \begin{flushleft}\ttfamily
+       Please make me some slides, based on Chapter 1: https://mlpp.pressbooks.pub/writinghandbook/chapter/chapter-1/ \\
+
+Make them in LaTeX, using luatex and biber, please make around 15 slides with at least 5 bullet points, use sub-lists where appropriate. \\
+    \end{flushleft}
+  \aicheck
+  \end{itemize}
+  
+\end{frame}
+
+
+% ====================================================
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\printbibliography[heading=none]
+\end{frame}
+
+
+% ====================================================
+% Appendix: material covered elsewhere, or in more detail
+% than the session has time for.  Here for the handout.
+\AtBeginSection[]{}
+\appendix
+
+\begin{frame}{Appendix}
+These frames are here for reference: they repeat material from
+another session, or go further than we had time for.
+\end{frame}
+
+\begin{frame}{Evaluating Sources — Why It Matters}
+\begin{itemize}
+  \item Academic writing depends on \textbf{credible evidence}.
+  \item Poor sources weaken even the best reasoning.
+  \item Evaluating sources ensures:
+    \begin{itemize}
+      \item Accuracy and reliability
+      \item Awareness of bias and limits
+      \item Relevance to your argument
+    \end{itemize}
+  \item Evaluation is a \textbf{critical thinking skill}, not a checklist exercise.
+  \end{itemize}
+
+  \vfill
+ Adapted from \href{https://wac.colostate.edu/resources/writing/guides/evaluating/}{Evaluating Sources} (WAC Clearinghouse, Colorado State University).  
+\end{frame}
+
+\begin{frame}{Purpose and Audience}
+\begin{itemize}
+  \item Ask: Why was this text created? For whom?
+  \item Purposes may include:
+    \begin{itemize}
+      \item Informing or teaching
+      \item Persuading or advocating
+      \item Selling or entertaining
+    \end{itemize}
+  \item Identify intended audience: scholars, professionals, or the general public.
+  \item Match the source’s aim with your own research goal.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Author and Authority}
+\begin{itemize}
+  \item Who is the author, and what makes them credible?
+  \item Check:
+    \begin{itemize}
+      \item Education and institutional affiliation
+      \item Prior publications and expertise
+      \item Reputation in the field
+    \end{itemize}
+  \item Anonymous or uncredentialed authors demand extra scrutiny.
+  \item Authority may also stem from collective or institutional authorship.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Publisher and Venue}
+\begin{itemize}
+  \item Who publishes or hosts the source?
+  \item University presses and peer-reviewed journals usually signal quality control.
+  \item For websites, assess the domain and hosting organization.
+  \item Recognize potential \textbf{institutional bias} in think tanks, corporations, or advocacy groups.
+  \item Prefer sources with transparent editorial oversight.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Currency and Timeliness}
+\begin{itemize}
+  \item Consider when the source was written or updated.
+  \item In fast-moving fields, information may age quickly.
+  \item For historical or theoretical work, older sources may remain foundational.
+  \item Look for revision dates, update logs, or newer editions.
+  \item Always relate publication date to your topic’s context.
+  \item Has the paper been \textbf{retracted}?
+    \begin{itemize}
+    \item Search in the official \href{https://retractiondatabase.org}{Retraction Watch Database}
+    \item Run a search by title, DOI, author, or journal.
+    \item This is the most comprehensive open database of retracted papers, maintained by Retraction Watch and made openly available through Crossref.
+    \item It also notes the reason for retraction (e.g., plagiarism, data falsification, honest error).
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evidence and Support}
+\begin{itemize}
+  \item Reliable sources \textbf{show their work}.
+  \item Ask:
+    \begin{itemize}
+      \item What kinds of evidence are used? (data, quotations, examples)
+      \item Are sources cited and traceable?
+      \item Is reasoning logical and transparent?
+    \end{itemize}
+  \item Unsupported claims or missing citations signal weakness.
+  \item Cross-check evidence against other reputable works.
+    \begin{itemize}
+    \item Multiple sources are more reliable
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Bias and Objectivity}
+\begin{itemize}
+  \item No source is completely neutral.
+  \item Look for:
+    \begin{itemize}
+      \item Loaded language or emotional tone
+      \item Selective omission of evidence
+      \item Conflicts of interest or funding ties
+    \end{itemize}
+  \item Identify perspective; judge how it shapes interpretation.
+  \item Acknowledge bias rather than ignoring it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Balance and Completeness}
+\begin{itemize}
+  \item Does the source present multiple viewpoints fairly?
+  \item Recognize one-sided or partial presentations.
+    \begin{itemize}
+    \item If they cite mostly themselves it is a bad sign (what counts as
+      ``too much'' varies a lot by field)
+    \item If they only cite their colleagues it is a bad sign
+    \end{itemize}
+  \item Check whether evidence contradicting the claim is addressed.
+  \item Balanced sources strengthen your own credibility when cited.
+  \item Even biased sources can be useful if analyzed critically.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Relevance to Your Project}
+\begin{itemize}
+  \item Determine how the source connects to your research question.
+  \item Directly relevant sources:
+    \begin{itemize}
+      \item Support or challenge your thesis
+      \item Provide key evidence or theory
+    \end{itemize}
+  \item Peripheral sources may supply context or background.
+  \item Avoid citing tangential material to inflate your bibliography.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Primary vs.\ Secondary Sources}
+\begin{itemize}
+  \item \textbf{Primary:} original materials (texts, data, interviews, artifacts).
+  \item \textbf{Secondary:} analysis, interpretation, commentary.
+  \item  \textbf{Tertiary:} index or textual consolidation of  primary and secondary sources
+  \item Choose according to purpose:
+    \begin{itemize}
+      \item Primary for direct evidence
+      \item Secondary for framing and critique
+      \item Tertiary for an overview
+    \end{itemize}
+  \item Distinguish between firsthand and filtered perspectives.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Scholarly vs.\ Popular Sources}
+\begin{itemize}
+  \item \textbf{Scholarly:} peer-reviewed, technical, detailed references.
+  \item \textbf{Popular:} general readership, journalistic style.
+  \item Use scholarly works for evidence, popular for public context.
+  \item Be cautious: some “grey literature” mixes the two.
+  \item Evaluate tone, citations, and rigor to tell them apart.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Checklist for Evaluating a Source}
+\begin{itemize}
+  \item Purpose and audience clearly stated?
+  \item Author’s credentials and affiliations verifiable?
+  \item Publisher or host credible and transparent?
+  \item Evidence traceable and balanced?
+  \item Date current enough for the topic?
+  \item Bias recognized and context considered?
+  \item Source relevant to your own argument?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Integrating Sources}
+\begin{itemize}
+  \item Use quotation, paraphrase, and summary effectively.
+  \item Cite sources to:
+    \begin{itemize}
+      \item Credit others’ ideas
+      \item Strengthen your credibility
+      \item Help readers locate materials
+    \end{itemize}
+  \item Follow the style your community uses --- APA 7 in this course.
+  \item Blend sources seamlessly with your own analysis.
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+%%% Local Variables:
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: luatex
+%%% End:

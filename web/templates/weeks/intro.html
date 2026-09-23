@@ -5,7 +5,7 @@
 
 These <a href="{{ url_for('static', filename='pdf/wk-01-intro.pdf')}}">slides</a> give an overview of the course, and what we hope to do.</p>
 
-<h3 id="task">Your first writing task (by Sunday 11 October)</h3>
+<h3 id="task">Your first writing task (by Sunday {{ deadlines.task|pretty }})</h3>
 
 <p>One question, three kinds of writing: <strong>do data centres use too much
 water?</strong>  Read all three.</p>
@@ -41,7 +41,8 @@ water?</strong>  Read all three.</p>
     sources, hedging, tone.</li>
 </ol>
 
-<p>Post it on Moodle by Sunday 11 October and bring it to class on 13 October,
+<p>Post it on Moodle by Sunday {{ deadlines.task|pretty }} and bring it to class
+on {{ weeks.sources.date|pretty }},
 where we will discuss what you found.  Your own words, please: no generative AI.
 Cite anything else you read.  This one is not graded — it is so that we can see
 how you write, and so that you get some practice in reading like a writer.</p>

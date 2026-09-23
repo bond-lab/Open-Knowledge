@@ -6,15 +6,80 @@ import toml
 from datetime import datetime, timedelta
 
 
-# Load the weeks data from the TOML file
+# The timetable: one source for the site and, via make_dates.py, the slides.
 toml_path = os.path.join(app.root_path, 'weeks.toml')
 with open(toml_path, 'r') as f:
-    weeks_data = toml.load(f)['weeks']
+    course_data = toml.load(f)
+
+# Sorted by date, so the file can list sessions in any order.
+weeks_data = dict(sorted(course_data['weeks'].items(),
+                         key=lambda item: item[1]['date']))
+course_year = course_data.get('year', datetime.now().year)
+deadlines_data = course_data.get('deadlines', {})
+breaks_data = course_data.get('breaks', [])
+
+
+def build_schedule() -> list[dict]:
+    """Interleave classes and breaks into one date-ordered timetable.
+
+    Returns:
+        One dict per row: the week or break itself under 'info', its 'kind'
+        ('week' or 'break'), its 'key', and for classes the teaching-week
+        'number' (breaks are not numbered).
+    """
+    rows = [{'kind': 'week', 'key': key, 'info': week}
+            for key, week in weeks_data.items()]
+    rows += [{'kind': 'break', 'key': b.get('key', ''), 'info': b}
+             for b in breaks_data]
+    rows.sort(key=lambda row: row['info']['date'])
+    number = 0
+    for row in rows:
+        if row['kind'] == 'week':
+            number += 1
+            row['number'] = number
+    return rows
+
+
+schedule_data = build_schedule()
+
+
+@app.template_filter('pretty')
+def pretty_date(value: str, style: str = 'long') -> str:
+    """Render a weeks.toml date as it should read on the page.
+
+    Args:
+        value: A date as "MM-DD" (the course year is assumed) or
+            "YYYY-MM-DD" (for deadlines that fall in the next calendar year).
+        style: "long" for "13 October", "short" for "13 Oct" (used in the
+            timetable, where the column has to stay narrow).
+
+    Returns:
+        The formatted date, or the value unchanged if it cannot be parsed, so
+        a typo in the TOML shows up on the page rather than breaking the build.
+    """
+    parts = value.split('-')
+    try:
+        if len(parts) == 3:
+            when = datetime(*(int(p) for p in parts))
+        else:
+            when = datetime(course_year, *(int(p) for p in parts))
+    except (TypeError, ValueError):
+        return value
+    return f'{when.day} {when:%b}' if style == 'short' else f'{when.day} {when:%B}'
+
 
 @app.before_request
 def before_request():
-    # Make weeks_data available in all templates
+    # Make the timetable available in all templates
     g.weeks = weeks_data
+    g.deadlines = deadlines_data
+
+
+@app.context_processor
+def inject_dates():
+    """Give every template the deadlines, as `weeks` is already injected."""
+    return {'deadlines': deadlines_data, 'course_year': course_year,
+            'schedule': schedule_data}
 
 
     

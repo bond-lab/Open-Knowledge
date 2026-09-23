@@ -3,16 +3,13 @@
 {% block content %}
 <h2>{{ info.title }}</h2>
 
-<p>These <a href="{{ url_for('static', filename='pdf/wk-03-academic-sources.pdf')}}">slides</a> gives some guidelines for academic writing in general, with more detail on selecting and citing good sources.</p>
+<p>{{ info.date|pretty }}, {{ info.time }}.</p>
 
+<p>These <a href="{{ url_for('static', filename='pdf/wk-04-sources.pdf') }}">slides</a> cover finding, judging and citing sources &mdash; the second half of the academic writing material.</p>
 
-<blockquote class="blockquote">
-  <p class="mb-0">The reason I’ve spent so long establishing [that writing helps you refine your thinking] is that it leads to another [point] that many people will find shocking. If writing down your ideas always makes them more precise and more complete, then no one who hasn’t written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.</p>
-<br>
-  <footer class="blockquote-footer"><cite>Putting Ideas into Words</cite> <a href='https://paulgraham.com/words.html'>(Paul Graham, 2022)</a></footer>
-  <footer class="blockquote-footer">Cited in <cite>How to think in writing</cite> <a href='https://henrikkarlsson.xyz/p/writing-to-think'>(Henrik Karlsson, 2024)</a></footer>
-</blockquote>
-
+<p>We start by comparing what you each made of the water-use texts the
+week before, and then ask the question that disagreement raises: how do you
+tell a good source from a bad one?</p>
 
 <h3>In class: reading each other's writing</h3>
 
@@ -44,5 +41,4 @@ beforehand.</p>
 
 <p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
 &rarr;</a></p>
-
 {% endblock %}

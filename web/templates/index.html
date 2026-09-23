@@ -17,7 +17,7 @@
 </ruby></a> and <a href='mailto:pavel.bednarik@wikimedia.cz'>Pavel Bednařík</a>
   <strong>2026</strong> (DAS OK), 2025.
 
-<p>Tuesday 16:45-18:15 (16:45-19:45),
+<p>Tuesdays from 16:45,
   <a href='https://mapy.upol.cz/en?prac=64'>Room 3.51, tř. Svobody 26,
   779 00 Olomouc</a>
 
@@ -45,7 +45,10 @@
     </ol>
     
     <p>
-        Apart from the first and last sessions, classes are long sessions worth two lectures each, held roughly every second week. See the table below for the exact dates.
+        Francis's sessions are 90 minutes, 16:45&ndash;18:15.  Pavel's are three
+        hours, 16:45&ndash;19:45, with the new material in the first 90 minutes
+        and practice afterwards, so you can do the second half at home if you
+        have to leave.  See the table for dates and times.
 
     <p>We will focus on environmental issues in the writing practice, developing the ESCO skill: <a href='https://esco.ec.europa.eu/en/classification/skills?uri=http://data.europa.eu/esco/skill/f3cc52e3-a96c-4549-b841-6e41a846fa99'>report on environmental issues</a>.
     
@@ -56,23 +59,38 @@
         <tr>
             <th scope="col">Week</th>
             <th scope="col">Date</th>
+            <th scope="col">Time</th>
             <th scope="col">Topic</th>
+            <th scope="col">Due</th>
             <th scope="col">Other</th>
         </tr>
     </thead>
     <tbody>
-        {% for key, week in weeks.items() %}
+        {% for row in schedule %}
+        {% if row.kind == 'week' %}
         <tr>
-            <td>{{ loop.index }}</td>
-            <td>{{ week.date }}</td>
-            <td><a href="{{ url_for('week', week_key=key) }}">{{ week.title }}</a></td>
-            <td>{{ week.other if week.other else '' }}</td>
+            <td>{{ row.number }}</td>
+            <td>{{ row.info.date|pretty('short') }}</td>
+            <td>{{ row.info.time if row.info.time else '' }}</td>
+            <td><a href="{{ url_for('week', week_key=row.key) }}">{{ row.info.title }}</a></td>
+            <td>{{ row.info.due if row.info.due else '' }}</td>
+            <td>{{ row.info.other if row.info.other else '' }}</td>
         </tr>
+        {% else %}
+        <tr class="table-secondary">
+            <td></td>
+            <td>{{ row.info.date|pretty('short') }}</td>
+            <td>&mdash;</td>
+            <td><em>{{ row.info.title }}</em></td>
+            <td>{{ row.info.due if row.info.due else '' }}</td>
+            <td>{{ row.info.other if row.info.other else '' }}</td>
+        </tr>
+        {% endif %}
         {% endfor %}
 	<tr>
-            <th colspan=2>15 January</th>
-            <td>Assignment Due</td>
-            <td>Submit in moodle/edit in wikipedia</td>
+            <th colspan=4>{{ deadlines.final|pretty('short') }}</th>
+            <td><strong>Paper and article</strong></td>
+            <td>Moodle / Wikipedia</td>
         </tr>
  
 	
@@ -125,7 +143,7 @@ Wikipedia].
 <h3>Assessment</h3>
 
 <p>You will write two things: a <strong>Wikipedia article</strong> and a
-<strong>short academic paper</strong>, both due on 15 January.  In addition to the final paper, you will submit drafts, and comment on each other's work.  The
+<strong>short academic paper</strong>, both due on {{ deadlines.final|pretty }}.  In addition to the final paper, you will submit drafts, and comment on each other's work.  The
 <a href="{{ url_for('assessment') }}">assessment page</a> has the all details:
 what to write, how it is marked, the citation style, and the rules about
 using AI.</p>

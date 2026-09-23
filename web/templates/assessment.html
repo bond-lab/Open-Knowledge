@@ -21,7 +21,7 @@ with a slide, this page is correct.</p>
 </ul>
 
 <p>We focus on <strong>environmental issues</strong> in the writing practice.
-Both articles are due on <strong>15 January</strong>: submit the paper in Moodle, and have a complete article in Wikipedia.</p>
+Both articles are due on <strong>{{ deadlines.final|pretty }}</strong>: submit the paper in Moodle, and have a complete article in Wikipedia.</p>
 
 
 <h3 id="subtasks">Sub-tasks</h3>
@@ -30,15 +30,6 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
 <strong>but you must complete them all ON TIME to graduate</strong>.</p>
 
 <ol class="tasks">
-  <li><a href="{{ url_for('week', week_key='intro') }}#task">Three paragraphs on
-    water use in data centres</a> &mdash; read the three texts and say what each
-    claims, where they differ, and which you trusted most.
-    <div class="meta"><strong>Time:</strong> 2&ndash;3 hours &mdash; about an
-      hour reading, an hour writing.</div>
-    <div class="meta"><strong>Deliverable:</strong> upload to Moodle by
-      <strong>Sunday 11 October</strong>, and bring a printed copy to class on
-      13 October &mdash; you will swap it with a classmate.</div></li>
-
   <li><strong>A topic, and three references</strong>: the question you want your
     paper to answer, plus three sources you have actually found, one line each.
     This is a feasibility check, not a bibliography: if you cannot find three
@@ -46,8 +37,19 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
     <div class="meta"><strong>Time:</strong> about 1 hour &mdash; longer if the
       first topic does not survive, which is the point of doing it now.</div>
     <div class="meta"><strong>Deliverable:</strong> upload to Moodle before the
-      <a href="{{ url_for('week', week_key='writing') }}">academic writing
-      session</a>, <strong>13 October</strong>.</div></li>
+      <a href="{{ url_for('week', week_key='message') }}">first writing
+      session</a>, <strong>{{ weeks.message.date|pretty }}</strong> &mdash; we
+      work on your own topics in that class, so bring it with you.</div></li>
+
+  <li><a href="{{ url_for('week', week_key='intro') }}#task">Three paragraphs on
+    water use in data centres</a> &mdash; read the three texts and say what each
+    claims, where they differ, and which you trusted most.
+    <div class="meta"><strong>Time:</strong> 2&ndash;3 hours &mdash; about an
+      hour reading, an hour writing.</div>
+    <div class="meta"><strong>Deliverable:</strong> upload to Moodle by
+      <strong>Sunday {{ deadlines.task|pretty }}</strong>, and bring a printed copy
+      to class on {{ weeks.sources.date|pretty }} &mdash; you will swap it with a
+      classmate that day.</div></li>
 
   <li><strong>Annotated bibliography</strong>: five or more sources in APA 7,
     with two or three sentences on each saying what it shows, how far you trust
@@ -55,8 +57,8 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
     <div class="meta"><strong>Time:</strong> 3&ndash;4 hours &mdash; finding and
       skimming the sources is most of it.</div>
     <div class="meta"><strong>Deliverable:</strong> upload to Moodle by the
-      <a href="{{ url_for('week', week_key='fair') }}">FAIR and ethics
-      session</a>, <strong>10 November</strong>, and have it with you in class
+      <a href="{{ url_for('week', week_key='fair') }}">FAIR
+      session</a>, <strong>{{ weeks.fair.date|pretty }}</strong>, and have it with you in class
       that day, on paper or on screen &mdash; we work from it.</div></li>
 
   <li><strong>A complete draft</strong>, formatted as described below.
@@ -65,8 +67,8 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
       December.</div>
     <div class="meta"><strong>Deliverable:</strong> post in the <em>Peer
       review: papers</em> forum in Moodle before the
-      <a href="{{ url_for('week', week_key='peer_review') }}">peer review
-      session</a> on <strong>8 December</strong>, and bring a printed copy to
+      <a href="{{ url_for('week', week_key='workshop') }}">peer review
+      workshop</a> on <strong>{{ weeks.workshop.date|pretty }}</strong>, and bring a printed copy to
       class.  Without a draft you cannot take part, and the people reviewing
       you have nothing to read.</div></li>
 
@@ -74,7 +76,7 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
     <div class="meta"><strong>Time:</strong> 2&ndash;3 hours &mdash; about an
       hour per draft to read it and write something useful.</div>
     <div class="meta"><strong>Deliverable:</strong> reply in each of the two
-      forum threads by <strong>15 December</strong>.  The written feedback
+      forum threads by <strong>{{ deadlines.reviews|pretty }}</strong>.  The written feedback
       <em>is</em> marked &mdash; see <a href="#marks">how it is marked</a>.</div>
     <ul>
       <li>Reviews are <strong>open</strong>: your name is on them and the whole
@@ -89,7 +91,7 @@ Both articles are due on <strong>15 January</strong>: submit the paper in Moodle
     were given.
     <div class="meta"><strong>Time:</strong> 4&ndash;6 hours.</div>
     <div class="meta"><strong>Deliverable:</strong> upload the final paper to
-      Moodle by <strong>15 January</strong>.</div></li>
+      Moodle by <strong>{{ deadlines.final|pretty }}</strong>.</div></li>
 </ol>
 
 <p>Altogether that is roughly <strong>25&ndash;35 hours</strong> of your own
@@ -141,8 +143,8 @@ and last names and email address. This information should not need to
 	  be at the top of the first page, not a separate page.
 	  <li>Make the citations as complete as possible, and justify your choice of sources in the paper.
       </ul>
-    <li><strong>Submit Draft</strong> for the <a href="{{ url_for('week', week_key='peer_review') }}">peer review session</a>.</li>
-    <li><strong>Revise</strong> and submit final paper (January 15).</li>
+    <li><strong>Submit Draft</strong> for the <a href="{{ url_for('week', week_key='workshop') }}">peer review workshop</a>.</li>
+    <li><strong>Revise</strong> and submit the final paper ({{ deadlines.final|pretty }}).</li>
   </ol>
 </section>
 
@@ -218,7 +220,7 @@ passing: you have to come to class, or have a good reason not to.  They carry no
 percentage of their own.
 
 <p>The mark itself is made up as follows.  Both the article and the paper are
-due on 15 January:
+due on {{ deadlines.final|pretty }}:
 
 <ul>
   <li> A Wikipedia article on a topic to be okayed by the lecturer

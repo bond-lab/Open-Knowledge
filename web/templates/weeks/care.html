@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ info.title }}</h2>
+
+<p>{{ info.date|pretty }}, {{ info.time }}.</p>
+
+<p>FAIR asks whether data can be found and reused.  <strong>CARE</strong> asks
+whether it should be &mdash; who it came from, who benefits, and who is
+harmed.  We finish with persuasion: how evidence gets bent, and what to do when
+your own results surprise you.  The
+<a href="{{ url_for('static', filename='pdf/wk-06-care.pdf')}}">slides</a>
+give more detail, as well as references.</p>
+
+<h3>Key topics</h3>
+<ul>
+  <li><strong>CARE principles</strong>
+    <ul>
+      <li><em>Collective Benefit</em>: who gains from sharing this data?</li>
+      <li><em>Authority to Control</em>: who decides how it can be used?</li>
+      <li><em>Responsibility</em>: are researchers accountable to those represented?</li>
+      <li><em>Ethics</em>: how can openness coexist with respect and consent?</li>
+    </ul>
+  </li>
+  <li><strong>Case study</strong>: <em>Archive of Our Own</em> (AO3) &mdash; a
+    community archive that is open, richly organised, and deliberately hard to
+    scrape.</li>
+  <li><strong>Generative AI and training data</strong> &mdash; consent, credit,
+    and the rule for this course.</li>
+  <li><strong>Ethical persuasive writing</strong> &mdash; how to argue fairly
+    without manipulating evidence.</li>
+  <li><strong>How (not) to lie with statistics</strong> &mdash; cherry-picking,
+    truncated axes, hidden uncertainty.</li>
+  <li><strong>When results surprise you</strong> &mdash; honest reporting,
+    alternative explanations, and learning from unexpected findings.</li>
+  <li><strong>Writing styles</strong> &mdash; scientific, creative and
+    encyclopedic, and how audience and purpose shape tone.</li>
+</ul>
+
+<h3>Why this matters</h3>
+<ul>
+  <li>CARE ensures openness does not harm people or communities.</li>
+  <li>Sound governance upstream prevents misleading communication downstream.</li>
+</ul>
+
+<p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
+&rarr;</a></p>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ info.title }}</h2>
+
+<p>{{ info.date|pretty }}, {{ info.time }}.</p>
+
+<p>What are you actually claiming, and how do you build a case for it?  The
+<a href="{{ url_for('static', filename='pdf/wk-03-message.pdf')}}">slides</a>
+cover thesis, argument and structure; finding and citing the sources that
+support them is
+<a href="{{ url_for('week', week_key='sources') }}">next week</a>.</p>
+
+
+<blockquote class="blockquote">
+  <p class="mb-0">The reason I’ve spent so long establishing [that writing helps you refine your thinking] is that it leads to another [point] that many people will find shocking. If writing down your ideas always makes them more precise and more complete, then no one who hasn’t written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.</p>
+<br>
+  <footer class="blockquote-footer"><cite>Putting Ideas into Words</cite> <a href='https://paulgraham.com/words.html'>(Paul Graham, 2022)</a></footer>
+  <footer class="blockquote-footer">Cited in <cite>How to think in writing</cite> <a href='https://henrikkarlsson.xyz/p/writing-to-think'>(Henrik Karlsson, 2024)</a></footer>
+</blockquote>
+
+
+<p><strong>Bring your topic and three references</strong> &mdash; see
+<a href="{{ url_for('assessment') }}#subtasks">the sub-tasks</a>.  We work on
+your own questions in this class.</p>
+
+<p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
+&rarr;</a></p>
+
+{% endblock %}

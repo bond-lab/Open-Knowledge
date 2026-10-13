@@ -200,3 +200,7 @@ local/
 \#*\#
 .\#*
 *.old
+
+## The ACL demo in wk-04 inputs the .bbl that BibTeX writes
+!slides/bibdemo/refs-acl.bbl
+slides/bibdemo/*.pdf

@@ -1,0 +1,27 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Allosso and Allosso(2019)}]{writinghandbook}
+Dan Allosso and S.~F. Allosso. 2019.
+\newblock \href {https://mlpp.pressbooks.pub/writinghandbook/} {\emph{A Short
+  Handbook for Writing Essays in the Humanities and Social Sciences}}.
+\newblock Minnesota Libraries Publishing Project.
+
+\bibitem[{{\v{C}}apek(1936)}]{capek1936}
+Karel {\v{C}}apek. 1936.
+\newblock \emph{V{\'a}lka s mloky [{W}ar with the Newts]}.
+\newblock Fr. Borov{\'y}, Praha.
+
+\bibitem[{Mytton(2021)}]{Mytton2021}
+David Mytton. 2021.
+\newblock \href {https://doi.org/10.1038/s41545-021-00101-w} {Data centre water
+  consumption}.
+\newblock \emph{npj Clean Water}, 4(1):11.
+
+\bibitem[{Reid(2024)}]{Reid:2024}
+E.~Shelley Reid. 2024.
+\newblock \href {https://doi.org/10.37514/PRA-B.2024.2265} {\emph{Rethinking
+  Your Writing: Rhetoric for Reflective Writers}}.
+\newblock The WAC Clearinghouse; University Press of Colorado.
+
+\end{thebibliography}

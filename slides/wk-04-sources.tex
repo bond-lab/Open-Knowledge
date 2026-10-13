@@ -26,64 +26,9 @@
 % =====================================================================
 
 
-\section{In class: reading each other's writing}
-
-% --- In-class activity: peer response to the water-use task ---------------
-\begin{frame}{In class: read each other's paragraphs}
-You each read the same three texts on water use in data centres, and wrote
-three paragraphs.  Now swap with the person next to you.
-\begin{itemize}
-  \item \textbf{Read it once without writing anything} \hfill 5 min
-  \item \textbf{Then answer four questions on the worksheet} \hfill 10 min
-    \begin{enumerate}
-    \item What is this writer's \textbf{claim}?  One sentence, in your own words.
-    \item Which text did they \textbf{trust most}, and on what grounds?
-    \item Do you agree with their \textbf{judgement of the sources}?
-    \item Do you agree with their \textbf{conclusion} about water?
-    \end{enumerate}
-  \item \textbf{Talk in pairs} --- start with question 1, and let the writer
-    say whether that is what they meant \hfill 10 min
-\end{itemize}
-\vspace{1ex}
-Useful feedback is specific: point at a sentence.  ``I disagree'' is not
-feedback; ``your second paragraph claims X, but the source you cite says Y''
-is.  \hfill {\footnotesize (worksheet also on the course website)}
-\end{frame}
-
-\begin{frame}{Questions 3 and 4 are not the same question}
-\begin{itemize}
-  \item You can think a text is \textbf{well evidenced} and still think its
-    \textbf{conclusion} is wrong
-  \item You can agree with a conclusion that rests on \textbf{nothing}
-  \item Keeping those apart is the whole job:
-    \begin{itemize}
-    \item it is what a peer reviewer does in December
-    \item it is what \textbf{neutral point of view} asks of you on Wikipedia:
-      report what the sources say, whatever you think of it
-    \end{itemize}
-\end{itemize}
-\vspace{2ex}
-\textbf{Watch for this in your answers:} Masley says data centres use 0.008\%
-of US fresh water.  \citet{Mytton2021} and the Wikipedia article talk about
-stress on \emph{particular} watersheds.  Neither is lying.  They chose
-different things to compare against --- and that choice does most of the
-persuading.
-\end{frame}
 
 
 \section{What are good sources?}
-
- 
-
-
-
-
-
-
-
-
-
-
 
 \begin{frame}{Judging a source: the source itself}
 \small
@@ -212,7 +157,51 @@ is the mistake.  Evaluation is judgement, not a checklist.
 
 
 % =====================================================================
+\section{In class: reading each other's writing}
 
+% --- In-class activity: peer response to the water-use task ---------------
+\begin{frame}{In class: read each other's paragraphs}
+You each read the same three texts on water use in data centres, and wrote
+three paragraphs.  Now swap with the person next to you.
+\begin{itemize}
+  \item \textbf{Read it once without writing anything} \hfill 5 min
+  \item \textbf{Then answer four questions on the worksheet} \hfill 10 min
+    \begin{enumerate}
+    \item What is this writer's \textbf{claim}?  One sentence, in your own words.
+    \item Which text did they \textbf{trust most}, and on what grounds?
+    \item Do you agree with their \textbf{judgement of the sources}?
+    \item Do you agree with their \textbf{conclusion} about water?
+    \end{enumerate}
+  \item \textbf{Talk in pairs} --- start with question 1, and let the writer
+    say whether that is what they meant \hfill 10 min
+\end{itemize}
+\vspace{1ex}
+Useful feedback is specific: point at a sentence.  ``I disagree'' is not
+feedback; ``your second paragraph claims X, but the source you cite says Y''
+is.  \hfill {\footnotesize (worksheet also on the course website)}
+\end{frame}
+
+\begin{frame}{Questions 3 and 4 are not the same question}
+\begin{itemize}
+  \item You can think a text is \textbf{well evidenced} and still think its
+    \textbf{conclusion} is wrong
+  \item You can agree with a conclusion that rests on \textbf{nothing}
+  \item Keeping those apart is the whole job:
+    \begin{itemize}
+    \item it is what a peer reviewer does in December
+    \item it is what \textbf{neutral point of view} asks of you on Wikipedia:
+      report what the sources say, whatever you think of it
+    \end{itemize}
+\end{itemize}
+\vspace{2ex}
+\textbf{Watch for this in your answers:} Masley says data centres use 0.008\%
+of US fresh water.  \citet{Mytton2021} and the Wikipedia article talk about
+stress on \emph{particular} watersheds.  Neither is lying.  They chose
+different things to compare against --- and that choice does most of the
+persuading.
+\end{frame}
+
+% ==========================================================
 \section{How can I make it easy for my reader?}
 
 \begin{frame}{Make the Information Accessible}
@@ -262,6 +251,57 @@ is the mistake.  Evaluation is judgement, not a checklist.
   \item Differences usually make sense: books have titles/pages; tweets usually do not.
   \item Match the pattern to the \textbf{actual source features}.
   \item Avoid adding \textbf{unnecessary information}.
+\end{itemize}
+\end{frame}
+
+% --- Same .bib file (bibdemo/demo.bib), two styles.
+% APA comes from this deck's own biblatex; ACL is the .bbl that BibTeX wrote
+% for bibdemo/refs-acl.tex (rebuild: cd bibdemo; latexmk -lualatex refs-acl)
+\begin{frame}{Same four references, two styles}
+\footnotesize
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\bibitemsep}{0.4ex}
+\setbeamertemplate{bibliography item}{}
+\setbeamercolor{bibliography entry author}{fg=normal text.fg}
+\setbeamercolor{bibliography entry title}{fg=normal text.fg}
+\setbeamercolor{bibliography entry location}{fg=normal text.fg}
+\setbeamercolor{bibliography entry note}{fg=normal text.fg}
+\textbf{\small APA 7} {\small (this course)}
+\begin{refsection}[bibdemo/demo.bib]
+  \nocite{Mytton2021,Reid:2024,writinghandbook,capek1936}
+  \printbibliography[heading=none]
+\end{refsection}
+
+\vspace{1ex}
+\textbf{\small ACL} {\small (computational linguistics)}
+\begingroup
+  \renewenvironment{thebibliography}[1]
+    {\setlength{\parindent}{0pt}\setlength{\parskip}{0.4ex}}{\par}
+  \renewcommand{\bibitem}[2][]{\par\hangindent=2em\hangafter=1}
+  \renewcommand{\newblock}{}
+  \input{bibdemo/refs-acl.bbl}
+\endgroup
+\end{frame}
+
+\begin{frame}[fragile]{The software does the formatting}
+You type each reference \textbf{once}, in a \texttt{.bib} file:
+\begin{verbatim}
+@article{Mytton2021,
+  author  = {Mytton, David},
+  title   = {Data centre water consumption},
+  journal = {npj Clean Water},
+  volume  = {4}, number = {1}, pages = {11}, year = {2021},
+  doi     = {10.1038/s41545-021-00101-w}}
+\end{verbatim}
+Then you choose the style:
+\begin{verbatim}
+\usepackage[style=apa]{biblatex}      % APA 7
+\bibliographystyle{acl_natbib}        % ACL
+\end{verbatim}
+\begin{itemize}
+  \item Full names or initials, year first or second, sentence or title case,
+    DOI shown or linked: all decided by the style, not by you
+  \item Zotero does the same in Word: pick a different style from a menu
 \end{itemize}
 \end{frame}
 
@@ -330,7 +370,8 @@ is the mistake.  Evaluation is judgement, not a checklist.
 \item Bibliography managers and library export tools can \textbf{misformat} elements.
   \begin{itemize}
   \item E.g. Nurril Hirfana binte Mohamed Noor, Suerya binte Sapuan and Francis Bond (2011)
-    \\ cite as Nurril Hirfana, Suerya and Bond (2011) 
+    \\ cite as Nurril Hirfana, Suerya and Bond (2011)
+    \\ \textit{binte} means ``daughter of''
   \end{itemize}
   \item You must still \textbf{proofread} citations against the style rules.
   \item Learn enough of the code to \textbf{spot errors} quickly.

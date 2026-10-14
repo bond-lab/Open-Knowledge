@@ -4,6 +4,16 @@
 <h2>{{ info.title }}</h2>
 <p>This is the content for <i>{{ info.title }}</i>, scheduled for {{ info.date }}.</p>
 
+<h3>And something lighter</h3>
+<div class="lighter">
+  <figure>
+    <a href="https://xkcd.com/285/"><img src="{{ url_for('static', filename='img/lighter/xkcd-285.jpg') }}"
+      alt="xkcd comic: a protester at a rally holds a sign reading 'citation needed'" loading="lazy"></a>
+    <figcaption><a href="https://xkcd.com/285/">xkcd 285: Wikipedian Protester</a> &mdash; <em>[citation needed]</em>.
+      (<a href="https://www.explainxkcd.com/wiki/index.php/285:_Wikipedian_Protester">explained</a>)</figcaption>
+  </figure>
+</div>
+
 <p class="mt-4"><a href="{{ url_for('assessment') }}">What you have to hand in
 &rarr;</a></p>
 

@@ -25,7 +25,19 @@
      citecolor={red!50!black},
      urlcolor={blue!80!black}
    }
+% PDF properties: beamer fills in Title and Author from \title and \author.
+% Week 5 shows this deck's own properties as an example of metadata.
+\hypersetup{
+     pdfsubject={Open Knowledge for a Sustainable Future: Research, Ethics,
+       and Wikipedia (Palacký University Olomouc)},
+     pdfkeywords={open knowledge, research ethics, Wikipedia, FAIR data,
+       CARE principles, academic writing, peer review},
+     pdflang={en},
+     pdfinfo={License={CC BY 4.0},
+       LicenseURL={https://creativecommons.org/licenses/by/4.0/}}
+   }
 \usepackage{booktabs}
+\usepackage{fvextra}   % Verbatim with line breaking (week 5 metadata examples)
 \usepackage{microtype}
 
 \newcommand{\txx}[1]{\textbf{\textcolor{blue}{#1}}}

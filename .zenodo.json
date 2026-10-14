@@ -1,0 +1,18 @@
+{
+  "title": "Open Knowledge for a Sustainable Future: Research, Ethics, and Wikipedia",
+  "description": "Course materials (slides, handouts and website) for a course at Palacký University Olomouc on writing (both academic and for Wikipedia), finding, judging and citing sources, FAIR and CARE data, feedback and peer review.",
+  "upload_type": "lesson",
+  "creators": [
+    {"name": "Bond, Francis", "affiliation": "Palacký University Olomouc",
+     "orcid": "0000-0003-4973-8068"},
+    {"name": "Bednařík, Pavel", "affiliation": "Wikimedia ČR"}
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": ["open knowledge", "research ethics", "Wikipedia", "FAIR data",
+               "CARE principles", "academic writing", "peer review"],
+  "related_identifiers": [
+    {"identifier": "https://bond-lab.github.io/Open-Knowledge/",
+     "relation": "isDocumentedBy", "resource_type": "other"}
+  ]
+}

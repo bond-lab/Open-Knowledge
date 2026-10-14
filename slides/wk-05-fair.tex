@@ -55,6 +55,7 @@ FAIR data makes research more transparent, verifiable, and sustainable.
 % =========================
 % FINDABLE
 % =========================
+\subsection{Findable}
 \begin{frame}{\txx{Findable}: why it matters}
 \begin{itemize}
   \item Data has little value if no one can locate it.  
@@ -81,9 +82,61 @@ FAIR data makes research more transparent, verifiable, and sustainable.
 \end{itemize}
 \end{frame}
 
+% --- Persistent identifiers for people (foreshadowed in week 4)
+\begin{frame}{Identifiers for people: ORCID}
+\begin{itemize}
+  \item A DOI identifies a work; an \href{https://orcid.org/}{ORCID iD}
+    identifies the person who made it
+    \begin{itemize}
+    \item 16 digits: Francis's is \href{https://orcid.org/0000-0003-4973-8068}{0000-0003-4973-8068}
+    \item Free, run by a non-profit; it stays with you when you change
+      institution or name
+    \end{itemize}
+  \item It solves the name problem from week 4
+    \begin{itemize}
+    \item Nurril Hirfana binte Mohamed Noor, Nurril Hirfana, or N.~H. Mohamed Noor?
+    \item Or the many F.~Bonds
+    \end{itemize}
+  \item Journals, funders and repositories ask for it when you submit,
+    and put it in the metadata (as in the \texttt{.zenodo.json} two slides on)
+  \item Wikidata links people to it too:
+    \href{https://www.wikidata.org/wiki/Property:P496}{property P496}
+  \item Registration at \href{https://orcid.org/}{orcid.org} is free
+\end{itemize}
+\end{frame}
+
+% --- Metadata examples: this deck's own PDF properties (set in shared.tex)
+% and the repository's .zenodo.json (read from the file, so it stays current)
+\begin{frame}[fragile]{Metadata inside the file: this PDF}
+\texttt{pdfinfo -custom wk-05-fair.pdf} (or \emph{File $\rightarrow$
+Properties} in a PDF reader):
+\begin{Verbatim}[fontsize=\scriptsize,breaklines]
+Title:      Open Knowledge for a Sustainable Future: Research, Ethics, and Wikipedia - Week 5 — FAIR: making data findable and reusable
+Author:     Francis Bond (Academic), Pavel Bednařík (Wiki)
+Subject:    Open Knowledge for a Sustainable Future: Research, Ethics, and Wikipedia (Palacký University Olomouc)
+Keywords:   open knowledge, research ethics, Wikipedia, FAIR data, CARE principles, academic writing, peer review
+License:    CC BY 4.0
+LicenseURL: https://creativecommons.org/licenses/by/4.0/
+Producer:   LuaTeX-1.22.0
+\end{Verbatim}
+\begin{itemize}
+  \item A few lines in the \LaTeX{} preamble; in Word: \emph{File $\rightarrow$
+    Info $\rightarrow$ Properties}
+  \item Search engines and reference managers read these fields
+  \item The metadata travels with the file: email it, and the licence goes too
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Metadata for a repository: \texttt{.zenodo.json}}
+\VerbatimInput[fontsize=\scriptsize,breaklines]{../.zenodo.json}
+\small Put this in a GitHub repository connected to
+\href{https://zenodo.org/}{Zenodo}: each release is archived, with a DOI.
+\end{frame}
+
 % =========================
 % ACCESSIBLE
 % =========================
+\subsection{Accessible}
 \begin{frame}{\txx{Accessible}: why it matters}
 \begin{itemize}
   \item Even well-described data is useless if people can’t reach it.  
@@ -111,6 +164,7 @@ Access is about clarity and stability, not about giving everything away.  For se
 % =========================
 % INTEROPERABLE
 % =========================
+\subsection{Interoperable}
 \begin{frame}{\txx{Interoperable}: why it matters}
 \begin{itemize}
   \item Science advances when we can combine data from many sources.  
@@ -145,6 +199,7 @@ Interoperable data talks easily to other data.
 % =========================
 % REUSABLE
 % =========================
+\subsection{Reusable}
 \begin{frame}{\txx{Reusable}: why it matters}
 \begin{itemize}
   \item Good data should outlive the project that created it.  
@@ -173,6 +228,9 @@ A survey of wordnets and their licenses In \textit{Proceedings of the 6th Global
 \end{exampleblock}
   
 \end{frame}
+% =====================================================================
+\section{Open Licenses and Publications}
+
 % =========================
 % Open Licences and the Open Definition
 % =========================
@@ -232,16 +290,11 @@ Responsible openness means balancing transparency with care, consent, and contex
     manuscript in a repository --- your university's, or a subject archive
     such as arXiv or LingBuzz.
   \item \textbf{Predatory venues} take the APC and skip the peer review.
-    Check the journal against the DOAJ, and see whether you recognise anyone
+    Check the journal against the \href{https://doaj.org/}{DOAJ}, and see whether you recognise anyone
     on the editorial board.
 \end{itemize}
-\medskip
-\textit{Who pays, and at which end, decides who gets to read you.}
 \end{frame}
 
-% =========================
-% CARE Principles: Introduction and Four Dimensions
-% =========================
 
 \section{Practice!}
 
@@ -279,13 +332,12 @@ Responsible openness means balancing transparency with care, consent, and contex
       \item \textbf{FAIR:} can you \emph{find} it by DOI or stable URL, can you
         actually \emph{read} it, is its data or method reusable, is the licence clear?
       \item \textbf{CARE:} whose data or words does it rest on?  Did they
-        consent?  Who benefits from it being published?
+        consent?  Who benefits from it being published? (we will look at these in more detail next week)
     \end{itemize}
   \item \textbf{Part 3 (5 min):} decide together --- keep it, replace it, or
     cite it \emph{with} its limitations stated.  \textbf{Rewrite that
     annotation} before you leave.
 \end{itemize}
-\textit{Our goal: to read sources not only for what they say, but for how responsibly they were created.}
 \end{frame}
 
 % --- STUDENT ASSIGNMENT CONTEXT
@@ -321,27 +373,12 @@ I want to see how well you can use your sources to answer the question, as accur
 \begin{frame}[allowframebreaks]{Acknowledgements}
   \small
   \begin{itemize}
-  \item \textbf{Temperature graphs:} the two US 48-state plots come from
-    Tamino's \href{https://tamino.wordpress.com/2013/03/04/cherry-picking-is-childs-play/}{Open Mind}
-    post \textit{Cherry-Picking is Child's Play} (2013-03-04), which is
-    rebutting John Coleman, reposted by Anthony Watts.  The six-dataset
-    comparison is from
-    \href{https://www.climate.gov.ph/news/416}{the Philippine Climate Change Commission},
-    who credit Berkeley Earth.
-  \item \textbf{Bar charts:} the truncated and untruncated bar graphs are from
-    \href{https://en.wikipedia.org/wiki/Misleading_graph}{Wikipedia: Misleading graph} (CC BY-SA).
   \item \textbf{FAIR material} draws on
     \href{https://au-research.github.io/FAIR-data-101-training/}{FAIR Data 101}
     (Australian Research Data Commons, CC BY 4.0) and \citet{FAIR2016}.
-  \item \textbf{CARE material} draws on the Global Indigenous Data Alliance
-    \citep{CARE2020}.
-  \item \textbf{The AO3 case study} rests on the
-    \href{https://archiveofourown.org/}{Archive of Our Own} and the
-    Organization for Transformative Works, including their statement on
-    \href{https://www.transformativeworks.org/ai-and-data-scraping-on-the-archive/}{AI and data scraping on the Archive}.
-  \item \textbf{AI disclosure:} \textcite{openai-chatgpt-2025-03-14} (ChatGPT,
-    OpenAI) was used to format the references and to draft an early version of
-    these slides.
+  \item \textbf{AI disclosure:} \textbf{GPT-4o} in ChatGPT
+    \citep{openai-chatgpt-2025-03-14} was used to format the references and
+    to draft an early version of these slides.
   \aicheck
   \end{itemize}
 \end{frame}

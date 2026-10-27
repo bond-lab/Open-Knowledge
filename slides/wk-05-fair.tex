@@ -33,23 +33,26 @@
 % --- FAIR intro
 \begin{frame}{Why FAIR Data?}
 \begin{itemize}
-  \item \txx{Findable} — So that other researchers (and future you) can actually discover your data.  
- \\ \quad  \emph{If no one can find it, it might as well not exist.}
-
-  \item \txx{Accessible} — So that once found, data can be retrieved easily and safely.  
- \\ \quad \emph{Access should be possible even years later, with clear rules if restrictions apply.}
-
-  \item \txx{Interoperable} — So that data from different projects can be combined or compared.  
- \\ \quad  \emph{Shared formats and vocabularies let computers and people understand each other.}
-
-  \item \txx{Reusable} — So that data can be meaningfully used beyond its original purpose.  
- \\ \quad  \emph{Good documentation and clear licensing allow others to build on your work.}
+  \item \txx{Findable}: other researchers (and future you) can discover your data
+    \begin{itemize}
+    \item If no one can find it, it might as well not exist
+    \end{itemize}
+  \item \txx{Accessible}: once found, the data can be retrieved
+    \begin{itemize}
+    \item Even years later, with stated rules if access is restricted
+    \end{itemize}
+  \item \txx{Interoperable}: data from different projects can be combined or compared
+    \begin{itemize}
+    \item Shared formats and vocabularies, for computers and for people
+    \end{itemize}
+  \item \txx{Reusable}: data can be used beyond its original purpose
+    \begin{itemize}
+    \item Documentation and a licence let others build on your work
+    \end{itemize}
 \end{itemize}
 
 \medskip
-FAIR data makes research more transparent, verifiable, and sustainable.
-
-\tiny Sources: \citep{FAIR2016}, 
+\tiny Sources: \citep{FAIR2016},
 \href{https://au-research.github.io/FAIR-data-101-training/}{FAIR Data 101} (ARDC, CC BY 4.0; accessed 2026-09-20)
 \end{frame}
 % =========================
@@ -58,27 +61,71 @@ FAIR data makes research more transparent, verifiable, and sustainable.
 \subsection{Findable}
 \begin{frame}{\txx{Findable}: why it matters}
 \begin{itemize}
-  \item Data has little value if no one can locate it.  
-  \item Clear titles, metadata, and persistent identifiers (like DOIs) make your work visible to both people and search engines.  
-  \item When data is easy to find, it is easier to cite — increasing your impact and ensuring credit.
+  \item Data no one can find has no value
+  \item Titles, metadata and persistent identifiers (DOIs) make your work visible to people and to search engines
+  \item Data that is easy to find is easy to cite: you get the credit
 \end{itemize}
-\medskip
-\txx{Findable} is putting your data on the map.
 \end{frame}
 
 \begin{frame}{Making data findable}
 \begin{itemize}
-  \item Use descriptive, consistent names for datasets and files.  
-  \item Add rich metadata — who, what, when, where, why.
+  \item Use descriptive, consistent names for datasets and files
+  \item Add rich metadata: who, what, when, where, why
     \begin{itemize}
     \item Use standard terms, so people can find them easily
     \end{itemize}
-  \item Register your dataset in a trusted repository with a permanent identifier (e.g., Zenodo, Dataverse).  
-  \item Cross-link: paper $\leftrightarrow$ dataset $\leftrightarrow$ code.
+  \item Register your dataset in a trusted repository with a permanent identifier (e.g., Zenodo, Dataverse)
+  \item Cross-link: paper $\leftrightarrow$ dataset $\leftrightarrow$ code
   \item This applies to governments and companies as well as academia
     \begin{itemize}
     \item Making data findable should be part of making the data!
     \end{itemize}
+\end{itemize}
+\end{frame}
+
+% --- Persistent identifiers for works (after Francis's LTI week 10 DOI frames)
+\begin{frame}{Identifiers for works: DOI}
+\begin{itemize}
+  \item We need persistent identifiers: an ISBN names a book wherever it is
+    shelved; a \txx{Digital Object Identifier} names a paper, dataset or
+    program wherever it is hosted
+  \item \texttt{10.1007/s10579-008-9062-z}: a prefix for the publisher
+    (10.1007 is Springer), a suffix they choose
+  \item \url{https://doi.org/10.1007/s10579-008-9062-z} redirects to wherever
+    the paper is now
+    \begin{itemize}
+    \item In 2009 the record pointed to
+      \texttt{springerlink.com/content/v7q114033401th5u/}: that URL is dead
+    \item Today it goes to \texttt{link.springer.com}; the DOI did not change
+    \end{itemize}
+  \item Issued by registration agencies: Crossref for articles and books,
+    DataCite for data and software (Zenodo)
+    \begin{itemize}
+    \item About 275 million assigned so far
+    \item Publishers pay for theirs; Zenodo gives you one free
+    \end{itemize}
+\end{itemize}
+\medskip
+\tiny Source: \href{https://www.doi.org/the-identifier/what-is-a-doi/}{What is a DOI?}
+and \href{https://www.doi.org/the-identifier/resources/factsheets/key-facts-on-digital-object-identifier-system}{Key facts} (DOI Foundation; accessed 2026-10-27)
+\end{frame}
+
+\begin{frame}[fragile]{What a DOI knows}
+\begin{itemize}
+  \item The DOI carries its metadata: authors, title, venue, year, pages, current URL
+  \item So you can ask it for the citation:
+\begin{Verbatim}[fontsize=\scriptsize,breaklines]
+$ curl -L -H "Accept: text/x-bibliography; style=apa" https://doi.org/10.1007/s10579-008-9062-z
+Bond, F., Fujita, S., & Tanaka, T. (2008). The Hinoki syntactic and semantic treebank
+of Japanese. Language Resources and Evaluation, 42(2), 243-251.
+https://doi.org/10.1007/s10579-008-9062-z
+\end{Verbatim}
+    \begin{itemize}
+    \item This is what your reference manager does (week 4)
+    \end{itemize}
+  \item Citations can be counted: one identifier, not ten URLs for the same paper
+  \item No DOI (older papers, LingBuzz, websites)? Give a stable URL and the date you read it
+  \item A DOI that does not resolve is a warning sign (week 6)
 \end{itemize}
 \end{frame}
 
@@ -139,25 +186,25 @@ Producer:   LuaTeX-1.22.0
 \subsection{Accessible}
 \begin{frame}{\txx{Accessible}: why it matters}
 \begin{itemize}
-  \item Even well-described data is useless if people can’t reach it.  
-  \item Accessibility ensures that others can actually download or view your work \\ — now and in the future.  
-  \item It also clarifies boundaries: who can use the data, under what conditions.
+  \item Well-described data is useless if no one can reach it
+  \item Others can download or view your work, now and in the future
+  \item The access rules say who can use the data, and under what conditions
+  \item Accessible does not mean open: sensitive language or cultural data
+    can have access rules, as long as they are stated (more next week)
 \end{itemize}
-\medskip
-Access is about clarity and stability, not about giving everything away.  For sensitive language/cultural data, clarity of access rules is part of the ethics record.
 \end{frame}
 
 \begin{frame}{Making data accessible}
 \begin{itemize}
-  \item Store your data in repositories that use open web standards (HTTP/HTTPS).  
+  \item Store your data in repositories that use open web standards (HTTP/HTTPS)
     \begin{itemize}
-    \item Use persistent repositories 
+    \item Use persistent repositories
     \item Support persistent repositories
-    \item Data from companies is typically very perishable
+    \item Company data is perishable: when the product goes, so does the data
     \end{itemize}
-  \item Keep metadata available even if files must be restricted.  
-  \item Explain how others can request access if necessary.  
-  \item Test from a new computer — can someone else follow your instructions?
+  \item Keep metadata available even if files must be restricted
+  \item Explain how others can request access if necessary
+  \item Test from a new computer: can someone else follow your instructions?
 \end{itemize}
 \end{frame}
 
@@ -167,30 +214,27 @@ Access is about clarity and stability, not about giving everything away.  For se
 \subsection{Interoperable}
 \begin{frame}{\txx{Interoperable}: why it matters}
 \begin{itemize}
-  \item Science advances when we can combine data from many sources.  
-  \item Interoperability allows your work to connect with others’
-    \\ \quad — across languages, disciplines, and tools.  
-  \item Shared standards prevent “data silos” that only one group can use.
+  \item Most questions need data from more than one source
+  \item Your data can connect with others', across languages, disciplines and tools
+  \item Shared standards stop data ending up in silos only one group can use
 \end{itemize}
-\medskip
-Interoperable data talks easily to other data.
 \end{frame}
 
 \begin{frame}{Making data interoperable}
 \begin{itemize}
-\item Use open, non-proprietary formats (CSV, JSON, XML).
+\item Use open, non-proprietary formats (CSV, JSON, XML)
   \begin{itemize}
   \item Text is better than binary, as you can always read it
   \end{itemize}
-\item Follow community conventions for terminology and encoding.  
-\item Provide clear documentation of structure and meaning.  
-\item Link to external vocabularies or identifiers when possible.
+\item Follow community conventions for terminology and encoding
+\item Provide clear documentation of structure and meaning
+\item Link to external vocabularies or identifiers when possible
   \begin{itemize}
-  \item e.g. \href{https://en.wikipedia.org/wiki/ISO_639}{ISO 639} for the representation of languages and language groups.
+  \item \href{https://en.wikipedia.org/wiki/ISO_639}{ISO 639} for languages and language groups
     \begin{itemize}
     \item English: en, eng (ISO 639-1, 2\&3)
     \item Czech: cs, cze/ces, ces (ISO 639-1, 2-B/T, 3)
-    \item the parts were consolidated into a single standard, ISO 639:2023, where they are now called sets --- the codes are unchanged
+    \item Since ISO 639:2023 the parts are called sets; the codes are unchanged
     \end{itemize}
   \end{itemize}
 \end{itemize}
@@ -202,56 +246,158 @@ Interoperable data talks easily to other data.
 \subsection{Reusable}
 \begin{frame}{\txx{Reusable}: why it matters}
 \begin{itemize}
-  \item Good data should outlive the project that created it.  
-  \item Reuse lets others verify results, test new questions, and save time.  
-  \item Well-documented and licensed data reduce duplication and waste.
-  \item Producing data is the job of many agencies,  but if no one uses it, it is wasted effort, \ldots
+  \item Good data should outlive the project that created it
+  \item Reuse lets others verify results, test new questions, and save time
+  \item Documented, licensed data saves others from collecting it again
+  \item Many agencies produce data as their job; if no one uses it, the effort is wasted
+  \item Reuse is the payoff for the rest of FAIR
 \end{itemize}
-\medskip
-Reuse is the payoff — the reward for all your FAIR effort.
 \end{frame}
 
 \begin{frame}{Making data reusable}
 \begin{itemize}
-  \item Include full context: how the data was collected, cleaned, and analysed.
-  \item Choose a clear licence (e.g., CC BY or CC BY-SA).
-  \item Describe known limitations or ethical constraints.  
-  \item Provide examples of how to cite or acknowledge your dataset.
+  \item Include full context: how the data was collected, cleaned, and analysed
+  \item Choose a clear licence (e.g., CC BY or CC BY-SA)
+  \item Describe known limitations or ethical constraints
+  \item Provide examples of how to cite or acknowledge your dataset
   \end{itemize}
-  \begin{exampleblock}{Citing the \href{https://omwn.org/}{Open Multilingual Wordnet}}
-  If you use these wordnets, please cite the original projects who created them, if you got value from this aggregation/normalization, please cite Bond and Paik (2012).
+  \begin{exampleblock}{How the \href{https://omwn.org/}{Open Multilingual Wordnet} asks to be cited (omwn.org)}
+  ``If you use these wordnets, please cite the original projects who created them, if you got value from this aggregation/normalization, please cite Bond and Paik (2012).''
   \medskip
-  
+
     \textbf{References} \\
 Francis Bond and Kyonghee Paik (2012)
 A survey of wordnets and their licenses In \textit{Proceedings of the 6th Global WordNet Conference (GWC 2012)}. Matsue. 64–71
 \end{exampleblock}
-  
+
 \end{frame}
+% =====================================================================
+\section{Open Data Gets Better}
+
+% --- Linus's Law, applied to data
+\begin{frame}{Many Eyes Make Bugs Shallow}
+\begin{itemize}
+  \item Linus's Law, as \citet{raymond1999cathedral} named it:
+    \begin{itemize}
+    \item ``Given enough eyeballs, all bugs are shallow''
+    \end{itemize}
+  \item In open source software every user is a tester, and someone will
+    find the fix obvious
+    \begin{itemize}
+    \item The person who finds a bug is usually not the one who fixes it
+    \end{itemize}
+  \item The same holds for data
+    \begin{itemize}
+    \item A closed dataset is checked by the people who made it
+    \item An open dataset is checked by everyone who uses it
+    \item Each new use looks at the data from a new angle, and finds new errors
+    \end{itemize}
+  \item From our own work: when we gathered the world's wordnets in 2008,
+    Princeton WordNet had a loop in its hierarchy and the Global WordNet grid
+    had broken encodings
+    \begin{itemize}
+    \item No one had noticed, because few people had tried to combine them
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+% --- Many small contributions
+\begin{frame}{Many Small Contributions}
+\begin{itemize}
+  \item Each contribution is small: a typo, a wrong language code, a missing
+    entry, a dead link
+  \item The sum is a resource no one group could build
+    \begin{itemize}
+    \item Wikipedia, OpenStreetMap, Wikidata, the wordnets, Linux
+    \end{itemize}
+  \item Finding the error is the hard part; the fix is usually trivial
+    \begin{itemize}
+    \item But only if the finder can report it, or fix it themselves
+    \end{itemize}
+  \item Fixes compound: a dataset that has been used for ten years has
+    had ten years of corrections
+  \item Credit matters: people contribute more when their fixes are seen
+    and acknowledged
+    \begin{itemize}
+    \item A contributors list, a changelog entry, a line in the paper
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+% --- Closing the loop
+\begin{frame}{Closing the Loop: Make It Easy to Contribute}
+\begin{itemize}
+  \item Give people somewhere to report problems: an issue tracker
+    (GitHub, GitLab) or a contact address in the README
+  \item Version the data, so a fix is a recorded change, not a new file
+    \begin{itemize}
+    \item Each release gets a DOI (as in the \texttt{.zenodo.json}): papers
+      can cite the version they used
+    \end{itemize}
+  \item Say how to contribute: a CONTRIBUTING file, a changelog, and
+    validators that check the data
+  \item Act on reports, and say thank you: an acknowledged fix brings the
+    next one
+  \item A licence that forbids redistribution breaks the loop: the fix
+    cannot be shared
+    \begin{itemize}
+    \item Which brings us to licences
+    \end{itemize}
+  \item These slides are on
+    \href{https://github.com/bond-lab/Open-Knowledge}{GitHub} under CC BY:
+    if you find a mistake, tell us!
+\end{itemize}
+\end{frame}
+
 % =====================================================================
 \section{Open Licenses and Publications}
 
 % =========================
 % Open Licences and the Open Definition
 % =========================
-\begin{frame}{Open licences and the Open Definition}
+\begin{frame}{The Open Definition  (Open Knowledge Foundation) }
 \begin{itemize}
-  \item \textbf{Open data} means more than free access — it means legal permission to \emph{use, modify, and share} without discrimination.  
-  \item The \textbf{Open Definition} (Open Knowledge Foundation) states that data is open if \\
-  “anyone can freely access, use, modify, and share for any purpose” 
-  — subject only to requirements of attribution and share-alike.
-  \item Common open licences:  
-    \begin{itemize}
-      \item \textbf{CC BY} – reuse with attribution.  
-      \item \textbf{CC BY-SA} – reuse with attribution and same licence (share-alike).  
-      \item \textbf{CC0 /Public Domain} – no restrictions.  
-      \item \textbf{ODC-BY} – for databases; attribution only.
-      \item \textbf{ODbL} – for databases; attribution \emph{and} share-alike.
-    \end{itemize}
-  \item Choosing the right licence ensures that your data remains reusable and legally safe.
+  \item \txx{Open data}: free access plus legal permission to use, modify and share, for anyone
+  \item The \href{https://opendefinition.org/od/2.1/en/}{Open Definition} 2.1 puts it in one sentence:
 \end{itemize}
-\medskip
-\textit{Openness is a design choice—licensing makes it possible, clarity makes it trustworthy.}
+\bigskip
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\begin{beamercolorbox}[sep=1em,rounded=true,shadow=true]{block body}
+  \centering\Large
+  ``Knowledge is open if anyone is free to \\
+  \textbf{access}, \textbf{use}, \textbf{modify}, and \textbf{share} it \\
+  --- subject, at most, to measures
+  that preserve provenance and openness.''
+\end{beamercolorbox}
+\end{minipage}
+\end{center}
+\bigskip
+\begin{itemize}
+  \item Provenance: say where it came from (attribution); openness: keep it open (share-alike)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Open licences}
+\begin{itemize}
+  \item For text, data and media:
+    \begin{itemize}
+      \item \textbf{CC BY}: reuse with attribution (these slides)
+      \item \textbf{CC BY-SA}: attribution and the same licence (share-alike): Wikipedia
+      \item \textbf{CC0} / public domain: no restrictions: Wikidata
+      \item \textbf{ODC-BY}: for databases; attribution only
+      \item \textbf{ODbL}: for databases; attribution and share-alike: OpenStreetMap
+    \end{itemize}
+  \item For code:
+    \begin{itemize}
+      \item \textbf{MIT} (also BSD, Apache 2.0): attribution only; the commonest on GitHub
+      \item \textbf{GPL}: share-alike (copyleft): Linux, R
+    \end{itemize}
+  \item Not open: \textbf{CC BY-NC} (no commercial use) and \textbf{CC BY-ND}
+    (no changes) fail the Definition, however common they are
+  \item No licence means all rights reserved: no one can legally reuse it,
+    however open you meant it to be
+\end{itemize}
 \end{frame}
 
 % =========================
@@ -259,19 +405,17 @@ A survey of wordnets and their licenses In \textit{Proceedings of the 6th Global
 % =========================
 \begin{frame}{When not to use open licences}
 \begin{itemize}
-  \item Openness is a virtue, but not a universal rule.  
-  \item Some data should \emph{not} be released under open licences because openness could cause harm.
-  \item Examples include:
+  \item Some data should not be released openly, because openness could cause harm
+  \item Examples:
     \begin{itemize}
-      \item Personal or medical information that identifies individuals.  
-      \item Cultural or linguistic materials shared under community protocols.  
-      \item Locations of endangered species or sacred sites.  
-      \item Data collected without full, informed consent for public reuse.
+      \item Personal or medical information that identifies individuals
+      \item Cultural or linguistic materials shared under community protocols
+      \item Locations of endangered species or sacred sites
+      \item Data collected without full, informed consent for public reuse
     \end{itemize}
-  \item In such cases, use restricted or tiered access, or licences that reflect community agreements.
+  \item Use restricted or tiered access, or licences that reflect community agreements
+  \item Next week: the CARE principles for exactly these cases
 \end{itemize}
-\medskip
-Responsible openness means balancing transparency with care, consent, and context.
 \end{frame}
 
 % =========================
@@ -280,18 +424,18 @@ Responsible openness means balancing transparency with care, consent, and contex
 \begin{frame}{Where to publish: routes to open access}
 \begin{itemize}
   \item A licence says what readers are allowed to do.  The \textbf{route}
-    decides whether they can read the work at all.
+    decides whether they can read the work at all
   \item \textbf{Gold}: the journal publishes the final version openly, and
-    charges the author an article processing charge (APC) --- hundreds to
-    thousands of euros, usually paid by a funder or institution.
+    charges the author an article processing charge (APC): hundreds to
+    thousands of euros, usually paid by a funder or institution
   \item \textbf{Diamond}: open to readers and free to authors, funded by
-    universities or scholarly societies.  Much of linguistics works this way.
+    universities or scholarly societies.  Much of linguistics works this way
   \item \textbf{Green}: publish anywhere, then deposit the accepted
     manuscript in a repository --- your university's, or a subject archive
-    such as arXiv or LingBuzz.
+    such as arXiv or LingBuzz
   \item \textbf{Predatory venues} take the APC and skip the peer review.
     Check the journal against the \href{https://doaj.org/}{DOAJ}, and see whether you recognise anyone
-    on the editorial board.
+    on the editorial board
 \end{itemize}
 \end{frame}
 
@@ -312,59 +456,54 @@ Responsible openness means balancing transparency with care, consent, and contex
     \end{itemize}
   \item It is not a summary exercise.  An annotation that could have been
     written without reading the source is worth nothing to you in December,
-    when you are writing the paper and cannot remember which one said what.
+    when you are writing the paper and cannot remember which one said what
   \item Not graded on its own --- it is the scaffolding for the paper, and we
-    use it today.
+    use it today
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Auditing sources for FAIR and CARE issues}
 \begin{itemize}
   \item \textbf{30 minutes, in pairs.}  Work from the annotated bibliography
-    you brought today.
+    you brought today
   \item \textbf{Part 1 (10 min): pitch your topic.}  Tell your partner the
     question you want your paper to answer, then read them two of your
-    annotations: your \textbf{best} source and your \textbf{shakiest}.  Your
+    annotations: your best source and your shakiest.  Your
     partner asks: how do you know that one is any good?
   \item \textbf{Part 2 (15 min): audit one source each.}  Pick the shaky one
     and check it:
     \begin{itemize}
-      \item \textbf{FAIR:} can you \emph{find} it by DOI or stable URL, can you
-        actually \emph{read} it, is its data or method reusable, is the licence clear?
+      \item \textbf{FAIR:} can you find it by DOI or stable URL, can you
+        read it, is its data or method reusable, is the licence clear?
       \item \textbf{CARE:} whose data or words does it rest on?  Did they
-        consent?  Who benefits from it being published? (we will look at these in more detail next week)
+        consent?  Who benefits from it being published? (more next week)
     \end{itemize}
   \item \textbf{Part 3 (5 min):} decide together --- keep it, replace it, or
-    cite it \emph{with} its limitations stated.  \textbf{Rewrite that
-    annotation} before you leave.
+    cite it with its limitations stated.  Rewrite that
+    annotation before you leave
 \end{itemize}
 \end{frame}
 
 % --- STUDENT ASSIGNMENT CONTEXT
 \begin{frame}{Your first-draft paper: fitting the scientific style}
 \begin{itemize}
-\item The upcoming assignment is your \textbf{first draft of a short academic paper.}
- 
+  \item Next assignment: the first draft of a short academic paper
   \item Use the conventions of scientific writing:
     \begin{itemize}
-      \item Clear research question and motivation.  
-      \item Evidence-based argument supported by credible sources.  
-      \item Neutral tone; cautious interpretation; accurate citations.
+      \item Clear research question and motivation
+      \item Evidence-based argument supported by credible sources
+      \item Neutral tone; cautious interpretation; accurate citations
     \end{itemize}
-  \item The work you have already done both helps:
+  \item Both pieces of work you have done so far help:
     \begin{itemize}
       \item The three-paragraph comparison of texts on water use in data centres
-        $\rightarrow$ weighing sources against each other, and citing them in APA.
-      \item Wikipedia $\rightarrow$ writing neutrally and clearly for others.
+        $\rightarrow$ weighing sources against each other, and citing them in APA
+      \item Wikipedia $\rightarrow$ writing neutrally and clearly for others
     \end{itemize}
+  \item What I want to see: how well you use your sources to answer the
+    question, as accurately as possible
+  \item In the peer-review session you will read and comment on each other's papers
 \end{itemize}
-
-I want to see how well you can use your sources to answer the question, as accurately as possible.
-
-\begin{itemize}
-\item In the peer-review session, you will read each other's papers and comment on them.
-\end{itemize}
-
 \end{frame}
 
 % =====================================================================
@@ -378,7 +517,10 @@ I want to see how well you can use your sources to answer the question, as accur
     (Australian Research Data Commons, CC BY 4.0) and \citet{FAIR2016}.
   \item \textbf{AI disclosure:} \textbf{GPT-4o} in ChatGPT
     \citep{openai-chatgpt-2025-03-14} was used to format the references and
-    to draft an early version of these slides.
+    to draft an early version of these slides.  \textbf{Claude Fable 5.1}
+    \citep{anthropic-claude-fable-5-1-2026-10-27} edited the wording of the
+    deck against Francis's style guide and drafted the section \emph{Open Data
+    Gets Better} from his outline.
   \aicheck
   \end{itemize}
 \end{frame}

@@ -17,13 +17,19 @@
   \titlepage
 \end{frame}
 
+\begin{frame}
+  \frametitle{Today}
+  \small
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
 % ======================================
 % Feedback & Writing: The foundation for peer review
 % ======================================
 
 \section{Feedback and Revision}
 
-\begin{frame}{Writing is a process — feedback is essential}
+\begin{frame}{Why feedback?}
 \begin{itemize}
   \item First drafts are rarely clear, complete, or well-argued
   \item Feedback (from peers, tutors, self-reflection) helps identify:
@@ -33,32 +39,34 @@
     \item missing evidence
     \item stylistic issues
     \end{itemize}
-  \item Improving writing increases clarity, persuasiveness, and ethical responsibility — especially important when dealing with data, culture, or community topics
+  \item Better writing is clearer and more persuasive, and when you write about people and their data, more responsible
 \end{itemize}
 \end{frame}
 
-\begin{frame}{What feedback gives to the writer}
+\begin{frame}{What feedback gives you}
 \begin{itemize}
-  \item Another reader's perspective — reveals assumptions or blind spots
-  \item Fresh eyes on structure, coherence, and flow: does argument build logically?
-  \item Opportunity to strengthen evidence and address counter-arguments
-  \item Chance to improve style, tone, and accessibility depending on audience
+  \item As the writer:
+    \begin{itemize}
+    \item Another reader's view: it shows your assumptions and blind spots
+    \item Fresh eyes on the structure: does the argument build?
+    \item A chance to add evidence and answer counter-arguments
+    \item A chance to fix style and tone for the audience
+    \end{itemize}
+  \item As the reader:
+    \begin{itemize}
+    \item You learn to weigh evidence and spot weak arguments
+    \item You see how other people solve the problems you have
+    \item Better writing, better discussion
+    \end{itemize}
+  \item Think of the review you wrote on Moodle: which of these did it do?
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Feedback benefits the critical reader too}
+\begin{frame}{Feedback as an ethical check}
 \begin{itemize}
-  \item Readers become more critical and informed — able to assess evidence, question assumptions, and spot weak arguments
-  \item Improves collective standards: better writing leads to better discourse
-  \item Feeds back into research culture: clarity and transparency help others replicate, critique, or build further work
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Feedback is ethical, not just cosmetic}
-\begin{itemize}
-  \item Writing about people, cultures, data — carries responsibility. Feedback helps catch problematic framing, bias, or unintended harm
-  \item Encourages accountability: facts must be checked, sources verified, sensitive topics handled with care
-  \item Discipline-wide benefit: careful writing builds trust, respect, and legitimacy for scholarship
+  \item Writing about people, cultures and data carries responsibility: a reader can catch bad framing, bias or harm you did not see
+  \item Facts get checked, sources verified, sensitive topics handled with care
+  \item Careful writing builds trust in scholarship as a whole
 \end{itemize}
 \end{frame}
 
@@ -72,22 +80,21 @@
 % --- WHAT PEER REVIEW IS
 \begin{frame}{What peer review is}
 \begin{itemize}
-  \item Peer review is the process by which experts evaluate a manuscript before publication
+  \item Experts evaluate a manuscript before it is published
   \item Its aims are to:
     \begin{itemize}
       \item Check the \textbf{soundness} of methods and argument
       \item Improve clarity, structure, and contribution
       \item Build \textbf{trust} in published research
     \end{itemize}
-  \item Reviewers act as gatekeepers and mentors — ideally improving the quality of science and scholarship
+  \item Reviewers are gatekeepers and, at best, mentors
 \end{itemize}
-\textit{Peer review is not about perfection; it is about accountability and conversation.}
 \end{frame}
 
 % --- TYPES OF PEER REVIEW
 \begin{frame}{Types of peer review}
 \begin{itemize}
-  \item There are several models of peer review, each balancing \textbf{transparency, fairness, and accountability} in different ways
+  \item Three models, trading off transparency, fairness and accountability
 \end{itemize}
 
 \begin{description}
@@ -100,21 +107,18 @@
 
   \item[Double-blind:] Neither authors nor reviewers know each other's identity
     \begin{itemize}
-      \item Aims to reduce bias and level the playing field
+      \item Reduces bias (see the WSDM experiment later)
       \item Often used in humanities and linguistics conferences
-      \item Risk: anonymity may limit accountability; reviewers can sometimes guess authors
+      \item Risk: less accountability, and reviewers can often guess the authors
     \end{itemize}
 
   \item[Open review:] Both sides know identities, and sometimes reviews are published
     \begin{itemize}
-      \item Promotes transparency and recognition of reviewing labour
-      \item Encourages constructive tone, but may discourage strong criticism
+      \item Transparent, and reviewers get credit for their work
+      \item Politer, but reviewers may hold back (see the BMJ trial later)
       \item Used in some open-science and data journals
     \end{itemize}
 \end{description}
-
-% \medskip
-% \textit{Each model reflects what a community values most — fairness, openness, or candour.}
  \end{frame}
 
 
@@ -125,10 +129,10 @@
 \column{0.48\textwidth}
 \textbf{Strengths}
 \begin{itemize}
-  \item Enhances rigour and precision
+  \item Catches errors before publication
   \item Provides expert feedback before publication
-  \item Establishes a shared standard of credibility
-  \item Encourages dialogue within a discipline
+  \item A shared standard: ``peer reviewed'' means something
+  \item Dialogue within a discipline
 \end{itemize}
 
 \column{0.48\textwidth}
@@ -136,12 +140,10 @@
 \begin{itemize}
   \item Can be slow, inconsistent, or biased
   \item Overburdens a small reviewer pool
-  \item Replication and transparency not always checked
-  \item Negative or null results often unpublished (``file-drawer'' effect)
+  \item Reviewers rarely check replication
+  \item Negative or null results often unpublished (the file-drawer effect)
 \end{itemize}
 \end{columns}
-\medskip
-\textit{Peer review is essential but imperfect — a social process as much as a scientific one.}
 \end{frame}
 
 % --- REVIEWER 3 (the joke, and the evidence)
@@ -174,50 +176,28 @@
   \item \textbf{Post-publication review:}
     \begin{itemize}
       \item Articles or datasets are published first, then openly discussed
-      \item Examples: 
-        \href{https://f1000research.com/}{F1000Research}, 
+      \item Examples:
+        \href{https://f1000research.com/}{F1000Research},
         \href{https://pubpeer.com/}{PubPeer}
     \end{itemize}
 
   \item \textbf{Community review:}
     \begin{itemize}
-      \item Large-scale collaborative commenting before publication  
+      \item Large-scale collaborative commenting before publication
             (e.g., open preprints, \href{https://github.com/}{GitHub issues}, \href{https://langsci-press.org/openReview/intro}{Open Review at LangSci Press})
-      \item Builds transparency and collective expertise
+      \item Many eyes, in the open
     \end{itemize}
 
   \item \textbf{Preprint feedback:}
     \begin{itemize}
-      \item Early sharing (e.g., \href{https://arxiv.org/}{arXiv}, 
-            \href{https://ling.auf.net/lingbuzz}{LingBuzz}) invites informal peer feedback before formal submission
-      \item Speeds dissemination and reduces ``scoop'' anxiety
+      \item Early sharing (e.g., \href{https://arxiv.org/}{arXiv},
+            \href{https://ling.auf.net/lingbuzz}{LingBuzz}) gets informal feedback before submission
+      \item Faster, and it establishes priority (no fear of being scooped)
     \end{itemize}
 
-  \item These models shift peer review from an evaluation to a 
-       conversation
+  \item In all three, review is a conversation that continues after publication
 \end{itemize}
 
-\end{frame}
-
-
-% --- RESPONSIBILITIES AND ETHICS OF REVIEWERS
-\begin{frame}{Ethical responsibilities of peer reviewers}
-\begin{itemize}
-  \item Reviewers are entrusted with \textbf{privileged access} to unpublished work
-  \item Ethical responsibilities include:
-    \begin{itemize}
-      \item \textbf{Confidentiality}: do not share, quote, or use ideas from the manuscript
-      \item \textbf{Impartiality}: declare conflicts of interest; avoid personal or institutional bias
-      \item \textbf{Constructive criticism}: focus on improving the work, not attacking the author
-      \item \textbf{Timeliness}: return reviews promptly; long delays can harm authors' careers
-      \item \textbf{Accuracy}: evaluate methods, evidence, logic, and citations fairly
-      \item \textbf{Respect}: use professional tone; assume good intent; avoid dismissive language
-    \end{itemize}
-  \item As \citet{rockwell2005prethics} emphasises, access to unpublished research creates a
-        \textbf{power imbalance}: reviewers must not exploit this advantage
-\end{itemize}
-\medskip
-\textit{A good reviewer protects confidentiality, improves clarity, and strengthens trust in scholarship.}
 \end{frame}
 
 
@@ -226,19 +206,19 @@
 % ================================
 \subsection{Feedback Beyond Academia}
 
-\begin{frame}{Feedback in industry: the practice of ``giving notes''}
+\begin{frame}{Feedback in industry: giving notes}
 \begin{itemize}
-  \item In many industries (film, publishing, games, advertising), feedback is formalised as \textbf{``notes''} \citep{catmull2014creativityinc}
-  \item Notes come from editors, producers, managers, clients — often in a hierarchical chain
-  \item The goal is similar to academic review:
+  \item In film, publishing, games and advertising, feedback is called \txx{notes} \citep{catmull2014creativityinc}
+  \item Notes come from editors, producers, managers and clients, usually down a hierarchy
+  \item The goal is the same as in academic review:
     \begin{itemize}
-      \item improve clarity, impact, and quality
-      \item ensure the work meets its purpose and audience
+      \item make the work better
+      \item make sure it does its job for its audience
     \end{itemize}
-  \item But constraints differ:
+  \item The constraints differ:
     \begin{itemize}
-      \item strict deadlines, budgets, brand guidelines, legal concerns
-      \item competing visions between writer/creator, editor, and client
+      \item deadlines, budgets, brand guidelines, lawyers
+      \item the writer, the editor and the client may want different things
     \end{itemize}
 \end{itemize}
 
@@ -248,42 +228,37 @@
 
 \begin{frame}{How industry notes differ from academic peer review}
 \begin{itemize}
-  \item \textbf{Hierarchical:} notes often come from someone with authority over the project (editor, producer, manager)
-  \item \textbf{Goal-driven:} feedback must serve the needs of the project, brand, or product — not the advancement of knowledge
-  \item \textbf{Collaborative but constrained:} creators negotiate changes, but ultimate decisions may be external
-  \item \textbf{Iterative cycles:} multiple rounds of notes → revisions → more notes → final approval
-  \item \textbf{Success = alignment} with project goals, not independent scholarly rigour
+  \item \textbf{Hierarchical}: the notes come from someone with authority over the project
+  \item \textbf{Goal-driven}: the note serves the project, brand or product
+  \item \textbf{Negotiated, up to a point}: creators argue back, but the final call may not be theirs
+  \item \textbf{Iterative}: notes, revisions, more notes, approval
+  \item \textbf{Success} means the work does what the project needs
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}{Best practices from industry feedback culture}
 \begin{itemize}
-  \item \textbf{Clarity first:} Notes should define the problem before proposing solutions (Pixar rule)
-  \item \textbf{Respect creative intent:} Improve the work without imposing a personal style
-  \item \textbf{Prioritise high-impact changes:} Not all notes can be addressed; choose the ones that serve the project
-  \item \textbf{Negotiate professionally:} Creators can ask for clarification and push back when necessary
-  \item \textbf{Shared responsibility:} Good notes identify issues; creators choose how to solve them
+  \item \textbf{Clarity first}: say what the problem is before proposing a fix (the Pixar rule)
+  \item \textbf{Respect the creator's intent}: improve the work without imposing your style
+  \item \textbf{Prioritise}: not every note can be taken; choose the ones that serve the project
+  \item \textbf{Negotiate}: creators can ask what a note means, and push back
+  \item \textbf{Shared responsibility}: notes name problems; the creator chooses the fix
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}{What students can learn from industry feedback}
 \begin{itemize}
-  \item You will encounter feedback in many forms: editorial, managerial, client-oriented, or technical
-  \item Key transferable skills:
+  \item You will get feedback from editors, managers, clients and colleagues
+  \item What carries over:
     \begin{itemize}
       \item receiving feedback without defensiveness
       \item interpreting conflicting goals
       \item deciding which suggestions to adopt, adapt, or reject
       \item communicating clearly about revisions
     \end{itemize}
-  \item Ethical themes remain:
-    \begin{itemize}
-      \item respect, clarity, collaboration, responsibility
-    \end{itemize}
 \end{itemize}
-\textit{Good feedback — academic or industrial — improves the work and strengthens the team.}
 \end{frame}
 
 
@@ -293,12 +268,10 @@
 
 \begin{frame}{Feedback cultures beyond academic peer review}
 \begin{itemize}
-  \item \textbf{Journalism:} Editors and fact-checkers verify claims against primary sources before publication — different from academic review, which often assumes sources are cited correctly
-  \item \textbf{Wikipedia:} Articles pass through multiple stages of community review; good/featured article criteria require verifiability and neutral point of view
-  \item \textbf{Code review:} In software development, peers review code for bugs, style, and maintainability — feedback is typically public and tied to version control (e.g., GitHub pull requests)
+  \item \textbf{Journalism}: editors and fact-checkers check claims against primary sources before publication (academic reviewers rarely check that a citation says what the paper claims)
+  \item \textbf{Wikipedia}: articles pass through community review; Good and Featured Article criteria require verifiability and a neutral point of view
+  \item \textbf{Code review}: peers review code for bugs, style and maintainability, in public and tied to version control (GitHub pull requests)
   \end{itemize}
-\medskip
-  \textit{Feedback aims to improve quality through structured critique before the results are made public}
 \end{frame}
 
 
@@ -309,14 +282,13 @@
 
 \begin{frame}{Peer review in Computational Linguistics}
 \begin{itemize}
-  \item Peer review is so central to scholarship that whole communities invest in improving it
+  \item Whole communities invest in improving peer review
   \item The Association for Computational Linguistics (ACL) publishes:
     \begin{itemize}
       \item reviewer training guides \citep{acl2023reviewbasics}
       \item best-practice recommendations  \citep{aclarrguidelines}
       \item annual reports analysing what works and what fails \citep{aclcopr2023}
     \end{itemize}
-  \item These offer a model for responsible, constructive, ethical reviewing
   \item A large conference at scale --- ACL 2025, for example:
     \begin{itemize}
     \item  8,360 submissions
@@ -340,14 +312,19 @@
     \begin{itemize}
       \item \textbf{Expertise}: Can you fairly assess the methods and claims?
       \item \textbf{Conflicts of interest}: shared institution, collaborators, competitors
-      \item \textbf{Capacity}: Do you actually have time to read carefully?
+      \item \textbf{Capacity}: do you have time to read it carefully?
     \end{itemize}
   \item Accepting when you are unqualified or overloaded leads to unfair or rushed reviews
   \item Slightly undermined by the fact that if you submit a paper, someone from the author team must volunteer to review, and owes
         \href{https://aclrollingreview.org/reviewing-workload-adjustment/}{four reviews per submission} (capped at 16 in a cycle), \ldots
       \begin{itemize}
     \item ACL 2025 accepted 20.3\% to the main conference and a further 16.7\% as Findings --- four papers miss the main conference for every one that makes it, and nearly two thirds are turned down altogether
-    \item From October 2026 the \href{https://aclrollingreview.org/sustainable-reviewing-2026}{ACL sustainable reviewing policy} goes further: each submission must be backed by a qualified service contributor (who may serve for at most two submissions), authors are capped at 20 submissions and 5 first-author submissions a cycle, and papers whose authors do not register and do the service are desk rejected
+    \item From October 2026 the \href{https://aclrollingreview.org/sustainable-reviewing-2026}{ACL sustainable reviewing policy} goes further:
+      \begin{itemize}
+      \item each submission needs a qualified service contributor (at most two submissions each)
+      \item authors are capped at 20 submissions and 5 first-author submissions a cycle
+      \item no registered service, no review: the paper is desk rejected
+      \end{itemize}
     \end{itemize}
 \end{itemize}
 
@@ -361,7 +338,7 @@
 \begin{itemize}
   \item First read: understand the research question and contribution
   \item Second read: evaluate evidence, structure, and clarity
-  \item Look for what the author is \emph{trying} to do
+  \item Look for what the author is trying to do
   \item Avoid snap judgments based on style, formatting, or first impressions
 \end{itemize}
 
@@ -375,8 +352,8 @@
 \begin{itemize}
   \item Every review should include both:
     \begin{itemize}
-      \item \textbf{Strengths} — what works well
-      \item \textbf{Weaknesses} — what needs improvement
+      \item \textbf{Strengths}: what works
+      \item \textbf{Weaknesses}: what to fix
     \end{itemize}
   \item Make criticisms specific:
     \begin{itemize}
@@ -384,7 +361,7 @@
       \item explain why it is unclear
       \item suggest how to fix it
     \end{itemize}
-  \item Vague comments (\textit{paper is confusing}) are unhelpful
+  \item Vague comments (``the paper is confusing'') do not help
 \end{itemize}
 
 \end{frame}
@@ -403,7 +380,6 @@
       \item Are ethical implications acknowledged?
       \item Can results be verified or reproduced?
     \end{itemize}
-  \item Responsible peer review strengthens the entire field
 \end{itemize}
 
 \end{frame}
@@ -436,11 +412,13 @@
   \item Reviewers gain \textbf{access to unpublished work} before the community
   \item This creates responsibility:
     \begin{itemize}
-      \item Never use unpublished ideas in your own work
+      \item Never share, quote or use ideas from the manuscript
       \item Never delay a review to gain priority
       \item Never punish papers that challenge your favourite theory
+      \item Declare conflicts of interest
     \end{itemize}
-  \item Peer review is a trust-based system; unethical reviewing harms entire fields
+  \item \citet{rockwell2005prethics}: access to unpublished work is a power imbalance, and reviewers must not exploit it
+  \item Peer review runs on trust
 \end{itemize}
 
 \end{frame}
@@ -502,14 +480,14 @@
     \end{itemize}
   \item And means we have to review more and more publications
   \end{itemize}
-  
+
 \end{frame}
 
 % --- METRICS: WHY THEY WERE INTRODUCED
 \begin{frame}{Metrics: why they were introduced}
 \begin{itemize}
 
-  \item Growing research ecosystems needed \textbf{standardised indicators} to compare:
+  \item Evaluators wanted standard numbers to compare:
     \begin{itemize}
       \item journals (Impact Factor)
       \item researchers (h-index)
@@ -518,17 +496,16 @@
 
   \item \textbf{Impact Factor (IF):} citations made in one year to what a journal published in the \emph{two preceding} years, divided by the number of ``citable items'' (research articles and reviews) it published in those two years
   \begin{itemize}
-    \item Designed to help libraries choose journals and to signal visibility
+    \item Designed to help libraries choose which journals to buy
     \item A standard criticism is the mismatch between the two halves: the numerator counts citations to \emph{everything} (editorials, letters, news), the denominator counts only the ``citable items''
   \end{itemize}
 
   \item \textbf{h-index:} a researcher has index $h$ if they have $h$ papers each cited at least $h$ times
   \begin{itemize}
-    \item Intended to combine productivity + influence in a single number
+    \item Productivity and influence in one number
   \end{itemize}
 
-  \item Metrics aimed to make evaluation \textbf{transparent, comparable, and data-driven}
-  \item They were introduced to help — not to replace — expert judgment
+  \item Meant to inform expert judgement, not to replace it
 
 \end{itemize}
 \end{frame}
@@ -544,26 +521,19 @@
     \item Citation counts become currency; novelty outranks replication or rigour
   \end{itemize}
 
-  \item \textbf{Goodhart's Law}, as \citet[p.~308]{strathern1997ratings} famously put it:
-  \begin{quote}
-    When a measure becomes a target, it ceases to be a good measure.
-  \end{quote}
-  \vspace*{-2.5ex}
+  \item \textbf{Goodhart's Law}, as \citet[p.~308]{strathern1997ratings} put it:
   \begin{itemize}
-    \item IF and h-index lose validity once people actively game them
+    \item ``When a measure becomes a target, it ceases to be a good measure''
+    \item IF and h-index stop measuring anything once people game them
   \end{itemize}
 
-  \item \textbf{Punktoza (``points fever''):} publishing strategically to accumulate evaluation points rather than to advance knowledge \citep{kulczycki2017punktoza,kulczycki2017assessing}
+  \item \txx{Punktoza} (``points fever''): publishing to collect evaluation points \citep{kulczycki2017punktoza,kulczycki2017assessing}
   \begin{itemize}
     \item Encourages salami-slicing, low-risk incremental work, quantity over substance
-    \item A systemic response to metric-driven national evaluation frameworks
+    \item A rational response to points-based national evaluation
   \end{itemize}
 
-  \item Metrics intended to guide evaluation end up \textbf{shaping behaviour}, sometimes harming scholarship
-
 \end{itemize}
-
-\textit{Quantifying trust can erode it when numbers replace judgment.}
 \vspace*{-1ex}
 \end{frame}
 
@@ -579,32 +549,31 @@
 % ===================================
 
 \subsection{Bias and Inequality in Peer Review}
-\begin{frame}{Peer review is not neutral — known biases}
+\begin{frame}{Peer review is not neutral}
 \begin{itemize}
-  \item Peer review should be meritocratic — but social biases can shape outcomes
-  \item Empirical studies document systematic bias based on gender, institutional prestige, and affiliation
-  \item This can reproduce inequalities in academic visibility and access
+  \item Peer review should judge the work alone, but social biases shape outcomes
+  \item Studies find bias by gender, prestige and affiliation (next two frames)
+  \item The result: the same people stay visible
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Gender bias and underrepresentation}
 \begin{itemize}
-  \item A study of 145 journals --- 1.7 million authors and 740,000 referees --- found that manuscripts by women were not universally penalized, yet women remain under-represented among reviewers and editors \citep{squazzoni2021genderbias}
+  \item A study of 145 journals (1.7 million authors and 740,000 referees) found that manuscripts by women were not universally penalized, yet women remain under-represented among reviewers and editors \citep{squazzoni2021genderbias}
   \item An earlier study of 9,000 editors and 43,000 reviewers at one publisher found the same under-representation, and that reviewers tend to be matched with authors like themselves \citep{helmer2017genderbias,murray2018homophily}
   \item In grant-review contexts, women have also been shown to receive lower scores despite similar qualifications
     \citep{wenneras1997nepotism}
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Institutional – affiliation and prestige bias}
+\begin{frame}{Affiliation and prestige bias}
 \begin{itemize}
-\item ``Affiliation bias'' has been measured directly: WSDM 2017 ran a controlled experiment in which every paper got two \emph{single-blind} reviewers and two \emph{double-blind} ones \citep{tomkins2017dblblind}
+\item Affiliation bias has been measured directly: WSDM 2017 ran a controlled experiment in which every paper got two \emph{single-blind} reviewers and two \emph{double-blind} ones \citep{tomkins2017dblblind}
     \begin{itemize}
     \item The single-blind reviewers were markedly more likely to recommend acceptance for papers by famous authors (odds $\times$1.63) and from top universities ($\times$1.58) or top companies ($\times$2.10)
     \item Their double-blind colleagues, reading the same papers, showed no such advantage --- so double-blinding takes it away
     \end{itemize}
-  \item This can disadvantage authors from lesser-known institutions, even when the manuscript quality is comparable
-  \item Result: citation networks and publication records amplify institutional inequality — making ``the rich institutions'' richer
+  \item So publication records amplify institutional inequality: the rich get richer
 \end{itemize}
 \end{frame}
 
@@ -630,20 +599,19 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Why these biases happen — and what can we do?}
+\begin{frame}{Why these biases happen, and what we can do}
   \begin{itemize}
   \item Why these biases happen
     \begin{itemize}
-    \item Reviewers (and editors) may rely on stereotypes, familiarity, or ``status cues'' (institution name, authors' reputation) rather than content
-    \item Reviewing is human work; unconscious bias — on gender, prestige, nationality, career stage — is common
-    \item Peer-review bias is not just about individual reviewers, but structural patterns: who gets invited to review, whose papers get visibility, who gets accepted
+    \item Reviewers and editors lean on status cues: institution, reputation, familiarity
+    \item Reviewing is human work, and unconscious bias (gender, prestige, nationality, career stage) is common
+    \item It is structural too: who is asked to review, whose papers get seen, who gets accepted
     \end{itemize}
   \item What this means for us
     \begin{itemize}
-    \item As reviewers: stay alert to bias. Evaluate based on content, not identity or institution
-    \item As authors: be aware that results and visibility may be influenced by social factors beyond quality
-    \item As a community: encourage diversity in reviewers/editors, anonymised review where possible, transparency in editorial decisions
-    \item Use blind review where possible
+    \item As reviewers: judge the content, and notice when you are judging the name
+    \item As authors: a rejection is not only about quality
+    \item As a community: diverse reviewers and editors, anonymised review where it fits, transparent editorial decisions
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -652,25 +620,23 @@
 % ===================================
 % The Reproducibility Crisis & Why It Matters
 % ===================================
-\subsection{The Reproducibility Crisis} 
+\subsection{The Reproducibility Crisis}
 \begin{frame}{What is reproducibility / replicability?}
 \begin{itemize}
   \item \textbf{Reproducibility:} re-analyse the same data/code to get the same result
   \item \textbf{Replicability:} collect new data under same conditions and test whether the effect holds
-  \item Both are fundamental for reliable knowledge — without them, published findings remain provisional \citep{goodman2016reproducibility}
+  \item Without either, a published finding is provisional \citep{goodman2016reproducibility}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{What the crisis looks like — some sobering numbers}
+\begin{frame}{The crisis in numbers}
 \begin{itemize}
 \item In a 2015 project replicating 100 psychology studies, only about 36\% of results were successfully replicated; effect sizes dropped by about 50\% \citep{open2015reproducibility}
 
-  \item A 2016 \textit{Nature} survey of 1,576 researchers, across all the sciences, found over 70\% had tried and failed to reproduce another scientist's results — and 52\% judged that there is a significant crisis \citep{baker2016crisis}
-  \item Cancer biology is no better: an eight-year project repeated 50 experiments from 23 high-profile papers, and only 46\% of the replications (51/112) succeeded --- with effect sizes a median 85\% smaller \citep{errington2021cancer}
+  \item A 2016 \textit{Nature} survey of 1,576 researchers, across all the sciences, found over 70\% had tried and failed to reproduce another scientist's results, and 52\% judged that there is a significant crisis \citep{baker2016crisis}
+  \item Cancer biology is no better: an eight-year project repeated 50 experiments from 23 high-profile papers, and only 46\% of the replications (51/112) succeeded, with effect sizes a median 85\% smaller \citep{errington2021cancer}
+  \item If findings routinely fail to replicate, the literature misleads everyone who builds on it
 \end{itemize}
-\begin{block}{Why this matters}
-If published findings routinely fail replication, the scientific literature becomes unreliable — which undermines trust, wastes resources, and misleads follow-up research.
-\end{block}
 
 \medskip
 \small Video: \href{https://www.youtube.com/watch?v=42QuXLucH3Q}{Veritasium: ``Is Most Published Research Wrong?''} (12 min) %% SHOW IN CLASS?
@@ -678,37 +644,35 @@ If published findings routinely fail replication, the scientific literature beco
 
 \begin{frame}{Causes: why reproducibility fails}
 \begin{itemize}
-\item Low statistical power (too few subjects/samples) — leads to unstable, non-robust effects
+\item Low statistical power (too few subjects): effects that come and go
    \citep{ioannidis2005false}
-  \item Publication bias \& questionable research practices (QRPs): only positive or novel results tend to get published; null results stay hidden
-  \item Poor documentation, missing code/data, hidden methods — even honest researchers make replication hard when they do not share full materials
-  \item Time \& incentive structures: scientists rewarded for novelty, impact, and speed — not for replication or careful method sharing
+  \item Publication bias: positive, novel results get published; null results stay in the drawer
+  \item Missing code, data and method details: honest researchers make replication impossible by not sharing
+  \item Incentives: rewards go to novelty, impact and speed, none to replication
 \end{itemize}
 \end{frame}
 
-\begin{frame}{How FAIR + CARE + Good Writing helps fix reproducibility}
+\begin{frame}{FAIR, CARE and good writing help}
 \begin{itemize}
-  \item Proper metadata, shared code/data, and clear methods (FAIR) make re-analysis possible
-  \item Ethical responsibility (CARE) encourages transparent, honest reporting — including limitations, context, and reproducibility risks
-  \item Careful writing and documentation help readers understand exactly how a study was done
-  \item Together — transparent data practices, open sharing + honest reporting 
-    \item[=] more reliable science
+  \item FAIR: metadata, shared code and data make re-analysis possible
+  \item CARE: honest reporting of context and limitations
+  \item Good writing: a reader can tell exactly what was done
+  \item Together: more reliable science
 \end{itemize}
 \end{frame}
 
 % --- CITATION AS TRUST
 \begin{frame}{Citation as trust}
 \begin{itemize}
-  \item A citation is a \textbf{link of trust}: it says ``I have read and found this work reliable enough to build upon''
-  \item Over time, citations form \textbf{networks of credibility} — maps of intellectual influence
+  \item A citation says: I read this and trust it enough to build on it
+  \item Citations add up to networks of credibility
   \item Not all citations are equal:
     \begin{itemize}
       \item Some endorse, others critique or merely mention
-      \item ``Citation cascades'' can perpetuate unverified claims
+      \item Citation cascades pass on claims no one checked (next slide)
     \end{itemize}
-  \item Responsible citation means reading, understanding, and acknowledging context — not just counting links
+  \item Cite what you have read, and say what you take from it
 \end{itemize}
-\textit{Citation is conversation: each reference extends a thread of shared trust.}
 \end{frame}
 
 \begin{frame}{Citogenesis \href{https://xkcd.com/978/}{xkcd 978}}
@@ -724,14 +688,14 @@ If published findings routinely fail replication, the scientific literature beco
 
 \begin{frame}{AI in peer review: a known problem}
 \begin{itemize}
-  \item Large language models (LLMs) like ChatGPT are increasingly used in academic writing — and in peer review
-  \item A 2024 study estimated that 6.5–17\% of peer reviews at major AI conferences may have been substantially written or modified by LLMs \citep{liang2024aireviews}
-  \item Telltale signs: unusual adjectives (``commendable'', ``meticulous'', ``intricate'') spiked 10–35× in frequency
+  \item Large language models (LLMs) are used in academic writing, and in peer review
+  \item A 2024 study estimated that 6.5--17\% of peer reviews at major AI conferences may have been substantially written or modified by LLMs \citep{liang2024aireviews}
+  \item The tell: \textit{commendable}, \textit{meticulous} and \textit{intricate} rose 10--35 times in frequency
   \item Major publishers all restrict AI in peer review, but not in the same way:
     \begin{itemize}
-      \item \textbf{All of them:} never upload the manuscript, or any part of it, to a public AI tool --- that alone breaks confidentiality
+      \item \textbf{All of them:} never upload the manuscript, or any part of it, to a public AI tool: that alone breaks confidentiality
       \item \textbf{Taylor \& Francis} and \textbf{Sage:} do not let AI generate the review at all (T\&F allow it only to improve the language of a review you wrote yourself)
-      \item \textbf{Springer Nature:} AI may support a reviewer but never replace their judgement --- use only secure or institutionally approved tools, and be transparent about it
+      \item \textbf{Springer Nature:} AI may support a reviewer but never replace their judgement; use only secure or institutionally approved tools, and be transparent about it
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -739,13 +703,11 @@ If published findings routinely fail replication, the scientific literature beco
 \begin{frame}{Why AI-generated reviews are problematic}
 \begin{itemize}
   \item \textbf{Confidentiality breach}: uploading a manuscript to an LLM shares it with a third party
-  \item \textbf{Accountability}: reviewers are responsible for accuracy and judgment — LLMs cannot be held accountable
-  \item \textbf{Bias and hallucination}: LLMs can perpetuate biases and produce plausible-sounding but incorrect critiques
-  \item \textbf{Superficiality}: AI-generated reviews tend to be generic and miss domain-specific issues
-  \item \textbf{Trust erosion}: if reviews are automated, peer review loses its meaning as expert evaluation
+  \item \textbf{Accountability}: reviewers answer for accuracy and judgement, and an LLM cannot
+  \item \textbf{Bias and hallucination}: LLMs repeat biases and produce plausible, wrong critiques
+  \item \textbf{Superficiality}: generated reviews are generic and miss the issues an expert would see
+  \item \textbf{Trust erosion}: an automated review is no longer an expert's judgement
 \end{itemize}
-\medskip
-\textit{Peer review depends on human expertise, judgment, and responsibility — qualities LLMs cannot replicate.}
 \end{frame}
 
 \begin{frame}{Typical guidance on AI in peer review}
@@ -779,7 +741,7 @@ If published findings routinely fail replication, the scientific literature beco
   \item \textbf{GPT-4o} in ChatGPT \citep{openai-chatgpt-2025-03-14} was used to format the references, and generate a first draft of the slides
   \aicheck
   \end{itemize}
-  
+
 \end{frame}
 
 

@@ -56,6 +56,15 @@
 }
 
 
+% Beamer's quote environment inside an itemize ignores the list indent and
+% overflows the right margin by one indent per level.  Boxing it to the
+% current line width keeps it inside, wherever it is used.
+\let\origquote\quote
+\let\endorigquote\endquote
+\renewenvironment{quote}%
+  {\par\noindent\begin{minipage}{\linewidth}\origquote}%
+  {\endorigquote\end{minipage}\par}
+
 % ---- other packages
 \usepackage{tikz}
 
